@@ -82,64 +82,214 @@
   "games": {
     "title": "Web games and side projects (public, playable)",
     "items": [
-      {"url": "https://zero5phh-ops.github.io/galaxy-voyage/", "t": "Galaxy Voyage (銀河系漫遊)", "d": "Fly through the Milky Way in your browser"},
-      {"url": "https://zero5phh-ops.github.io/blackhole-voyage/", "t": "Black Hole Voyage (黑洞漫遊)", "d": "A 3D black hole visual experience"},
-      {"url": "https://zero5phh-ops.github.io/space-rocket-game/", "t": "3D Space Rocket Shooter", "d": "3D space shooter"},
-      {"url": "https://zero5phh-ops.github.io/neon-kart/", "t": "Neon Kart (霓虹卡丁車)", "d": "Neon-style kart racing"},
-      {"url": "https://zero5phh-ops.github.io/pixel-jump-quest/", "t": "Pixel Jump Quest (像素跳躍大冒險)", "d": "20-level pixel platformer"},
-      {"url": "https://zero5phh-ops.github.io/neon-tetris/", "t": "Neon Tetris (霓虹方塊)", "d": "Neon-style block puzzle"},
-      {"url": "https://zero5phh-ops.github.io/test/", "t": "Mobby Japanese Playland (Mobby 日語學習樂園)", "d": "Japanese-learning site for kids"}
+      {
+        "url": "https://zero5phh-ops.github.io/galaxy-voyage/",
+        "t": "Galaxy Voyage (銀河系漫遊)",
+        "d": "Fly through the Milky Way in your browser"
+      },
+      {
+        "url": "https://zero5phh-ops.github.io/blackhole-voyage/",
+        "t": "Black Hole Voyage (黑洞漫遊)",
+        "d": "A 3D black hole visual experience"
+      },
+      {
+        "url": "https://zero5phh-ops.github.io/space-rocket-game/",
+        "t": "3D Space Rocket Shooter",
+        "d": "3D space shooter"
+      },
+      {
+        "url": "https://zero5phh-ops.github.io/neon-kart/",
+        "t": "Neon Kart (霓虹卡丁車)",
+        "d": "Neon-style kart racing"
+      },
+      {
+        "url": "https://zero5phh-ops.github.io/pixel-jump-quest/",
+        "t": "Pixel Jump Quest (像素跳躍大冒險)",
+        "d": "20-level pixel platformer"
+      },
+      {
+        "url": "https://zero5phh-ops.github.io/neon-tetris/",
+        "t": "Neon Tetris (霓虹方塊)",
+        "d": "Neon-style block puzzle"
+      },
+      {
+        "url": "https://zero5phh-ops.github.io/test/",
+        "t": "Mobby Japanese Playland (Mobby 日語學習樂園)",
+        "d": "Japanese-learning site for kids"
+      }
     ]
   },
   "exp": {
     "title": "Work Experience",
-    "sub": "Working Experience",
+    "sub": "",
     "jobs": [
-      {"now": true, "yr": "2023 — Present", "role": "Content Team · Video · AI Systems Development", "org": "SOL Integrative Wellness Centre, Kuala Lumpur", "p": "Film and produce doctor video content; since 2026, personally building SOL Studio to move the entire content pipeline into one AI system."},
-      {"yr": "2024", "role": "Freelance · Video Production", "org": "FCB Malaysia (advertising agency) × RHB Bank", "p": "Produced award-entry videos for RHB Bank: 2024 MDA (D Awards) “Mobile Banking: Less Time Banking, More Time Bonding”, and the 2024 APAC Effies entry."},
-      {"yr": "2022 — 2023", "role": "Film Director", "org": "Fu Gong Plantation Sdn Bhd", "p": "Documentary on durian cultivation."},
-      {"yr": "2020 — 2022", "role": "Film Director", "org": "Taiwan Buddhist Tzu-Chi Foundation Malaysia (Kuala Lumpur)", "p": "Documentary series “Tzu Chi Malaysia Stories (大馬慈濟情)”, broadcast on Da Ai TV."},
-      {"yr": "2017 — 2019", "role": "Content Creator", "org": "Shenzhen Kuangshi Culture Communication Co., Ltd.", "p": "Brand films for Shenzhen Airlines, Shenzhen Metro, Kaisa Group, Yantian International, Tencent LEGO and more."},
-      {"yr": "2014 — 2016", "role": "CEO", "org": "Guangzhou YiCai Art Gallery House", "p": ""},
-      {"yr": "2013 — 2014", "role": "Creative Director", "org": "Guangzhou Jintai Photography", "p": ""},
-      {"yr": "2004 — 2012", "role": "Founder · Marketing &amp; Content Creator", "org": "Feeltone Inc (Feeltone Creative Platform)", "p": ""}
+      {
+        "now": true,
+        "yr": "2023 — Present",
+        "role": "Content Team · Video · AI Systems Development",
+        "org": "SOL Integrative Wellness Centre, Kuala Lumpur",
+        "p": "Film and produce doctor video content; since 2026, personally building SOL Studio to move the entire content pipeline into one AI system."
+      },
+      {
+        "yr": "2024",
+        "role": "Freelance · Video Production",
+        "org": "FCB Malaysia (advertising agency) × RHB Bank",
+        "p": "Produced award-entry videos for RHB Bank: 2024 MDA (D Awards) “Mobile Banking: Less Time Banking, More Time Bonding”, and the 2024 APAC Effies entry."
+      },
+      {
+        "yr": "2022 — 2023",
+        "role": "Film Director",
+        "org": "Fu Gong Plantation Sdn Bhd",
+        "p": "Documentary on durian cultivation."
+      },
+      {
+        "yr": "2020 — 2022",
+        "role": "Film Director",
+        "org": "Taiwan Buddhist Tzu-Chi Foundation Malaysia (Kuala Lumpur)",
+        "p": "Documentary series “Tzu Chi Malaysia Stories (大馬慈濟情)”, broadcast on Da Ai TV."
+      },
+      {
+        "yr": "2017 — 2019",
+        "role": "Content Creator",
+        "org": "Shenzhen Kuangshi Culture Communication Co., Ltd.",
+        "p": "Brand films for Shenzhen Airlines, Shenzhen Metro, Kaisa Group, Yantian International, Tencent LEGO and more."
+      },
+      {
+        "yr": "2014 — 2016",
+        "role": "CEO",
+        "org": "Guangzhou YiCai Art Gallery House",
+        "p": ""
+      },
+      {
+        "yr": "2013 — 2014",
+        "role": "Creative Director",
+        "org": "Guangzhou Jintai Photography",
+        "p": ""
+      },
+      {
+        "yr": "2004 — 2012",
+        "role": "Founder · Marketing &amp; Content Creator",
+        "org": "Feeltone Inc (Feeltone Creative Platform)",
+        "p": ""
+      }
     ],
     "edu_title": "Education",
     "edu": "Informatics Technology College — Computer Science Diploma (1999)"
   },
   "aw": {
     "title": "Awards, Exhibitions and Milestones",
-    "sub": "Awards, Exhibitions &amp; Milestones",
+    "sub": "",
     "cols": [
       [
-        {"y": "2004", "t": "Founded Feeltone Creative Platform, an online creative community"},
-        {"y": "2007", "t": "Official photographer, Miss Sabah Malaysia pageant"},
-        {"y": "2007", "t": "Digital Camera Magazine Malaysia 2007 Hot Choice"},
-        {"y": "2008", "t": "Digital Camera World Hot Choice (Editor’s Pick)"},
-        {"y": "2009", "t": "Official photographer, Borneo KK Jazz Festival"},
-        {"y": "2009", "t": "Featured in Digital Camera Magazine UK; work published on Telegraph.co.uk"},
-        {"y": "2010", "t": "POTY Photographer of the Year 2010, Digital Vision — 2nd Place", "hl": true},
-        {"y": "2010", "t": "Photography workshop instructor, Panasonic Lumix Station Sabah"},
-        {"y": "2010", "t": "Exhibited at Borneo Bond Art Festival"},
-        {"y": "2010", "t": "First solo photography talk"},
-        {"y": "2011", "t": "Photography workshop instructor, Sony Center Sabah"}
+        {
+          "y": "2004",
+          "t": "Founded Feeltone Creative Platform, an online creative community"
+        },
+        {
+          "y": "2007",
+          "t": "Official photographer, Miss Sabah Malaysia pageant"
+        },
+        {
+          "y": "2007",
+          "t": "Digital Camera Magazine Malaysia 2007 Hot Choice"
+        },
+        {
+          "y": "2008",
+          "t": "Digital Camera World Hot Choice (Editor’s Pick)"
+        },
+        {
+          "y": "2009",
+          "t": "Official photographer, Borneo KK Jazz Festival"
+        },
+        {
+          "y": "2009",
+          "t": "Featured in Digital Camera Magazine UK; work published on Telegraph.co.uk"
+        },
+        {
+          "y": "2010",
+          "t": "POTY Photographer of the Year 2010, Digital Vision — 2nd Place",
+          "hl": true
+        },
+        {
+          "y": "2010",
+          "t": "Photography workshop instructor, Panasonic Lumix Station Sabah"
+        },
+        {
+          "y": "2010",
+          "t": "Exhibited at Borneo Bond Art Festival"
+        },
+        {
+          "y": "2010",
+          "t": "First solo photography talk"
+        },
+        {
+          "y": "2011",
+          "t": "Photography workshop instructor, Sony Center Sabah"
+        }
       ],
       [
-        {"y": "2011", "t": "Solo photo exhibition “The Sense of Jesselton (爵士頓之舞)”", "hl": true},
-        {"y": "2011", "t": "EPSON 100 Photo / Art Exhibition"},
-        {"y": "2011", "t": "Second solo photography talk"},
-        {"y": "2012", "t": "Exhibited at Borneo Bond Art Festival"},
-        {"y": "2012", "t": "Guest lecturer, photography course at Chung Cheng Institute (崇正學院)"},
-        {"y": "2012", "t": "Trailer for first short film “Trap (陷阱)”"},
-        {"y": "2013", "t": "Solo photo exhibition at the 10th Guangzhou Art Big Bang"},
-        {"y": "2014", "t": "Short film “I’m Sorry (對不起)” wins Jury Award at KK International Film Festival", "hl": true},
-        {"y": "2015", "t": "Video profile of Hong Kong artist Li Yiyin (李懿殷) on her journey through India"},
-        {"y": "2016", "t": "Food show production for Shenzhen Xindian.com (新店網)"},
-        {"y": "2017", "t": "Ongoing documentary coverage of Shenzhen Metro Lines 6 and 8"},
-        {"y": "2018", "t": "Event filming for Kaisa Group, Shenzhen"},
-        {"y": "2019", "t": "Tencent LEGO short film, Shenzhen; “Little People, Big Dreams (小人物大夢想)” series for Kota Kinabalu new media"},
-        {"y": "2020", "t": "Tzu Chi Foundation documentary series “Tzu Chi Malaysia Stories (大馬慈濟情)”"},
-        {"y": "2022", "t": "Fu Gong Plantation — durian cultivation documentary"}
+        {
+          "y": "2011",
+          "t": "Solo photo exhibition “The Sense of Jesselton (爵士頓之舞)”",
+          "hl": true
+        },
+        {
+          "y": "2011",
+          "t": "EPSON 100 Photo / Art Exhibition"
+        },
+        {
+          "y": "2011",
+          "t": "Second solo photography talk"
+        },
+        {
+          "y": "2012",
+          "t": "Exhibited at Borneo Bond Art Festival"
+        },
+        {
+          "y": "2012",
+          "t": "Guest lecturer, photography course at Chung Cheng Institute (崇正學院)"
+        },
+        {
+          "y": "2012",
+          "t": "Trailer for first short film “Trap (陷阱)”"
+        },
+        {
+          "y": "2013",
+          "t": "Solo photo exhibition at the 10th Guangzhou Art Big Bang"
+        },
+        {
+          "y": "2014",
+          "t": "Short film “I’m Sorry (對不起)” wins Jury Award at KK International Film Festival",
+          "hl": true
+        },
+        {
+          "y": "2015",
+          "t": "Video profile of Hong Kong artist Li Yiyin (李懿殷) on her journey through India"
+        },
+        {
+          "y": "2016",
+          "t": "Food show production for Shenzhen Xindian.com (新店網)"
+        },
+        {
+          "y": "2017",
+          "t": "Ongoing documentary coverage of Shenzhen Metro Lines 6 and 8"
+        },
+        {
+          "y": "2018",
+          "t": "Event filming for Kaisa Group, Shenzhen"
+        },
+        {
+          "y": "2019",
+          "t": "Tencent LEGO short film, Shenzhen; “Little People, Big Dreams (小人物大夢想)” series for Kota Kinabalu new media"
+        },
+        {
+          "y": "2020",
+          "t": "Tzu Chi Foundation documentary series “Tzu Chi Malaysia Stories (大馬慈濟情)”"
+        },
+        {
+          "y": "2022",
+          "t": "Fu Gong Plantation — durian cultivation documentary"
+        }
       ]
     ]
   },
@@ -149,59 +299,211 @@
     "tzuchi": "Tzu Chi Malaysia Stories (大馬慈濟情) documentary series (Da Ai TV)",
     "brand": "Short films and brand videos",
     "tzuchi_items": [
-      {"url": "https://www.youtube.com/watch?v=A0ICXfiE0Lk", "yt": "A0ICXfiE0Lk", "t": "Guardians (守護者)", "d": "YouTube · 2021"},
-      {"url": "https://youtu.be/zaRsn41oajE", "yt": "zaRsn41oajE", "t": "Fighting the Pandemic Together (一起戰疫)", "d": "YouTube · 2021"},
-      {"url": "https://youtu.be/s7nwF3-RXII", "yt": "s7nwF3-RXII", "t": "Leave Regrets in Yesterday (把遺憾留給昨天)", "d": "YouTube · 2021"},
-      {"url": "https://youtu.be/jDoRc7CG8sw", "yt": "jDoRc7CG8sw", "t": "An 80-Year-Old’s Wish (80 歲的願望)", "d": "YouTube · 2020"},
-      {"url": "https://youtu.be/UlIcvxULwbs", "yt": "UlIcvxULwbs", "t": "Standing with Our Doctors (「疫」起挺醫去)", "d": "YouTube · 2020"},
-      {"url": "https://youtu.be/lSCXmtg-GfE", "yt": "lSCXmtg-GfE", "t": "Exploring Eco-Friendly Farming (友善農耕探索之旅)", "d": "YouTube · 2021"},
-      {"url": "https://youtu.be/3HhL-2FRzrw", "yt": "3HhL-2FRzrw", "t": "Relieving Suffering, Bringing Joy (拔苦與樂的承擔)", "d": "YouTube · 2021"},
-      {"url": "https://youtu.be/6MDd0LfYeZM", "yt": "6MDd0LfYeZM", "t": "Our Land of Fish and Rice, Kept Green by All (漁米之鄉是我家，環保靠大家)", "d": "YouTube · 2021"},
-      {"url": "https://youtu.be/B_QRKShlvl0", "yt": "B_QRKShlvl0", "t": "A People Without Roots (失根的民族)", "d": "YouTube · 2021"}
+      {
+        "url": "https://www.youtube.com/watch?v=A0ICXfiE0Lk",
+        "yt": "A0ICXfiE0Lk",
+        "t": "Guardians (守護者)",
+        "d": "YouTube · 2021"
+      },
+      {
+        "url": "https://youtu.be/zaRsn41oajE",
+        "yt": "zaRsn41oajE",
+        "t": "Fighting the Pandemic Together (一起戰疫)",
+        "d": "YouTube · 2021"
+      },
+      {
+        "url": "https://youtu.be/s7nwF3-RXII",
+        "yt": "s7nwF3-RXII",
+        "t": "Leave Regrets in Yesterday (把遺憾留給昨天)",
+        "d": "YouTube · 2021"
+      },
+      {
+        "url": "https://youtu.be/jDoRc7CG8sw",
+        "yt": "jDoRc7CG8sw",
+        "t": "An 80-Year-Old’s Wish (80 歲的願望)",
+        "d": "YouTube · 2020"
+      },
+      {
+        "url": "https://youtu.be/UlIcvxULwbs",
+        "yt": "UlIcvxULwbs",
+        "t": "Standing with Our Doctors (「疫」起挺醫去)",
+        "d": "YouTube · 2020"
+      },
+      {
+        "url": "https://youtu.be/lSCXmtg-GfE",
+        "yt": "lSCXmtg-GfE",
+        "t": "Exploring Eco-Friendly Farming (友善農耕探索之旅)",
+        "d": "YouTube · 2021"
+      },
+      {
+        "url": "https://youtu.be/3HhL-2FRzrw",
+        "yt": "3HhL-2FRzrw",
+        "t": "Relieving Suffering, Bringing Joy (拔苦與樂的承擔)",
+        "d": "YouTube · 2021"
+      },
+      {
+        "url": "https://youtu.be/6MDd0LfYeZM",
+        "yt": "6MDd0LfYeZM",
+        "t": "Our Land of Fish and Rice, Kept Green by All (漁米之鄉是我家，環保靠大家)",
+        "d": "YouTube · 2021"
+      },
+      {
+        "url": "https://youtu.be/B_QRKShlvl0",
+        "yt": "B_QRKShlvl0",
+        "t": "A People Without Roots (失根的民族)",
+        "d": "YouTube · 2021"
+      }
     ],
     "brand_items": [
-      {"url": "https://v.youku.com/v_show/id_XMTM5MDU3MTA0NA==.html", "ph": "Youku", "t": "I’m Sorry (對不起)", "d": "Jury Award, KK International Film Festival 2014"},
-      {"url": "https://v.youku.com/v_show/id_XNTc1NDk1NzM2.html", "ph": "Youku", "t": "Trap (陷阱) — Trailer", "d": "2012 · First short film"},
-      {"url": "https://v.youku.com/v_show/id_XMTYwNTI3NTkxMg==.html", "ph": "Youku", "t": "Micro-ad: Chasing Dream (夢想進行中)", "d": "Youku"},
-      {"url": "https://youtu.be/Pvk9rN0Yn1o", "yt": "Pvk9rN0Yn1o", "t": "Artist interview, 30-second CV (Li Yiyin 李懿殷)", "d": "YouTube"},
-      {"url": "https://v.youku.com/v_show/id_XMTQwMDAwMDk4OA==.html", "ph": "Youku", "t": "Artist interview, full version: Jasmine’s Journey to India", "d": "Youku · 2015"},
-      {"url": "https://mp.weixin.qq.com/s/jqywWBz2MKh6MZTx7roetQ", "ph": "WeChat", "t": "Shenzhen Airlines flight safety video", "d": "Produced by Kuangshi Culture · 2019"},
-      {"url": "https://mp.weixin.qq.com/s/QmqfsfxPg0cTsU4Vl0kI3Q", "ph": "WeChat", "t": "Kaisa Group short film", "d": "Campus recruitment film"},
-      {"url": "https://mp.weixin.qq.com/s/tWBzx8dxLDFo-E7k_P-HjQ", "ph": "WeChat", "t": "Shenzhen Metro — Tram short film", "d": "Produced by Kuangshi Culture"},
-      {"url": "https://mp.weixin.qq.com/s/F8T3cMDx1PNYg7RP3FfHVA", "ph": "WeChat", "t": "Yantian International, Shenzhen — MOL Triumph maiden call", "d": "Produced by Kuangshi Culture · 2017"}
+      {
+        "url": "https://v.youku.com/v_show/id_XMTM5MDU3MTA0NA==.html",
+        "ph": "Youku",
+        "t": "I’m Sorry (對不起)",
+        "d": "Jury Award, KK International Film Festival 2014"
+      },
+      {
+        "url": "https://v.youku.com/v_show/id_XNTc1NDk1NzM2.html",
+        "ph": "Youku",
+        "t": "Trap (陷阱) — Trailer",
+        "d": "2012 · First short film"
+      },
+      {
+        "url": "https://v.youku.com/v_show/id_XMTYwNTI3NTkxMg==.html",
+        "ph": "Youku",
+        "t": "Micro-ad: Chasing Dream (夢想進行中)",
+        "d": "Youku"
+      },
+      {
+        "url": "https://youtu.be/Pvk9rN0Yn1o",
+        "yt": "Pvk9rN0Yn1o",
+        "t": "Artist interview, 30-second CV (Li Yiyin 李懿殷)",
+        "d": "YouTube"
+      },
+      {
+        "url": "https://v.youku.com/v_show/id_XMTQwMDAwMDk4OA==.html",
+        "ph": "Youku",
+        "t": "Artist interview, full version: Jasmine’s Journey to India",
+        "d": "Youku · 2015"
+      },
+      {
+        "url": "https://mp.weixin.qq.com/s/jqywWBz2MKh6MZTx7roetQ",
+        "ph": "WeChat",
+        "t": "Shenzhen Airlines flight safety video",
+        "d": "Produced by Kuangshi Culture · 2019"
+      },
+      {
+        "url": "https://mp.weixin.qq.com/s/QmqfsfxPg0cTsU4Vl0kI3Q",
+        "ph": "WeChat",
+        "t": "Kaisa Group short film",
+        "d": "Campus recruitment film"
+      },
+      {
+        "url": "https://mp.weixin.qq.com/s/tWBzx8dxLDFo-E7k_P-HjQ",
+        "ph": "WeChat",
+        "t": "Shenzhen Metro — Tram short film",
+        "d": "Produced by Kuangshi Culture"
+      },
+      {
+        "url": "https://mp.weixin.qq.com/s/F8T3cMDx1PNYg7RP3FfHVA",
+        "ph": "WeChat",
+        "t": "Yantian International, Shenzhen — MOL Triumph maiden call",
+        "d": "Produced by Kuangshi Culture · 2017"
+      }
     ]
   },
   "photo": {
     "title": "Photography",
     "sub": "More work on <a href=\"https://www.flickr.com/photos/zero5phh\" target=\"_blank\" rel=\"noopener\">Flickr</a>.",
     "items": [
-      {"img": "poty-2nd.jpg", "cap": "POTY 2010 Digital Vision — 2nd Place"},
-      {"img": "poty-telegraph.jpg", "cap": "Digital Camera Photographer of the Year, featured on Telegraph.co.uk"},
-      {"img": "jesselton.jpg", "cap": "2011 solo exhibition “The Sense of Jesselton (爵士頓之舞)”"},
-      {"img": "epson100.jpg", "cap": "EPSON 100 Photo / Art Exhibition"},
-      {"img": "dance.jpg", "cap": "Dance performance"},
-      {"img": "music.jpg", "cap": "Live music · KK Jazz Festival"},
-      {"img": "trap.jpg", "cap": "2012 short film “Trap (陷阱)” — on set and poster"}
+      {
+        "img": "poty-2nd.jpg",
+        "cap": "POTY 2010 Digital Vision — 2nd Place"
+      },
+      {
+        "img": "poty-telegraph.jpg",
+        "cap": "Digital Camera Photographer of the Year, featured on Telegraph.co.uk"
+      },
+      {
+        "img": "jesselton.jpg",
+        "cap": "2011 solo exhibition “The Sense of Jesselton (爵士頓之舞)”"
+      },
+      {
+        "img": "epson100.jpg",
+        "cap": "EPSON 100 Photo / Art Exhibition"
+      },
+      {
+        "img": "dance.jpg",
+        "cap": "Dance performance"
+      },
+      {
+        "img": "music.jpg",
+        "cap": "Live music · KK Jazz Festival"
+      },
+      {
+        "img": "trap.jpg",
+        "cap": "2012 short film “Trap (陷阱)” — on set and poster"
+      }
     ]
   },
   "skills": {
     "title": "Skills",
-    "sub": "Skills",
+    "sub": "",
     "items": [
-      {"n": "Photography", "l": 5, "s": "Portrait, events, stage"},
-      {"n": "PC building and repair", "l": 5, "s": ""},
-      {"n": "Videography", "l": 4, "s": "DSLR, gimbals, live streaming"},
-      {"n": "Drone", "l": 4, "s": ""},
-      {"n": "Photo Editing", "l": 4, "s": "Photoshop, Capture One, Bridge"},
-      {"n": "Storytelling", "l": 4, "s": ""},
-      {"n": "Video Editing", "l": 4, "s": "Final Cut Pro, Premiere, DaVinci, After Effects"},
-      {"n": "AI workflows and software development", "l": 4, "s": "Claude, MCP, TypeScript, Python, FFmpeg"}
+      {
+        "n": "Photography",
+        "l": 5,
+        "s": "Portrait, events, stage"
+      },
+      {
+        "n": "PC building and repair",
+        "l": 5,
+        "s": ""
+      },
+      {
+        "n": "Videography",
+        "l": 4,
+        "s": "DSLR, gimbals, live streaming"
+      },
+      {
+        "n": "Drone",
+        "l": 4,
+        "s": ""
+      },
+      {
+        "n": "Photo Editing",
+        "l": 4,
+        "s": "Photoshop, Capture One, Bridge"
+      },
+      {
+        "n": "Storytelling",
+        "l": 4,
+        "s": ""
+      },
+      {
+        "n": "Video Editing",
+        "l": 4,
+        "s": "Final Cut Pro, Premiere, DaVinci, After Effects"
+      },
+      {
+        "n": "AI workflows and software development",
+        "l": 4,
+        "s": "Claude, MCP, TypeScript, Python, FFmpeg"
+      }
     ],
     "lang_title": "Languages",
     "langs": [
-      {"n": "Chinese", "l": 4},
-      {"n": "English", "l": 3},
-      {"n": "Bahasa Melayu", "l": 1}
+      {
+        "n": "Chinese",
+        "l": 4
+      },
+      {
+        "n": "English",
+        "l": 3
+      },
+      {
+        "n": "Bahasa Melayu",
+        "l": 1
+      }
     ],
     "hobby_title": "Interests",
     "hobby": "Songwriting, playing guitar, bass and piano, photography, running, hiking, travel."

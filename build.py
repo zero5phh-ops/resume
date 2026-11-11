@@ -16,7 +16,10 @@ LANGS = [  # code, file, <html lang>, label in the switcher
     ("ko", "ko.html", "ko", "한국어"),
 ]
 BASE_URL = "https://zero5phh-ops.github.io/resume/"
+LATIN = "Noto+Sans:wght@400;500;700;900&family=Noto+Serif:wght@600;900&family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@900"
 FONTS = {
+    "en": LATIN,
+    "ms": LATIN,
     "ja": "Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@600;900&family=Noto+Sans+TC:wght@400;700",
     "ko": "Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@600;900&family=Noto+Sans+TC:wght@400;700",
 }
@@ -91,6 +94,7 @@ def render(code, t):
         return val
 
     out = re.sub(r"\{\{([^}]+)\}\}", sub, html)
+    out = out.replace('  <p class="sub"></p>\n', "")
     assert "{{" not in out, f"unfilled placeholder in {code}"
     return out
 
