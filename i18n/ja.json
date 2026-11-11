@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "title": "馮煥曉 Lonny Pang · 履歴書",
+    "description": "馮煥曉 Lonny Pang Huan Hsiao — 映像監督・フォトグラファー・コンテンツクリエイター。AI コンテンツ制作ツールの自社開発も手がける。"
+  },
+  "nav": {
+    "brand": "馮煥曉 Lonny",
+    "software": "ソフトウェア",
+    "experience": "職歴",
+    "awards": "受賞・展覧会",
+    "films": "映像作品",
+    "photo": "写真",
+    "skills": "スキル",
+    "theme": "ライト／ダーク切替"
+  },
+  "hero": {
+    "name": "馮煥曉",
+    "sub": "Lonny Pang Huan Hsiao",
+    "lead": "写真と映像に20年携わってきた映像監督・フォトグラファー。現在は SOL Integrative Wellness Centre でコンテンツチームを率い、脚本作成・撮影・編集から予約投稿まで、コンテンツ制作の全工程を担うシステムを AI と共に自ら開発。",
+    "loc": "Kuala Lumpur, Malaysia",
+    "born": "Kota Kinabalu, Sabah 出身",
+    "langs": "中国語 · 英語 · マレー語",
+    "flickr": "Flickr 写真作品",
+    "badge": "Digital Vision 部門 第2位"
+  },
+  "sw": {
+    "title": "ソフトウェア",
+    "sub": "2026年より Claude とペア開発。非公開 repo は概要を記載、公開 repo はリンクを掲載。"
+  },
+  "sol": {
+    "meta": "2026-08 — 現在 · 約 2,000 commits · 社内で本番稼働中",
+    "desc": "SOL Integrative Wellness Centre の医師向けコンテンツ制作システム。一言で1か月分の脚本を作成 → 医師がスマホのプロンプターで撮影 → 自動で粗編集 → レビュー → SNS へ予約投稿 → ワンクリックで KPI 出力。技術職以外の全社員が日常的に利用し、UI は中国語・英語・マレー語の3言語対応。",
+    "open": "SOL Studio の Landing Page を開く",
+    "features": [
+      "<b>Create Script</b>：「Dr Vig November」と入力するだけで、AI が医師本人の口調で1か月分を執筆。Hook と医療表現チェック付き。マーケティング部の PPT 月間計画の解析にも対応",
+      "<b>撮影アプリ</b>（iOS / Android、Expo）：絵コンテカード＋スクロール式プロンプター。撮影後は自動アップロードし共有ドライブへ整理",
+      "<b>AI 自動粗編集</b>：間や撮り直しのカット、Whisper による字幕同期、B-roll の自動割り当て、数値の動的強調、3秒 Hook、サムネイル",
+      "<b>Pass to AI</b>：一言で動画を修正。ジョブは各 Mac 上の AI helper にキューイングして実行。CapCut プロジェクトファイルの書き出しにも対応",
+      "<b>ブラウザ版タイムラインエディタ</b>：マルチトラック、カラーグレーディング、ボーカル分離、背景除去、トランジション、16種の字幕。AI-cut では AI の編集過程をリアルタイムで確認可能",
+      "<b>Podcast マルチカメラ</b>：複数のカメラとマイクを音声で自動同期し、話者を判定して自動でカメラを切替",
+      "<b>Design ボード</b>：FB / IG の画像投稿を AI が執筆。Auto Design でレイヤー編集可能な PSD を一度に3案生成",
+      "<b>医師の AI ナレーション</b>：社内でクローンした音声でナレーションを作成。電話番号は1桁ずつ読み上げ、英語・マレー語の混在文も原文どおりに発音",
+      "<b>GHL 予約投稿</b>：FB / IG / TikTok / YouTube に対応。コメントを監視し、新着返信があれば通知音でお知らせ",
+      "<b>3,000本以上の完成動画を収めた素材ライブラリ</b>、Dashboard、Content KPI の Excel レポート、Webinar と顧客リスト",
+      "<b>権限とプライバシー</b>：ロール／部署単位の権限管理、チャットはメンバー認証のみ、患者同意書は権限保持者のみ閲覧可",
+      "<b>MCP サーバー</b>：Claude などの外部 AI がアプリ内で直接タスク作成・脚本執筆・タイムライン確認を実行可能"
+    ],
+    "caption": "SOL Studio の公開 landing page（ログイン後が業務システム）。前身は AI-Content-studio（2026-08、MVP：Web で脚本作成 → スマホのプロンプターで撮影 → 自動ポストプロダクション）。"
+  },
+  "onset": {
+    "meta": "2026-11 開始 · ゼロから全面再設計 · 開発中",
+    "desc": "一般のコンテンツクリエイター向け個人スタジオアプリ。脚本・撮影・編集・サムネイルや投稿画像の制作を一か所で完結。どの画面でも右下から AI（Ask Onset）を呼び出せ、AI の作業を一歩ずつ確認しながらいつでも停止可能。対応予定プラットフォームは macOS、Windows、iOS、Android。",
+    "features": [
+      "<b>AI Onset 初期設定</b>：一問一答でチャンネルのスタイルを設定し、脚本／インタビュー／デザイン／編集の4種のスタイルに自動整理（プリセット36種）",
+      "<b>AI Script</b>：ショート動画、長尺動画、インタビュー質問リスト、Podcast rundown、ナレーション原稿の5形式に対応し、そのまま撮影へ",
+      "<b>Recording</b>：PC カメラまたは外部カメラ＋プロンプター。速度とフォントを調整可能",
+      "<b>CapCut 風エディタ</b>：キーフレーム、39種のトランジション、マスク、LUT（HLG / Apple Log / S-Log3 → 709 対応）、速度カーブ、手ぶれ補正",
+      "<b>字幕</b>：Whisper による音声文字起こし、20種の字幕スタイル、13種のフォント、カラオケ風の逐語ハイライト",
+      "<b>Auto-cut と AI Edit</b>：間や撮り直しを自動カットし、AI がチャプターごとに編集。各ステップをタイムライン上にリアルタイム表示",
+      "<b>オーディオ</b>：ノイズ除去、Demucs によるボーカル／背景分離、AI ナレーション、音楽と効果音、BGM の自動ダッキング",
+      "<b>Podcast マルチカメラ</b>と<b>2時間超の長尺動画</b>：自動同期、話者に応じたカメラ切替、チャプター単位の処理",
+      "<b>サムネイルと画像投稿</b>：35種のレイアウト、44種のデザイン操作。FB / IG / 小紅書 / TikTok / X / Threads に対応",
+      "<b>書き出し</b>：MP4 / MOV / MP3 / WAV。CapCut、FCPXML、Premiere XML、FilmCraft のプロジェクトファイルにも対応",
+      "<b>アニメーションモード</b>：撮影不要。図形、テキストアニメーション、Godot 2D／3D で動画を制作",
+      "<b>MCP</b>：Onset の起動中、外部 AI が直接編集を操作可能"
+    ],
+    "tauri": "Tauri（計画中）",
+    "cap_editing": "Editing：左に素材カテゴリ、中央にプレビュー、右にプロパティと AI Edit、下にマルチトラックのタイムライン。",
+    "cap_start": "ホーム画面は5つの入口のみ。右下に Ask Onset。",
+    "cap_setup": "初回利用時：AI Onset が質問を重ねてスタイルを引き出す。",
+    "cap_styles": "設定完了後、4種のスタイルを自動生成。",
+    "cap_script": "Create Script：左で AI と対話、右に脚本。",
+    "cap_design": "開発前に作成した macOS 版のデザインカンプ。"
+  },
+  "vpipe": {
+    "desc": "Mac 上で MiniMax H3（音声付き動画）と Qwen Image 2.1 Turbo（画像）をローカル実行する小さな Web アプリ。クラウドもクレジットも不要。設定チェックとモデルのワンクリックダウンロード、AI による prompt 最適化、人物 LoRA、キュー処理、2倍アップスケールを搭載。Neural Engine に演算を分担させ、M3 Air で5秒動画の生成時間を約73分から約35分に短縮。"
+  },
+  "stock": {
+    "meta": "2026-10 · 個人用",
+    "desc": "米国株とマレーシア株（Bursa Malaysia）のリサーチダッシュボード。市場概況、個別銘柄のローソク足とニュース、保有銘柄のシグナル表示と平易な助言、バックテスト、デモ口座、さらに4つの AI アシスタントが毎日作成する繁体字中国語のブリーフィングを搭載。Python + Streamlit、ローカル環境のみで動作。"
+  },
+  "games": {
+    "title": "Web ゲームと小作品（公開中・すぐに遊べます）",
+    "items": [
+      {"url": "https://zero5phh-ops.github.io/galaxy-voyage/", "t": "銀河系の旅 · Galaxy Voyage", "d": "ブラウザで銀河系を飛び回る"},
+      {"url": "https://zero5phh-ops.github.io/blackhole-voyage/", "t": "ブラックホールの旅 · Black Hole Voyage", "d": "3D ブラックホールのビジュアル体験"},
+      {"url": "https://zero5phh-ops.github.io/space-rocket-game/", "t": "3D Space Rocket Shooter", "d": "3D 宇宙シューティングゲーム"},
+      {"url": "https://zero5phh-ops.github.io/neon-kart/", "t": "ネオンカート · Neon Kart", "d": "ネオン風レースゲーム"},
+      {"url": "https://zero5phh-ops.github.io/pixel-jump-quest/", "t": "ピクセルジャンプ大冒険", "d": "全20ステージのピクセル風プラットフォームアクション"},
+      {"url": "https://zero5phh-ops.github.io/neon-tetris/", "t": "ネオンブロック", "d": "ネオン風落ち物パズル"},
+      {"url": "https://zero5phh-ops.github.io/test/", "t": "Mobby 日本語学習ランド", "d": "子ども向け日本語学習サイト"}
+    ]
+  },
+  "exp": {
+    "title": "職歴",
+    "sub": "Working Experience",
+    "jobs": [
+      {"now": true, "yr": "2023 — 現在", "role": "コンテンツチーム · 映像 · AI システム開発", "org": "SOL Integrative Wellness Centre, Kuala Lumpur", "p": "医師の動画コンテンツの撮影・制作を担当。2026年より SOL Studio を自ら開発し、コンテンツ制作の全工程を AI システムに移行。"},
+      {"yr": "2024", "role": "フリーランス · 映像制作", "org": "FCB Malaysia（広告代理店）× RHB Bank", "p": "RHB Bank の応募作品を制作：2024 MDA（D Awards）『Mobile Banking: Less Time Banking, More Time Bonding』、および 2024 APAC Effies 応募映像。"},
+      {"yr": "2022 — 2023", "role": "Film Director", "org": "Fu Gong Plantation Sdn Bhd 富宮種植", "p": "ドリアン栽培のドキュメンタリー。"},
+      {"yr": "2020 — 2022", "role": "Film Director", "org": "Taiwan Buddhist Tzu-Chi Foundation Malaysia 慈済基金会マレーシア支部（クアラルンプール）", "p": "「大馬慈済情」ドキュメンタリーシリーズ。大愛テレビにて放送。"},
+      {"yr": "2017 — 2019", "role": "Content Creator", "org": "深圳曠時文化伝播有限公司", "p": "深圳航空、深圳地下鉄、佳兆業（Kaisa）、塩田国際（Yantian International）、テンセント × レゴなどのブランド映像。"},
+      {"yr": "2014 — 2016", "role": "CEO", "org": "Guangzhou YiCai Art Gallery House 広州懿彩文化有限公司", "p": ""},
+      {"yr": "2013 — 2014", "role": "Creative Director", "org": "Guangzhou Jintai Photography 今太撮影", "p": ""},
+      {"yr": "2004 — 2012", "role": "Founder · Marketing &amp; Content Creator", "org": "Feeltone Inc（沸騰創作網 Feeltone Creative Platform）", "p": ""}
+    ],
+    "edu_title": "学歴",
+    "edu": "Informatics Technology College — Computer Science Diploma（1999）"
+  },
+  "aw": {
+    "title": "受賞・展覧会・作品年表",
+    "sub": "Awards, Exhibitions &amp; Milestones",
+    "cols": [
+      [
+        {"y": "2004", "t": "クリエイター交流サイト「沸騰創作網 Feeltone Creative Platform」を設立"},
+        {"y": "2007", "t": "Miss Sabah Malaysia（サバ州ミスコンテスト）専属フォトグラファー"},
+        {"y": "2007", "t": "Digital Camera Magazine Malaysia 2007 Hot Choice"},
+        {"y": "2008", "t": "Digital Camera World Hot Choice（編集部選出）"},
+        {"y": "2009", "t": "Borneo KK Jazz Festival（ボルネオ・ジャズフェスティバル）専属フォトグラファー"},
+        {"y": "2009", "t": "Digital Camera Magazine UK に特集掲載、作品が Telegraph.co.uk に掲載"},
+        {"y": "2010", "t": "POTY Photographer of the Year 2010 Digital Vision 部門 第2位", "hl": true},
+        {"y": "2010", "t": "Panasonic Lumix Station Sabah 写真ワークショップ講師"},
+        {"y": "2010", "t": "Borneo Bond Art Festival（原建芸術祭）作品展示"},
+        {"y": "2010", "t": "第1回 個人写真講座"},
+        {"y": "2011", "t": "Sony Center Sabah 写真ワークショップ講師"}
+      ],
+      [
+        {"y": "2011", "t": "個展『The Sense of Jesselton』（爵士頓之舞）", "hl": true},
+        {"y": "2011", "t": "EPSON 100 Photo / Art Exhibition"},
+        {"y": "2011", "t": "第2回 個人写真講座"},
+        {"y": "2012", "t": "Borneo Bond Art Festival（原建芸術祭）作品展示"},
+        {"y": "2012", "t": "崇正学院 写真講座講師"},
+        {"y": "2012", "t": "初の短編映画『罠 Trap』予告編"},
+        {"y": "2013", "t": "広州 第10回「芸術大爆発」個人写真展"},
+        {"y": "2014", "t": "短編映画『ごめんなさい I'm Sorry』が KK International Film Festival 審査員賞を受賞", "hl": true},
+        {"y": "2015", "t": "香港のアーティスト李懿殷のインド旅行ドキュメンタリー・インタビュー"},
+        {"y": "2016", "t": "深圳「新店網」グルメ番組制作"},
+        {"y": "2017", "t": "深圳地下鉄6号線・8号線の定期記録撮影"},
+        {"y": "2018", "t": "深圳 佳兆業（Kaisa）イベント撮影"},
+        {"y": "2019", "t": "深圳 テンセント × レゴ短編映画、コタキナバルの新メディア「小人物大夢想」シリーズ"},
+        {"y": "2020", "t": "慈済基金会「大馬慈済情」ドキュメンタリーシリーズ"},
+        {"y": "2022", "t": "富宮種植 — ドリアン栽培ドキュメンタリー"}
+      ]
+    ]
+  },
+  "films": {
+    "title": "映像作品",
+    "sub": "2026-11 に再確認済み。以下のリンクはすべて視聴可能です。",
+    "tzuchi": "「大馬慈済情」ドキュメンタリーシリーズ（大愛テレビ）",
+    "brand": "短編映画とブランド映像",
+    "tzuchi_items": [
+      {"url": "https://www.youtube.com/watch?v=A0ICXfiE0Lk", "yt": "A0ICXfiE0Lk", "t": "守護者", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/zaRsn41oajE", "yt": "zaRsn41oajE", "t": "共にコロナと闘う（一起戰疫）", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/s7nwF3-RXII", "yt": "s7nwF3-RXII", "t": "後悔は昨日に置いて（把遺憾留給昨天）", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/jDoRc7CG8sw", "yt": "jDoRc7CG8sw", "t": "80歳の願い（80 歲的願望）", "d": "YouTube · 2020"},
+      {"url": "https://youtu.be/UlIcvxULwbs", "yt": "UlIcvxULwbs", "t": "共に医療を支えよう（「疫」起挺醫去）", "d": "YouTube · 2020"},
+      {"url": "https://youtu.be/lSCXmtg-GfE", "yt": "lSCXmtg-GfE", "t": "環境にやさしい農業を探る旅（友善農耕探索之旅）", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/3HhL-2FRzrw", "yt": "3HhL-2FRzrw", "t": "苦を抜き楽を与える担い手（拔苦與樂的承擔）", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/6MDd0LfYeZM", "yt": "6MDd0LfYeZM", "t": "魚と米の里はわが家、環境保護はみんなで（漁米之鄉是我家，環保靠大家）", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/B_QRKShlvl0", "yt": "B_QRKShlvl0", "t": "根を失った民族（失根的民族）", "d": "YouTube · 2021"}
+    ],
+    "brand_items": [
+      {"url": "https://v.youku.com/v_show/id_XMTM5MDU3MTA0NA==.html", "ph": "Youku", "t": "ごめんなさい I'm Sorry（對不起）", "d": "KK International Film Festival 2014 審査員賞"},
+      {"url": "https://v.youku.com/v_show/id_XNTc1NDk1NzM2.html", "ph": "Youku", "t": "罠 Trap（予告編）（陷阱）", "d": "2012年 初の短編映画"},
+      {"url": "https://v.youku.com/v_show/id_XMTYwNTI3NTkxMg==.html", "ph": "Youku", "t": "マイクロ広告：夢の途中 Chasing Dream（夢想進行中）", "d": "Youku"},
+      {"url": "https://youtu.be/Pvk9rN0Yn1o", "yt": "Pvk9rN0Yn1o", "t": "アーティストインタビュー 30秒 CV（李懿殷）", "d": "YouTube"},
+      {"url": "https://v.youku.com/v_show/id_XMTQwMDAwMDk4OA==.html", "ph": "Youku", "t": "アーティストインタビュー完全版：Jasmine のインド旅行", "d": "Youku · 2015"},
+      {"url": "https://mp.weixin.qq.com/s/jqywWBz2MKh6MZTx7roetQ", "ph": "WeChat", "t": "深圳航空 機内安全ビデオ", "d": "曠時文化制作 · 2019"},
+      {"url": "https://mp.weixin.qq.com/s/QmqfsfxPg0cTsU4Vl0kI3Q", "ph": "WeChat", "t": "佳兆業（Kaisa）短編映画", "d": "新卒採用プロモーション映像"},
+      {"url": "https://mp.weixin.qq.com/s/tWBzx8dxLDFo-E7k_P-HjQ", "ph": "WeChat", "t": "深圳地下鉄 — 路面電車短編映画", "d": "曠時文化制作"},
+      {"url": "https://mp.weixin.qq.com/s/F8T3cMDx1PNYg7RP3FfHVA", "ph": "WeChat", "t": "深圳 塩田国際 MOL Triumph 初寄港", "d": "曠時文化制作 · 2017"}
+    ]
+  },
+  "photo": {
+    "title": "写真",
+    "sub": "その他の作品は <a href=\"https://www.flickr.com/photos/zero5phh\" target=\"_blank\" rel=\"noopener\">Flickr</a> にて。",
+    "items": [
+      {"img": "poty-2nd.jpg", "cap": "POTY 2010 Digital Vision 部門 第2位"},
+      {"img": "poty-telegraph.jpg", "cap": "Digital Camera Photographer of the Year、Telegraph.co.uk に掲載"},
+      {"img": "jesselton.jpg", "cap": "2011年 個展『The Sense of Jesselton』（爵士頓之舞）"},
+      {"img": "epson100.jpg", "cap": "EPSON 100 Photo / Art Exhibition"},
+      {"img": "dance.jpg", "cap": "ダンスパフォーマンス"},
+      {"img": "music.jpg", "cap": "音楽イベント · KK Jazz Festival"},
+      {"img": "trap.jpg", "cap": "2012年 短編映画『罠 Trap』撮影現場とポスター"}
+    ]
+  },
+  "skills": {
+    "title": "スキル",
+    "sub": "Skills",
+    "items": [
+      {"n": "写真撮影 Photography", "l": 5, "s": "ポートレート、イベント、ステージ"},
+      {"n": "PC の組み立て・修理", "l": 5, "s": ""},
+      {"n": "映像撮影 Videography", "l": 4, "s": "DSLR、ジンバル、ライブ配信"},
+      {"n": "空撮 Drone", "l": 4, "s": ""},
+      {"n": "写真レタッチ Photo Edit", "l": 4, "s": "Photoshop、Capture One、Bridge"},
+      {"n": "ストーリーテリング Story-Telling", "l": 4, "s": ""},
+      {"n": "映像編集 Video Editing", "l": 4, "s": "Final Cut Pro、Premiere、DaVinci、After Effects"},
+      {"n": "AI ワークフローとソフトウェア開発", "l": 4, "s": "Claude、MCP、TypeScript、Python、FFmpeg"}
+    ],
+    "lang_title": "語学",
+    "langs": [
+      {"n": "中国語", "l": 4},
+      {"n": "英語", "l": 3},
+      {"n": "マレー語", "l": 1}
+    ],
+    "hobby_title": "趣味",
+    "hobby": "作曲、楽器演奏（ギター、ベース、ピアノ）、写真、ジョギング、登山、旅行。"
+  },
+  "footer": "馮煥曉 Lonny Pang Huan Hsiao · Kuala Lumpur · 最終更新 2026-11"
+}

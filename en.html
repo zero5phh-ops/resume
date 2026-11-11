@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lonny Pang (馮煥曉) · Resume</title>
+<meta name="description" content="Lonny Pang Huan Hsiao (馮煥曉) — director, photographer and content creator who also builds his own AI content-production tools.">
+<link rel="alternate" hreflang="zh-Hant" href="https://zero5phh-ops.github.io/resume/">
+<link rel="alternate" hreflang="en" href="https://zero5phh-ops.github.io/resume/en.html">
+<link rel="alternate" hreflang="ms" href="https://zero5phh-ops.github.io/resume/ms.html">
+<link rel="alternate" hreflang="ja" href="https://zero5phh-ops.github.io/resume/ja.html">
+<link rel="alternate" hreflang="ko" href="https://zero5phh-ops.github.io/resume/ko.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --paper:#fffdf8; --ink:#16161a; --muted:#5f5f68; --line:#e2ddd2;
+  --accent:#e0402f; --accent-soft:#fbe4df; --tag:#efeae0; --shadow:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e0e11; --paper:#17171b; --ink:#ececf0; --muted:#a0a0aa; --line:#2a2a31;
+  --accent:#ff5a46; --accent-soft:#3a1d19; --tag:#24242a; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}}
+:root[data-theme="dark"]{
+  --bg:#0e0e11; --paper:#17171b; --ink:#ececf0; --muted:#a0a0aa; --line:#2a2a31;
+  --accent:#ff5a46; --accent-soft:#3a1d19; --tag:#24242a; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Noto Sans TC",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+nav.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:18px;align-items:center;height:52px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav.top .wrap::-webkit-scrollbar{display:none}
+nav.top a{text-decoration:none;font-size:14px;color:var(--muted)}
+nav.top a:hover{color:var(--ink)}
+nav.top .brand{font-weight:900;color:var(--ink);margin-right:auto;font-size:15px}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center;padding:72px 0 56px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(40px,7vw,72px);line-height:1.05;margin:10px 0 6px}
+h1 small{display:block;font-family:"Noto Sans TC",sans-serif;font-weight:500;font-size:.34em;color:var(--muted);margin-top:12px;letter-spacing:.02em}
+.lead{font-size:18px;color:var(--ink);max-width:36em}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.chip{background:var(--tag);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:8px 14px;font-size:14px;text-decoration:none;font-weight:500}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.portrait{position:relative}
+.portrait img{border-radius:20px;box-shadow:var(--shadow);aspect-ratio:1/1;object-fit:cover;width:100%}
+.portrait .badge{position:absolute;left:-14px;bottom:24px;background:var(--accent);color:#fff;border-radius:12px;padding:10px 14px;font-size:13px;line-height:1.35;box-shadow:var(--shadow)}
+.portrait .badge b{display:block;font-size:22px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:"Noto Serif TC",serif;font-size:clamp(26px,4vw,36px);margin:0 0 6px;line-height:1.2}
+h2 + .sub{color:var(--muted);margin:0 0 32px}
+h3{font-size:22px;margin:0;line-height:1.3}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--shadow)}
+.project{margin-bottom:28px}
+.phead{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin-bottom:6px}
+.vis{font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;letter-spacing:.04em}
+.vis.priv{background:var(--accent-soft);color:var(--accent)}
+.vis.pub{background:#dff3e4;color:#1d7a3a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .vis.pub{background:#16301e;color:#7fd99a}}
+:root[data-theme="dark"] .vis.pub{background:#16301e;color:#7fd99a}
+.meta{color:var(--muted);font-size:14px}
+.pdesc{margin:10px 0 18px;font-size:17px}
+.feat{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 28px;margin:0 0 20px;padding:0;list-style:none}
+.feat li{position:relative;padding-left:18px;font-size:15px}
+.feat li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;border-radius:2px;background:var(--accent)}
+.feat b{font-weight:700}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.stack span{font-size:12px;background:var(--tag);color:var(--muted);border-radius:6px;padding:2px 8px}
+figure{margin:0}
+figure.shot img{border-radius:12px;border:1px solid var(--line)}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.shots .wide{grid-column:1/-1}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mini{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;text-decoration:none;display:flex;flex-direction:column;gap:4px;transition:transform .15s,border-color .15s}
+a.mini:hover{transform:translateY(-2px);border-color:var(--accent);color:inherit}
+.mini .t{font-weight:700}
+.mini .d{font-size:14px;color:var(--muted)}
+.mini .u{font-size:12px;color:var(--accent);margin-top:auto;padding-top:8px;word-break:break-all}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 26px 26px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:.55em;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
+.timeline li.now::before{background:var(--accent)}
+.timeline .yr{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.04em}
+.timeline .role{font-weight:700;font-size:17px}
+.timeline .org{color:var(--muted);font-size:15px}
+.timeline p{margin:4px 0 0;font-size:15px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.awards{list-style:none;margin:0;padding:0}
+.awards li{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.awards li span{color:var(--accent);font-weight:700}
+.awards li.hl{font-weight:700}
+.vids{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.vid{display:flex;gap:12px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px;text-decoration:none}
+a.vid:hover{border-color:var(--accent);color:inherit}
+.vid img{width:120px;aspect-ratio:16/9;object-fit:cover;border-radius:8px;flex:none;background:var(--tag)}
+.vid .ph{width:120px;aspect-ratio:16/9;border-radius:8px;flex:none;background:var(--tag);display:grid;place-items:center;color:var(--muted);font-size:12px}
+.vid .t{font-weight:700;font-size:15px;line-height:1.35}
+.vid .d{font-size:13px;color:var(--muted)}
+.vid.dead{opacity:.6}
+h4{font-size:15px;letter-spacing:.06em;color:var(--muted);margin:32px 0 12px;font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery figure img{border-radius:10px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 32px}
+.skill{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:15px}
+.skill .lv{display:flex;gap:3px;align-items:center}
+.skill .lv i{width:16px;height:6px;border-radius:3px;background:var(--line)}
+.skill .lv i.on{background:var(--accent)}
+.skill small{color:var(--muted)}
+footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.theme{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:4px 10px;font:inherit;font-size:13px;cursor:pointer}
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;gap:28px;padding:40px 0}
+  .portrait{max-width:300px}
+  .portrait .badge{left:auto;right:-8px}
+  .feat,.shots,.two,.vids,.skills{grid-template-columns:1fr}
+  .grid3,.gallery{grid-template-columns:1fr 1fr}
+  .card{padding:20px}
+}
+@media (max-width:480px){.grid3,.gallery{grid-template-columns:1fr}}
+@media print{nav.top,.theme{display:none}section{break-inside:avoid-page}body{background:#fff}}
+.langs{display:flex;gap:2px;border:1px solid var(--line);border-radius:8px;padding:2px;background:var(--paper);flex:none}
+.langs a{font-size:12px;padding:2px 8px;border-radius:6px;color:var(--muted)}
+.langs a[aria-current]{background:var(--ink);color:var(--bg)}
+html[lang=ja] body{font-family:"Noto Sans JP","Noto Sans TC",system-ui,sans-serif}
+html[lang=ko] body{font-family:"Noto Sans KR","Noto Sans TC",system-ui,sans-serif}
+html[lang=ja] h1,html[lang=ja] h2{font-family:"Noto Serif JP","Noto Serif TC",serif}
+html[lang=ko] h1,html[lang=ko] h2{font-family:"Noto Serif KR","Noto Serif TC",serif}
+html[lang=en] .lead,html[lang=ms] .lead{font-size:17px}
+
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="#top">Lonny Pang</a>
+  <a href="#software">Software</a>
+  <a href="#experience">Experience</a>
+  <a href="#awards">Awards</a>
+  <a href="#films">Films</a>
+  <a href="#photo">Photography</a>
+  <a href="#skills">Skills</a>
+  <span class="langs"><a href="index.html" hreflang="zh-Hant">中文</a><a href="en.html" hreflang="en" aria-current="page">EN</a><a href="ms.html" hreflang="ms">BM</a><a href="ja.html" hreflang="ja">日本語</a><a href="ko.html" hreflang="ko">한국어</a></span>
+  <button class="theme" id="theme" type="button" aria-label="Toggle light/dark">◐</button>
+</div></nav>
+
+<header class="wrap hero" id="top">
+  <div>
+    <div class="eyebrow">Director · Photographer · AI Workflow Builder</div>
+    <h1>馮煥曉<small>Lonny Pang Huan Hsiao</small></h1>
+    <p class="lead">Director and photographer with twenty years behind the camera. Now leading the content team at SOL Integrative Wellness Centre, where I built — hands-on, together with AI — an end-to-end content production system: scripting, filming, editing and scheduled publishing.</p>
+    <div class="facts">
+      <span class="chip">📍 Kuala Lumpur, Malaysia</span>
+      <span class="chip">Born in Kota Kinabalu, Sabah</span>
+      <span class="chip">Chinese · English · Bahasa Melayu</span>
+    </div>
+    <div class="links">
+      <a class="btn primary" href="https://github.com/zero5phh-ops" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/lonny-pang-a0172687/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://www.instagram.com/zero5phh/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn" href="https://www.facebook.com/zero5phh" target="_blank" rel="noopener">Facebook</a>
+      <a class="btn" href="https://www.flickr.com/photos/zero5phh" target="_blank" rel="noopener">Flickr portfolio</a>
+    </div>
+  </div>
+  <div class="portrait">
+    <img src="assets/portrait.jpg" alt="馮煥曉 Lonny Pang">
+    <div class="badge"><b>2010</b>Photographer of the Year<br>Digital Vision, 2nd Place</div>
+  </div>
+</header>
+
+<section id="software"><div class="wrap">
+  <h2>Software</h2>
+  <p class="sub">Pair-programming with Claude since 2026. Private repos are described in detail; public repos are linked directly.</p>
+
+  <article class="card project">
+    <div class="phead"><h3>SOL Studio</h3><span class="vis priv">PRIVATE</span><span class="meta">Aug 2026 — Present · ~2,000 commits · In production company-wide</span></div>
+    <p class="pdesc">Doctor content production system for SOL Integrative Wellness Centre: one sentence writes a full month of scripts → doctors film on a phone teleprompter → automatic rough cut → review → scheduled social publishing → one-click KPI reports. Used daily by non-technical staff across the company, with a Chinese / English / Malay interface.</p>
+    <div class="links" style="margin-bottom:18px"><a class="btn primary" href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener">Open the SOL Studio landing page ↗</a></div>
+    <ul class="feat">
+      <li><b>Create Script</b>: type “Dr Vig November” and AI writes the whole month in the doctor’s own voice, with hooks and medical-claims checks; also parses Marketing’s monthly PPT plans</li>
+      <li><b>Mobile filming app</b> (iOS / Android, Expo): shot cards + scrolling teleprompter, with automatic upload and filing to the shared drive</li>
+      <li><b>AI auto rough cut</b>: removes pauses and retakes, Whisper-aligned captions, B-roll matching, animated key figures, 3-second hooks, covers</li>
+      <li><b>Pass to AI</b>: edit a video with one sentence; jobs queue to AI helpers on each Mac; exports CapCut project files</li>
+      <li><b>Browser timeline editor</b>: multitrack, color grading, voice separation, background removal, transitions, 16 caption styles, and AI-cut to watch AI edit step by step</li>
+      <li><b>Multicam podcasts</b>: cameras and mics auto-synced by audio, with automatic switching to whoever is speaking</li>
+      <li><b>Design board</b>: AI writes FB / IG post copy; Auto Design produces three layered, editable PSD versions at once</li>
+      <li><b>Doctor AI voiceover</b>: in-house cloned voices for narration; phone numbers read digit by digit, mixed English/Malay read as written</li>
+      <li><b>GHL scheduled publishing</b>: FB / IG / TikTok / YouTube, with comment monitoring that alerts on new replies</li>
+      <li><b>Library of 3,000+ finished videos</b>, dashboard, Content KPI Excel reports, webinars and client lists</li>
+      <li><b>Permissions and privacy</b>: role/department access, chat tied to member identity, patient consent forms visible only to authorised staff</li>
+      <li><b>MCP server</b>: Claude and other external AIs can create tasks, write scripts and read timelines directly in the app</li>
+    </ul>
+    <div class="stack"><span>Next.js</span><span>Fastify</span><span>Prisma / SQLite</span><span>Expo (React Native)</span><span>FFmpeg</span><span>faster-whisper</span><span>Claude API / Claude CLI</span><span>HeyGen</span><span>GoHighLevel API</span><span>Docker</span><span>Cloudflare Tunnel</span><span>MCP</span></div>
+    <figure class="shot"><a href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener"><img src="assets/sol-studio-landing.jpg" alt="SOL Studio landing page" loading="lazy"></a><figcaption>The public SOL Studio landing page (the working system sits behind login). It grew out of AI-Content-studio (Aug 2026, MVP: web scripting → phone teleprompter filming → automatic post-production).</figcaption></figure>
+  </article>
+
+  <article class="card project">
+    <div class="phead"><h3>Onset 3.0</h3><span class="vis priv">PRIVATE</span><span class="meta">Started Nov 2026 · Full rewrite from scratch · In development</span></div>
+    <p class="pdesc">A personal studio app for everyday creators: scripting, filming, editing, covers and posts all in one place. Ask Onset, in the bottom-right of every screen, brings in AI help — and you can watch it work step by step and stop it anytime. Targets macOS, Windows, iOS and Android.</p>
+    <ul class="feat">
+      <li><b>AI Onset first-run setup</b>: a short Q&amp;A sets your channel style, auto-organised into script / interview / design / editing styles (36 built in)</li>
+      <li><b>AI Script</b>: five formats — short video, long-form, interview questions, podcast rundown, voiceover — sent straight to filming</li>
+      <li><b>Recording</b>: webcam or external camera + teleprompter with adjustable speed and font</li>
+      <li><b>CapCut-style editor</b>: keyframes, 39 transitions, masks, LUTs (incl. HLG / Apple Log / S-Log3 → 709), speed curves, stabilisation</li>
+      <li><b>Captions</b>: Whisper speech-to-text, 20 caption styles, 13 fonts, karaoke word-by-word highlighting</li>
+      <li><b>Auto-cut and AI Edit</b>: auto-removes pauses and retakes; AI edits chapter by chapter, every step shown live on the timeline</li>
+      <li><b>Audio</b>: noise reduction, Demucs voice/background separation, AI voiceover, music and SFX, auto-ducking</li>
+      <li><b>Multicam podcasts</b> and <b>2-hour+ long-form</b>: auto-sync, speaker-based switching, chapter-by-chapter processing</li>
+      <li><b>Covers and image posts</b>: 35 layouts, 44 design operations, for FB / IG / Xiaohongshu / TikTok / X / Threads</li>
+      <li><b>Export</b>: MP4 / MOV / MP3 / WAV, plus CapCut, FCPXML, Premiere XML and FilmCraft project files</li>
+      <li><b>Animation mode</b>: make videos without filming, using graphics, text animation and Godot 2D/3D</li>
+      <li><b>MCP</b>: external AIs can drive the editor directly while Onset is open</li>
+    </ul>
+    <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>WebGL / GLSL</span><span>MCP</span><span>Tauri (planned)</span></div>
+    <div class="shots">
+      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>Editing: media bins on the left, preview in the centre, properties and AI Edit on the right, multitrack timeline below.</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset 3.0 Start" loading="lazy"><figcaption>The home screen has just five entry points, with Ask Onset at the bottom right.</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-setup.jpg" alt="AI Onset" loading="lazy"><figcaption>First run: AI Onset works out your style one question at a time.</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-styles.jpg" alt="Styles" loading="lazy"><figcaption>Setup complete — four styles generated automatically.</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-script.jpg" alt="AI Script" loading="lazy"><figcaption>Create Script: chat with AI on the left, script on the right.</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-design-overview.png" alt="Onset 3.0 design" loading="lazy"><figcaption>macOS design mockup drawn before development began.</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="card project">
+    <div class="phead"><h3>vpipe工作台 · vpipe Workbench</h3><span class="vis pub">PUBLIC · MIT</span><span class="meta">2026-11</span></div>
+    <p class="pdesc">A small web app that runs MiniMax H3 (video with sound) and Qwen Image 2.1 Turbo (images) locally on a Mac — no cloud, no credits. Built-in setup checks and one-click model download, AI prompt enhancement, character LoRAs, queueing and 2× upscaling; offloads work to the Neural Engine, cutting a 5-second video on an M3 Air from ~73 to ~35 minutes.</p>
+    <div class="links"><a class="btn primary" href="https://github.com/zero5phh-ops/vpipe-workbench" target="_blank" rel="noopener">github.com/zero5phh-ops/vpipe-workbench ↗</a></div>
+  </article>
+
+  <article class="card project">
+    <div class="phead"><h3>AI Stock Research Desk</h3><span class="vis priv">PRIVATE</span><span class="meta">Oct 2026 · Personal use</span></div>
+    <p class="pdesc">US and Malaysian (Bursa Malaysia) stock research dashboard: market overview, candlestick charts and news per stock, holding signals with plain-language notes, backtesting, a paper-trading account, and daily Traditional Chinese briefings written by four AI assistants. Python + Streamlit, runs locally only.</p>
+  </article>
+
+  <h4>Web games and side projects (public, playable)</h4>
+  <div class="grid3">
+    <a class="mini" href="https://zero5phh-ops.github.io/galaxy-voyage/" target="_blank" rel="noopener"><span class="t">Galaxy Voyage (銀河系漫遊)</span><span class="d">Fly through the Milky Way in your browser</span><span class="u">zero5phh-ops.github.io/galaxy-voyage</span></a>
+    <a class="mini" href="https://zero5phh-ops.github.io/blackhole-voyage/" target="_blank" rel="noopener"><span class="t">Black Hole Voyage (黑洞漫遊)</span><span class="d">A 3D black hole visual experience</span><span class="u">zero5phh-ops.github.io/blackhole-voyage</span></a>
+    <a class="mini" href="https://zero5phh-ops.github.io/space-rocket-game/" target="_blank" rel="noopener"><span class="t">3D Space Rocket Shooter</span><span class="d">3D space shooter</span><span class="u">zero5phh-ops.github.io/space-rocket-game</span></a>
+    <a class="mini" href="https://zero5phh-ops.github.io/neon-kart/" target="_blank" rel="noopener"><span class="t">Neon Kart (霓虹卡丁車)</span><span class="d">Neon-style kart racing</span><span class="u">zero5phh-ops.github.io/neon-kart</span></a>
+    <a class="mini" href="https://zero5phh-ops.github.io/pixel-jump-quest/" target="_blank" rel="noopener"><span class="t">Pixel Jump Quest (像素跳躍大冒險)</span><span class="d">20-level pixel platformer</span><span class="u">zero5phh-ops.github.io/pixel-jump-quest</span></a>
+    <a class="mini" href="https://zero5phh-ops.github.io/neon-tetris/" target="_blank" rel="noopener"><span class="t">Neon Tetris (霓虹方塊)</span><span class="d">Neon-style block puzzle</span><span class="u">zero5phh-ops.github.io/neon-tetris</span></a>
+    <a class="mini" href="https://zero5phh-ops.github.io/test/" target="_blank" rel="noopener"><span class="t">Mobby Japanese Playland (Mobby 日語學習樂園)</span><span class="d">Japanese-learning site for kids</span><span class="u">zero5phh-ops.github.io/test</span></a>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Work Experience</h2>
+  <p class="sub">Working Experience</p>
+  <ul class="timeline">
+    <li class="now"><div class="yr">2023 — Present</div><div class="role">Content Team · Video · AI Systems Development</div><div class="org">SOL Integrative Wellness Centre, Kuala Lumpur</div><p>Film and produce doctor video content; since 2026, personally building SOL Studio to move the entire content pipeline into one AI system.</p></li>
+    <li><div class="yr">2024</div><div class="role">Freelance · Video Production</div><div class="org">FCB Malaysia (advertising agency) × RHB Bank</div><p>Produced award-entry videos for RHB Bank: 2024 MDA (D Awards) “Mobile Banking: Less Time Banking, More Time Bonding”, and the 2024 APAC Effies entry.</p></li>
+    <li><div class="yr">2022 — 2023</div><div class="role">Film Director</div><div class="org">Fu Gong Plantation Sdn Bhd</div><p>Documentary on durian cultivation.</p></li>
+    <li><div class="yr">2020 — 2022</div><div class="role">Film Director</div><div class="org">Taiwan Buddhist Tzu-Chi Foundation Malaysia (Kuala Lumpur)</div><p>Documentary series “Tzu Chi Malaysia Stories (大馬慈濟情)”, broadcast on Da Ai TV.</p></li>
+    <li><div class="yr">2017 — 2019</div><div class="role">Content Creator</div><div class="org">Shenzhen Kuangshi Culture Communication Co., Ltd.</div><p>Brand films for Shenzhen Airlines, Shenzhen Metro, Kaisa Group, Yantian International, Tencent LEGO and more.</p></li>
+    <li><div class="yr">2014 — 2016</div><div class="role">CEO</div><div class="org">Guangzhou YiCai Art Gallery House</div></li>
+    <li><div class="yr">2013 — 2014</div><div class="role">Creative Director</div><div class="org">Guangzhou Jintai Photography</div></li>
+    <li><div class="yr">2004 — 2012</div><div class="role">Founder · Marketing &amp; Content Creator</div><div class="org">Feeltone Inc (Feeltone Creative Platform)</div></li>
+  </ul>
+  <h4>Education</h4>
+  <p>Informatics Technology College — Computer Science Diploma (1999)</p>
+</div></section>
+
+<section id="awards"><div class="wrap">
+  <h2>Awards, Exhibitions and Milestones</h2>
+  <p class="sub">Awards, Exhibitions &amp; Milestones</p>
+  <div class="two">
+    <ul class="awards">
+      <li><span>2004</span>Founded Feeltone Creative Platform, an online creative community</li>
+      <li><span>2007</span>Official photographer, Miss Sabah Malaysia pageant</li>
+      <li><span>2007</span>Digital Camera Magazine Malaysia 2007 Hot Choice</li>
+      <li><span>2008</span>Digital Camera World Hot Choice (Editor’s Pick)</li>
+      <li><span>2009</span>Official photographer, Borneo KK Jazz Festival</li>
+      <li><span>2009</span>Featured in Digital Camera Magazine UK; work published on Telegraph.co.uk</li>
+      <li class="hl"><span>2010</span>POTY Photographer of the Year 2010, Digital Vision — 2nd Place</li>
+      <li><span>2010</span>Photography workshop instructor, Panasonic Lumix Station Sabah</li>
+      <li><span>2010</span>Exhibited at Borneo Bond Art Festival</li>
+      <li><span>2010</span>First solo photography talk</li>
+      <li><span>2011</span>Photography workshop instructor, Sony Center Sabah</li>
+    </ul>
+    <ul class="awards">
+      <li class="hl"><span>2011</span>Solo photo exhibition “The Sense of Jesselton (爵士頓之舞)”</li>
+      <li><span>2011</span>EPSON 100 Photo / Art Exhibition</li>
+      <li><span>2011</span>Second solo photography talk</li>
+      <li><span>2012</span>Exhibited at Borneo Bond Art Festival</li>
+      <li><span>2012</span>Guest lecturer, photography course at Chung Cheng Institute (崇正學院)</li>
+      <li><span>2012</span>Trailer for first short film “Trap (陷阱)”</li>
+      <li><span>2013</span>Solo photo exhibition at the 10th Guangzhou Art Big Bang</li>
+      <li class="hl"><span>2014</span>Short film “I’m Sorry (對不起)” wins Jury Award at KK International Film Festival</li>
+      <li><span>2015</span>Video profile of Hong Kong artist Li Yiyin (李懿殷) on her journey through India</li>
+      <li><span>2016</span>Food show production for Shenzhen Xindian.com (新店網)</li>
+      <li><span>2017</span>Ongoing documentary coverage of Shenzhen Metro Lines 6 and 8</li>
+      <li><span>2018</span>Event filming for Kaisa Group, Shenzhen</li>
+      <li><span>2019</span>Tencent LEGO short film, Shenzhen; “Little People, Big Dreams (小人物大夢想)” series for Kota Kinabalu new media</li>
+      <li><span>2020</span>Tzu Chi Foundation documentary series “Tzu Chi Malaysia Stories (大馬慈濟情)”</li>
+      <li><span>2022</span>Fu Gong Plantation — durian cultivation documentary</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="films"><div class="wrap">
+  <h2>Films</h2>
+  <p class="sub">Rechecked Nov 2026 — all links below still work.</p>
+  <h4>Tzu Chi Malaysia Stories (大馬慈濟情) documentary series (Da Ai TV)</h4>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=A0ICXfiE0Lk" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/A0ICXfiE0Lk/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">Guardians (守護者)</div><div class="d">YouTube · 2021</div></div></a>
+    <a class="vid" href="https://youtu.be/zaRsn41oajE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/zaRsn41oajE/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">Fighting the Pandemic Together (一起戰疫)</div><div class="d">YouTube · 2021</div></div></a>
+    <a class="vid" href="https://youtu.be/s7nwF3-RXII" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/s7nwF3-RXII/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">Leave Regrets in Yesterday (把遺憾留給昨天)</div><div class="d">YouTube · 2021</div></div></a>
+    <a class="vid" href="https://youtu.be/jDoRc7CG8sw" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/jDoRc7CG8sw/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">An 80-Year-Old’s Wish (80 歲的願望)</div><div class="d">YouTube · 2020</div></div></a>
+    <a class="vid" href="https://youtu.be/UlIcvxULwbs" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/UlIcvxULwbs/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">Standing with Our Doctors (「疫」起挺醫去)</div><div class="d">YouTube · 2020</div></div></a>
+    <a class="vid" href="https://youtu.be/lSCXmtg-GfE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/lSCXmtg-GfE/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">Exploring Eco-Friendly Farming (友善農耕探索之旅)</div><div class="d">YouTube · 2021</div></div></a>
+    <a class="vid" href="https://youtu.be/3HhL-2FRzrw" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/3HhL-2FRzrw/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">Relieving Suffering, Bringing Joy (拔苦與樂的承擔)</div><div class="d">YouTube · 2021</div></div></a>
+    <a class="vid" href="https://youtu.be/6MDd0LfYeZM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/6MDd0LfYeZM/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">Our Land of Fish and Rice, Kept Green by All (漁米之鄉是我家，環保靠大家)</div><div class="d">YouTube · 2021</div></div></a>
+    <a class="vid" href="https://youtu.be/B_QRKShlvl0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/B_QRKShlvl0/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">A People Without Roots (失根的民族)</div><div class="d">YouTube · 2021</div></div></a>
+  </div>
+  <h4>Short films and brand videos</h4>
+  <div class="vids">
+    <a class="vid" href="https://v.youku.com/v_show/id_XMTM5MDU3MTA0NA==.html" target="_blank" rel="noopener"><div class="ph">Youku</div><div><div class="t">I’m Sorry (對不起)</div><div class="d">Jury Award, KK International Film Festival 2014</div></div></a>
+    <a class="vid" href="https://v.youku.com/v_show/id_XNTc1NDk1NzM2.html" target="_blank" rel="noopener"><div class="ph">Youku</div><div><div class="t">Trap (陷阱) — Trailer</div><div class="d">2012 · First short film</div></div></a>
+    <a class="vid" href="https://v.youku.com/v_show/id_XMTYwNTI3NTkxMg==.html" target="_blank" rel="noopener"><div class="ph">Youku</div><div><div class="t">Micro-ad: Chasing Dream (夢想進行中)</div><div class="d">Youku</div></div></a>
+    <a class="vid" href="https://youtu.be/Pvk9rN0Yn1o" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Pvk9rN0Yn1o/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">Artist interview, 30-second CV (Li Yiyin 李懿殷)</div><div class="d">YouTube</div></div></a>
+    <a class="vid" href="https://v.youku.com/v_show/id_XMTQwMDAwMDk4OA==.html" target="_blank" rel="noopener"><div class="ph">Youku</div><div><div class="t">Artist interview, full version: Jasmine’s Journey to India</div><div class="d">Youku · 2015</div></div></a>
+    <a class="vid" href="https://mp.weixin.qq.com/s/jqywWBz2MKh6MZTx7roetQ" target="_blank" rel="noopener"><div class="ph">WeChat</div><div><div class="t">Shenzhen Airlines flight safety video</div><div class="d">Produced by Kuangshi Culture · 2019</div></div></a>
+    <a class="vid" href="https://mp.weixin.qq.com/s/QmqfsfxPg0cTsU4Vl0kI3Q" target="_blank" rel="noopener"><div class="ph">WeChat</div><div><div class="t">Kaisa Group short film</div><div class="d">Campus recruitment film</div></div></a>
+    <a class="vid" href="https://mp.weixin.qq.com/s/tWBzx8dxLDFo-E7k_P-HjQ" target="_blank" rel="noopener"><div class="ph">WeChat</div><div><div class="t">Shenzhen Metro — Tram short film</div><div class="d">Produced by Kuangshi Culture</div></div></a>
+    <a class="vid" href="https://mp.weixin.qq.com/s/F8T3cMDx1PNYg7RP3FfHVA" target="_blank" rel="noopener"><div class="ph">WeChat</div><div><div class="t">Yantian International, Shenzhen — MOL Triumph maiden call</div><div class="d">Produced by Kuangshi Culture · 2017</div></div></a>
+  </div>
+</div></section>
+
+<section id="photo"><div class="wrap">
+  <h2>Photography</h2>
+  <p class="sub">More work on <a href="https://www.flickr.com/photos/zero5phh" target="_blank" rel="noopener">Flickr</a>.</p>
+  <div class="gallery">
+    <figure><img src="assets/poty-2nd.jpg" alt="POTY 2010 Digital Vision — 2nd Place" loading="lazy"><figcaption>POTY 2010 Digital Vision — 2nd Place</figcaption></figure>
+    <figure><img src="assets/poty-telegraph.jpg" alt="Digital Camera Photographer of the Year, featured on Telegraph.co.uk" loading="lazy"><figcaption>Digital Camera Photographer of the Year, featured on Telegraph.co.uk</figcaption></figure>
+    <figure><img src="assets/jesselton.jpg" alt="2011 solo exhibition “The Sense of Jesselton (爵士頓之舞)”" loading="lazy"><figcaption>2011 solo exhibition “The Sense of Jesselton (爵士頓之舞)”</figcaption></figure>
+    <figure><img src="assets/epson100.jpg" alt="EPSON 100 Photo / Art Exhibition" loading="lazy"><figcaption>EPSON 100 Photo / Art Exhibition</figcaption></figure>
+    <figure><img src="assets/dance.jpg" alt="Dance performance" loading="lazy"><figcaption>Dance performance</figcaption></figure>
+    <figure><img src="assets/music.jpg" alt="Live music · KK Jazz Festival" loading="lazy"><figcaption>Live music · KK Jazz Festival</figcaption></figure>
+    <figure><img src="assets/trap.jpg" alt="2012 short film “Trap (陷阱)” — on set and poster" loading="lazy"><figcaption>2012 short film “Trap (陷阱)” — on set and poster</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <p class="sub">Skills</p>
+  <div class="skills">
+    <div class="skill"><span>Photography <small>· Portrait, events, stage</small></span><span class="lv" aria-label="5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+    <div class="skill"><span>PC building and repair</span><span class="lv" aria-label="5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+    <div class="skill"><span>Videography <small>· DSLR, gimbals, live streaming</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>Drone</span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>Photo Editing <small>· Photoshop, Capture One, Bridge</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>Storytelling</span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>Video Editing <small>· Final Cut Pro, Premiere, DaVinci, After Effects</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>AI workflows and software development <small>· Claude, MCP, TypeScript, Python, FFmpeg</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+  </div>
+  <div class="two" style="margin-top:32px">
+    <div>
+      <h4 style="margin-top:0">Languages</h4>
+      <div class="skills" style="grid-template-columns:1fr">
+        <div class="skill"><span>Chinese</span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+        <div class="skill"><span>English</span><span class="lv" aria-label="3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
+        <div class="skill"><span>Bahasa Melayu</span><span class="lv" aria-label="1 / 5"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span></div>
+      </div>
+    </div>
+    <div>
+      <h4 style="margin-top:0">Interests</h4>
+      <p>Songwriting, playing guitar, bass and piano, photography, running, hiking, travel.</p>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">Lonny Pang Huan Hsiao (馮煥曉) · Kuala Lumpur · Last updated Nov 2026 · <a href="https://github.com/zero5phh-ops" target="_blank" rel="noopener">github.com/zero5phh-ops</a></div></footer>
+
+<script>
+const root=document.documentElement,key="resume-theme";
+try{const t=localStorage.getItem(key);if(t)root.dataset.theme=t}catch(e){}
+document.getElementById("theme").onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;root.dataset.theme=dark?"light":"dark";try{localStorage.setItem(key,root.dataset.theme)}catch(e){}};
+</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "title": "Lonny Pang (馮煥曉) · Resume",
+    "description": "Lonny Pang Huan Hsiao (馮煥曉) — pengarah, jurugambar dan pencipta kandungan yang turut membina sendiri alat penghasilan kandungan AI."
+  },
+  "nav": {
+    "brand": "Lonny Pang",
+    "software": "Perisian",
+    "experience": "Pengalaman",
+    "awards": "Anugerah dan Pameran",
+    "films": "Karya Video",
+    "photo": "Fotografi",
+    "skills": "Kemahiran",
+    "theme": "Tukar mod cerah/gelap"
+  },
+  "hero": {
+    "name": "馮煥曉",
+    "sub": "Lonny Pang Huan Hsiao",
+    "lead": "Pengarah dan jurugambar dengan 20 tahun pengalaman dalam fotografi dan video. Kini mengetuai pasukan kandungan di SOL Integrative Wellness Centre, dan membina sendiri bersama AI satu sistem penghasilan kandungan yang lengkap: daripada penulisan skrip, penggambaran dan suntingan hinggalah penjadualan siaran.",
+    "loc": "Kuala Lumpur, Malaysia",
+    "born": "Dilahirkan di Kota Kinabalu, Sabah",
+    "langs": "Bahasa Cina · Bahasa Inggeris · Bahasa Melayu",
+    "flickr": "Portfolio fotografi di Flickr",
+    "badge": "Digital Vision Tempat Kedua"
+  },
+  "sw": {
+    "title": "Perisian",
+    "sub": "Dibangunkan secara berpasangan dengan Claude sejak 2026. Repo peribadi diterangkan secara terperinci; repo awam disertakan pautan terus."
+  },
+  "sol": {
+    "meta": "2026-08 — Kini · kira-kira 2,000 commit · digunakan secara rasmi di dalam syarikat",
+    "desc": "Sistem penghasilan kandungan doktor untuk SOL Integrative Wellness Centre: satu ayat untuk menulis skrip sebulan penuh → doktor merakam dengan teleprompter telefon → suntingan kasar automatik → semakan → penjadualan siaran ke media sosial → laporan KPI dengan satu klik. Digunakan setiap hari oleh kakitangan bukan teknikal di seluruh syarikat, dengan antara muka dalam tiga bahasa: Cina, Inggeris dan Melayu.",
+    "open": "Buka Landing Page SOL Studio",
+    "features": [
+      "<b>Create Script</b>: taip “Dr Vig November” dan AI menulis skrip sebulan penuh mengikut gaya percakapan doktor itu sendiri, lengkap dengan Hook dan semakan kenyataan perubatan; juga boleh membaca pelan bulanan PPT daripada jabatan pemasaran",
+      "<b>App penggambaran mudah alih</b> (iOS / Android, Expo): kad papan cerita + teleprompter bergulir, rakaman dimuat naik dan difailkan secara automatik ke pemacu kongsi",
+      "<b>Suntingan kasar AI automatik</b>: membuang jeda dan rakaman ulang, sari kata diselaraskan dengan Whisper, padanan B-roll, sorotan angka beranimasi, Hook 3 saat dan kulit muka",
+      "<b>Pass to AI</b>: ubah video dengan satu ayat; tugasan dibariskan ke AI helper pada setiap Mac; boleh dieksport sebagai fail projek CapCut",
+      "<b>Penyunting garis masa dalam pelayar</b>: berbilang trek, gred warna, pengasingan suara, buang latar, peralihan, 16 gaya sari kata, dan AI-cut yang membolehkan anda menonton AI menyunting langkah demi langkah",
+      "<b>Podcast berbilang kamera</b>: kamera dan mikrofon diselaraskan secara automatik melalui audio, dengan pertukaran syot mengikut siapa yang sedang bercakap",
+      "<b>Papan Design</b>: kapsyen FB / IG ditulis oleh AI, dan Auto Design menghasilkan tiga versi PSD berlapis yang boleh disunting sekali gus",
+      "<b>Suara latar AI doktor</b>: suara klon dalaman untuk naratif, nombor telefon dibaca digit demi digit, campuran Inggeris-Melayu dibaca seperti teks asal",
+      "<b>Penjadualan siaran GHL</b>: FB / IG / TikTok / YouTube, dengan pemantauan komen yang memberi amaran apabila ada balasan baharu",
+      "<b>Pustaka media 3,000+ video siap</b>, papan Dashboard, laporan Excel Content KPI, Webinar dan senarai pelanggan",
+      "<b>Kebenaran dan privasi</b>: kebenaran mengikut peranan dan jabatan, sembang hanya mengenal pasti identiti ahli, borang persetujuan pesakit hanya untuk pihak yang dibenarkan",
+      "<b>Pelayan MCP</b>: AI luaran seperti Claude boleh terus mencipta tugasan, menulis skrip dan melihat garis masa di dalam App"
+    ],
+    "caption": "Landing page awam SOL Studio (sistem kerja hanya selepas log masuk). Asalnya AI-Content-studio (2026-08, MVP: skrip di Web → rakaman teleprompter telefon → pascaproduksi automatik)."
+  },
+  "onset": {
+    "meta": "Bermula 2026-11 · ditulis semula sepenuhnya dari awal · dalam pembangunan",
+    "desc": "App studio peribadi untuk pencipta kandungan: menulis skrip, merakam, menyunting, mereka kulit muka dan hantaran — semuanya di satu tempat. AI (Ask Onset) boleh dipanggil dari penjuru kanan bawah mana-mana skrin, dan anda boleh menonton AI bekerja langkah demi langkah serta menghentikannya bila-bila masa. Platform sasaran: macOS, Windows, iOS, Android.",
+    "features": [
+      "<b>Persediaan awal AI Onset</b>: soal jawab ringkas untuk menetapkan gaya saluran, kemudian disusun secara automatik kepada empat gaya — skrip, temu bual, reka bentuk dan suntingan (36 gaya terbina dalam)",
+      "<b>AI Script</b>: lima format — video pendek, video panjang, senarai soalan temu bual, rundown Podcast dan skrip naratif — terus dihantar untuk penggambaran",
+      "<b>Recording</b>: kamera komputer atau kamera luaran + teleprompter, dengan kelajuan dan fon boleh laras",
+      "<b>Penyunting gaya CapCut</b>: keyframe, 39 peralihan, topeng, LUT (termasuk HLG / Apple Log / S-Log3 → 709), lengkung kelajuan, penstabilan",
+      "<b>Sari kata</b>: transkripsi pertuturan Whisper, 20 gaya sari kata, 13 fon, sorotan perkataan gaya karaoke",
+      "<b>Auto-cut dan AI Edit</b>: membuang jeda dan rakaman ulang secara automatik, AI menyunting bab demi bab, dan setiap langkah dipaparkan secara langsung pada garis masa",
+      "<b>Audio</b>: pengurangan hingar, pengasingan suara/latar dengan Demucs, suara latar AI, muzik dan kesan bunyi, pengurangan bunyi latar automatik",
+      "<b>Podcast berbilang kamera</b> dan <b>video panjang melebihi 2 jam</b>: penyelarasan automatik, pertukaran syot mengikut penutur, pemprosesan mengikut bab",
+      "<b>Kulit muka dan hantaran imej</b>: 35 templat susun atur, 44 operasi reka bentuk, untuk FB / IG / Xiaohongshu / TikTok / X / Threads",
+      "<b>Eksport</b>: MP4 / MOV / MP3 / WAV, serta fail projek CapCut, FCPXML, Premiere XML dan FilmCraft",
+      "<b>Mod animasi</b>: hasilkan video tanpa penggambaran, menggunakan grafik, animasi teks dan Godot 2D/3D",
+      "<b>MCP</b>: AI luaran boleh terus mengawal suntingan semasa Onset dibuka"
+    ],
+    "tauri": "Tauri (dalam perancangan)",
+    "cap_editing": "Editing: kategori media di kiri, pratonton di tengah, sifat dan AI Edit di kanan, garis masa berbilang trek di bawah.",
+    "cap_start": "Halaman utama hanya ada lima pintu masuk, dengan Ask Onset di penjuru kanan bawah.",
+    "cap_setup": "Penggunaan pertama: AI Onset bertanya satu demi satu untuk mengenal pasti gaya anda.",
+    "cap_styles": "Selepas persediaan, empat gaya dijana secara automatik.",
+    "cap_script": "Create Script: berbual dengan AI di kiri, skrip di kanan.",
+    "cap_design": "Reka bentuk versi macOS yang dilakar sebelum pembangunan bermula."
+  },
+  "vpipe": {
+    "desc": "Laman web kecil untuk menjalankan MiniMax H3 (video beraudio) dan Qwen Image 2.1 Turbo (imej) secara setempat pada Mac — tanpa awan, tanpa credits. Dilengkapi semakan tetapan dan muat turun model satu klik, pengoptimuman prompt dengan AI, LoRA watak, barisan gilir dan peningkatan 2x; menggunakan Neural Engine untuk berkongsi beban pengiraan, mengurangkan masa video 5 saat pada M3 Air daripada kira-kira 73 minit kepada kira-kira 35 minit."
+  },
+  "stock": {
+    "meta": "2026-10 · kegunaan peribadi",
+    "desc": "Papan pemuka penyelidikan saham AS dan Malaysia (Bursa Malaysia): gambaran pasaran, carta lilin dan berita saham individu, isyarat lampu pegangan dengan cadangan dalam bahasa mudah, ujian balik, akaun simulasi, serta taklimat harian dalam bahasa Cina Tradisional oleh empat pembantu AI. Python + Streamlit, dijalankan secara setempat sahaja."
+  },
+  "games": {
+    "title": "Permainan web dan projek kecil (awam, boleh dimainkan terus)",
+    "items": [
+      {"url": "https://zero5phh-ops.github.io/galaxy-voyage/", "t": "Galaxy Voyage", "d": "Terbang merentasi galaksi dalam pelayar"},
+      {"url": "https://zero5phh-ops.github.io/blackhole-voyage/", "t": "Black Hole Voyage", "d": "Pengalaman visual lubang hitam 3D"},
+      {"url": "https://zero5phh-ops.github.io/space-rocket-game/", "t": "3D Space Rocket Shooter", "d": "Permainan tembak-menembak angkasa 3D"},
+      {"url": "https://zero5phh-ops.github.io/neon-kart/", "t": "Neon Kart", "d": "Lumba kart bergaya neon"},
+      {"url": "https://zero5phh-ops.github.io/pixel-jump-quest/", "t": "Pixel Jump Quest", "d": "Permainan platform piksel dengan 20 peringkat"},
+      {"url": "https://zero5phh-ops.github.io/neon-tetris/", "t": "Neon Tetris", "d": "Permainan susun blok bergaya neon"},
+      {"url": "https://zero5phh-ops.github.io/test/", "t": "Mobby: Taman Belajar Bahasa Jepun", "d": "Laman web belajar bahasa Jepun untuk kanak-kanak"}
+    ]
+  },
+  "exp": {
+    "title": "Pengalaman Kerja",
+    "sub": "Working Experience",
+    "jobs": [
+      {"now": true, "yr": "2023 — Kini", "role": "Pasukan Kandungan · Video · Pembangunan Sistem AI", "org": "SOL Integrative Wellness Centre, Kuala Lumpur", "p": "Bertanggungjawab atas penggambaran dan penghasilan kandungan video doktor; sejak 2026 membangunkan sendiri SOL Studio, memindahkan keseluruhan proses penghasilan kandungan ke dalam satu sistem AI."},
+      {"yr": "2024", "role": "Pekerja Bebas · Penerbitan Video", "org": "FCB Malaysia (agensi pengiklanan) × RHB Bank", "p": "Menghasilkan video penyertaan untuk RHB Bank: 2024 MDA (D Awards) “Mobile Banking: Less Time Banking, More Time Bonding”, serta video penyertaan 2024 APAC Effies."},
+      {"yr": "2022 — 2023", "role": "Film Director", "org": "Fu Gong Plantation Sdn Bhd", "p": "Dokumentari penanaman durian."},
+      {"yr": "2020 — 2022", "role": "Film Director", "org": "Taiwan Buddhist Tzu-Chi Foundation Malaysia (Kuala Lumpur)", "p": "Siri dokumentari “Kisah Tzu Chi Malaysia (大馬慈濟情)”, disiarkan di Da Ai TV."},
+      {"yr": "2017 — 2019", "role": "Content Creator", "org": "Shenzhen Kuangshi Culture Communication Co., Ltd.", "p": "Video jenama untuk Shenzhen Airlines, Shenzhen Metro, Kaisa Group, Yantian International Container Terminals, Tencent Lego dan lain-lain."},
+      {"yr": "2014 — 2016", "role": "CEO", "org": "Guangzhou YiCai Art Gallery House", "p": ""},
+      {"yr": "2013 — 2014", "role": "Creative Director", "org": "Guangzhou Jintai Photography", "p": ""},
+      {"yr": "2004 — 2012", "role": "Founder · Marketing &amp; Content Creator", "org": "Feeltone Inc (Feeltone Creative Platform)", "p": ""}
+    ],
+    "edu_title": "Pendidikan",
+    "edu": "Informatics Technology College — Diploma Sains Komputer (1999)"
+  },
+  "aw": {
+    "title": "Anugerah, Pameran dan Kronologi Karya",
+    "sub": "Awards, Exhibitions &amp; Milestones",
+    "cols": [
+      [
+        {"y": "2004", "t": "Mengasaskan Feeltone Creative Platform (laman komuniti kreatif)"},
+        {"y": "2007", "t": "Jurugambar rasmi Miss Sabah Malaysia"},
+        {"y": "2007", "t": "Digital Camera Magazine Malaysia 2007 Hot Choice"},
+        {"y": "2008", "t": "Digital Camera World Hot Choice (Pilihan Editor)"},
+        {"y": "2009", "t": "Jurugambar rasmi Borneo KK Jazz Festival"},
+        {"y": "2009", "t": "Karya ditampilkan dalam Digital Camera Magazine UK; disiarkan di Telegraph.co.uk"},
+        {"y": "2010", "t": "POTY Photographer of the Year 2010 Digital Vision Tempat Kedua", "hl": true},
+        {"y": "2010", "t": "Penceramah bengkel fotografi Panasonic Lumix Station Sabah"},
+        {"y": "2010", "t": "Pameran karya di Borneo Bond Art Festival"},
+        {"y": "2010", "t": "Ceramah fotografi peribadi yang pertama"},
+        {"y": "2011", "t": "Penceramah bengkel fotografi Sony Center Sabah"}
+      ],
+      [
+        {"y": "2011", "t": "Pameran fotografi solo “The Sense of Jesselton (爵士頓之舞)”", "hl": true},
+        {"y": "2011", "t": "EPSON 100 Photo / Art Exhibition"},
+        {"y": "2011", "t": "Ceramah fotografi peribadi yang kedua"},
+        {"y": "2012", "t": "Pameran karya di Borneo Bond Art Festival"},
+        {"y": "2012", "t": "Penceramah kursus fotografi di Kolej Tshung Tsin (崇正學院)"},
+        {"y": "2012", "t": "Treler filem pendek pertama “Perangkap (陷阱 Trap)”"},
+        {"y": "2013", "t": "Pameran fotografi solo di Guangzhou Art Big Bang ke-10 (廣州第十屆藝術大爆炸)"},
+        {"y": "2014", "t": "Filem pendek “Maafkan Saya (對不起 I'm Sorry)” memenangi Anugerah Juri KK International Film Festival", "hl": true},
+        {"y": "2015", "t": "Video temu bual perjalanan India artis Hong Kong Jasmine (李懿殷)"},
+        {"y": "2016", "t": "Penerbitan program makanan untuk Shenzhen Xindian (深圳新店網)"},
+        {"y": "2017", "t": "Rakaman dokumentasi berkala Shenzhen Metro Laluan 6 dan Laluan 8"},
+        {"y": "2018", "t": "Penggambaran acara Kaisa Group, Shenzhen"},
+        {"y": "2019", "t": "Filem pendek Tencent Lego, Shenzhen; siri media baharu Kota Kinabalu “Insan Kecil, Impian Besar (小人物大夢想)”"},
+        {"y": "2020", "t": "Siri dokumentari Yayasan Tzu Chi “Kisah Tzu Chi Malaysia (大馬慈濟情)”"},
+        {"y": "2022", "t": "Fu Gong Plantation — dokumentari penanaman durian"}
+      ]
+    ]
+  },
+  "films": {
+    "title": "Karya Video",
+    "sub": "Disemak semula pada 2026-11; semua pautan di bawah masih boleh dibuka.",
+    "tzuchi": "Siri dokumentari Kisah Tzu Chi Malaysia (大馬慈濟情) (Da Ai TV)",
+    "brand": "Filem pendek dan video jenama",
+    "tzuchi_items": [
+      {"url": "https://www.youtube.com/watch?v=A0ICXfiE0Lk", "yt": "A0ICXfiE0Lk", "t": "Penjaga (守護者)", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/zaRsn41oajE", "yt": "zaRsn41oajE", "t": "Bersama Melawan Wabak (一起戰疫)", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/s7nwF3-RXII", "yt": "s7nwF3-RXII", "t": "Tinggalkan Penyesalan pada Semalam (把遺憾留給昨天)", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/jDoRc7CG8sw", "yt": "jDoRc7CG8sw", "t": "Hajat pada Usia 80 (80 歲的願望)", "d": "YouTube · 2020"},
+      {"url": "https://youtu.be/UlIcvxULwbs", "yt": "UlIcvxULwbs", "t": "Bersama Menyokong Barisan Hadapan Perubatan (「疫」起挺醫去)", "d": "YouTube · 2020"},
+      {"url": "https://youtu.be/lSCXmtg-GfE", "yt": "lSCXmtg-GfE", "t": "Menjelajah Pertanian Mesra Alam (友善農耕探索之旅)", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/3HhL-2FRzrw", "yt": "3HhL-2FRzrw", "t": "Tanggungjawab Meringankan Derita (拔苦與樂的承擔)", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/6MDd0LfYeZM", "yt": "6MDd0LfYeZM", "t": "Kampung Jelapang Padi Kami, Alam Sekitar Tanggungjawab Bersama (漁米之鄉是我家，環保靠大家)", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/B_QRKShlvl0", "yt": "B_QRKShlvl0", "t": "Bangsa yang Hilang Akar (失根的民族)", "d": "YouTube · 2021"}
+    ],
+    "brand_items": [
+      {"url": "https://v.youku.com/v_show/id_XMTM5MDU3MTA0NA==.html", "ph": "Youku", "t": "Maafkan Saya (對不起 I'm Sorry)", "d": "Anugerah Juri KK International Film Festival 2014"},
+      {"url": "https://v.youku.com/v_show/id_XNTc1NDk1NzM2.html", "ph": "Youku", "t": "Perangkap (陷阱 Trap) (treler)", "d": "2012 · filem pendek pertama"},
+      {"url": "https://v.youku.com/v_show/id_XMTYwNTI3NTkxMg==.html", "ph": "Youku", "t": "Iklan pendek: Mengejar Impian (夢想進行中 Chasing Dream)", "d": "Youku"},
+      {"url": "https://youtu.be/Pvk9rN0Yn1o", "yt": "Pvk9rN0Yn1o", "t": "Video CV 30 saat temu bual artis (Jasmine 李懿殷)", "d": "YouTube"},
+      {"url": "https://v.youku.com/v_show/id_XMTQwMDAwMDk4OA==.html", "ph": "Youku", "t": "Temu bual artis versi penuh: Perjalanan Jasmine ke India (Jasmine 印度之旅)", "d": "Youku · 2015"},
+      {"url": "https://mp.weixin.qq.com/s/jqywWBz2MKh6MZTx7roetQ", "ph": "WeChat", "t": "Video keselamatan penerbangan Shenzhen Airlines (深圳航空安全飛行影片)", "d": "Terbitan Kuangshi Culture · 2019"},
+      {"url": "https://mp.weixin.qq.com/s/QmqfsfxPg0cTsU4Vl0kI3Q", "ph": "WeChat", "t": "Filem pendek Kaisa Group (佳兆業微電影)", "d": "Video promosi pengambilan graduan"},
+      {"url": "https://mp.weixin.qq.com/s/tWBzx8dxLDFo-E7k_P-HjQ", "ph": "WeChat", "t": "Shenzhen Metro — filem pendek trem (有軌電車微電影)", "d": "Terbitan Kuangshi Culture"},
+      {"url": "https://mp.weixin.qq.com/s/F8T3cMDx1PNYg7RP3FfHVA", "ph": "WeChat", "t": "Pelayaran sulung MOL Triumph di Yantian International, Shenzhen (深圳鹽田國際 MOL Triumph 首航)", "d": "Terbitan Kuangshi Culture · 2017"}
+    ]
+  },
+  "photo": {
+    "title": "Fotografi",
+    "sub": "Lebih banyak karya di <a href=\"https://www.flickr.com/photos/zero5phh\" target=\"_blank\" rel=\"noopener\">Flickr</a>.",
+    "items": [
+      {"img": "poty-2nd.jpg", "cap": "POTY 2010 Digital Vision Tempat Kedua"},
+      {"img": "poty-telegraph.jpg", "cap": "Digital Camera Photographer of the Year, disiarkan di Telegraph.co.uk"},
+      {"img": "jesselton.jpg", "cap": "Pameran fotografi solo 2011 “The Sense of Jesselton (爵士頓之舞)”"},
+      {"img": "epson100.jpg", "cap": "EPSON 100 Photo / Art Exhibition"},
+      {"img": "dance.jpg", "cap": "Persembahan tarian"},
+      {"img": "music.jpg", "cap": "Acara muzik · KK Jazz Festival"},
+      {"img": "trap.jpg", "cap": "Lokasi penggambaran dan poster filem pendek 2012 “Perangkap (陷阱 Trap)”"}
+    ]
+  },
+  "skills": {
+    "title": "Kemahiran",
+    "sub": "Skills",
+    "items": [
+      {"n": "Fotografi", "l": 5, "s": "Potret, acara, pentas"},
+      {"n": "Pemasangan dan pembaikan komputer", "l": 5, "s": ""},
+      {"n": "Videografi", "l": 4, "s": "DSLR, gimbal, siaran langsung"},
+      {"n": "Fotografi dron", "l": 4, "s": ""},
+      {"n": "Suntingan foto", "l": 4, "s": "Photoshop, Capture One, Bridge"},
+      {"n": "Penceritaan", "l": 4, "s": ""},
+      {"n": "Suntingan video", "l": 4, "s": "Final Cut Pro, Premiere, DaVinci, After Effects"},
+      {"n": "Aliran kerja AI dan pembangunan perisian", "l": 4, "s": "Claude, MCP, TypeScript, Python, FFmpeg"}
+    ],
+    "lang_title": "Bahasa",
+    "langs": [
+      {"n": "Bahasa Cina", "l": 4},
+      {"n": "Bahasa Inggeris", "l": 3},
+      {"n": "Bahasa Melayu", "l": 1}
+    ],
+    "hobby_title": "Minat",
+    "hobby": "Mencipta lagu, bermain alat muzik (gitar, bes, piano), fotografi, berjoging, mendaki gunung dan melancong."
+  },
+  "footer": "Lonny Pang Huan Hsiao (馮煥曉) · Kuala Lumpur · Kemas kini terakhir 2026-11"
+}

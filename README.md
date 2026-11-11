@@ -2,7 +2,9 @@
 
 導演、攝影師、內容創作者，也和 AI 一起寫內容製作工具。
 
-打開 `index.html` 就是完整履歷（單一 HTML 檔，圖片在 `assets/`）。開了 GitHub Pages 之後網址會是 `https://zero5phh-ops.github.io/resume/`。
+線上版：https://zero5phh-ops.github.io/resume/
+
+五種語言：[中文](https://zero5phh-ops.github.io/resume/) · [English](https://zero5phh-ops.github.io/resume/en.html) · [Bahasa Melayu](https://zero5phh-ops.github.io/resume/ms.html) · [日本語](https://zero5phh-ops.github.io/resume/ja.html) · [한국어](https://zero5phh-ops.github.io/resume/ko.html)
 
 ## 內容
 
@@ -14,4 +16,10 @@
 
 ## 更新
 
-直接改 `index.html`。技能和語言的星等在檔案最下面的 `skills` / `langs` 陣列。
+不要直接改產生出來的 `.html`。版面在 `src/template.html` + `src/style.css`，文字在 `i18n/<語言>.json`（zh / en / ms / ja / ko，五份結構相同）。改完執行：
+
+```bash
+python3 build.py
+```
+
+會重新產生 `index.html`（中文）、`en.html`、`ms.html`、`ja.html`、`ko.html`。

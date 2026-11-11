@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>馮煥曉 Lonny Pang · Resume</title>
+<title>馮煥曉 Lonny Pang · 履歷</title>
 <meta name="description" content="馮煥曉 Lonny Pang Huan Hsiao — 導演、攝影師、內容創作者，也自己寫 AI 內容製作工具。">
+<link rel="alternate" hreflang="zh-Hant" href="https://zero5phh-ops.github.io/resume/">
+<link rel="alternate" hreflang="en" href="https://zero5phh-ops.github.io/resume/en.html">
+<link rel="alternate" hreflang="ms" href="https://zero5phh-ops.github.io/resume/ms.html">
+<link rel="alternate" hreflang="ja" href="https://zero5phh-ops.github.io/resume/ja.html">
+<link rel="alternate" hreflang="ko" href="https://zero5phh-ops.github.io/resume/ko.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
@@ -122,6 +127,15 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px soli
 }
 @media (max-width:480px){.grid3,.gallery{grid-template-columns:1fr}}
 @media print{nav.top,.theme{display:none}section{break-inside:avoid-page}body{background:#fff}}
+.langs{display:flex;gap:2px;border:1px solid var(--line);border-radius:8px;padding:2px;background:var(--paper);flex:none}
+.langs a{font-size:12px;padding:2px 8px;border-radius:6px;color:var(--muted)}
+.langs a[aria-current]{background:var(--ink);color:var(--bg)}
+html[lang=ja] body{font-family:"Noto Sans JP","Noto Sans TC",system-ui,sans-serif}
+html[lang=ko] body{font-family:"Noto Sans KR","Noto Sans TC",system-ui,sans-serif}
+html[lang=ja] h1,html[lang=ja] h2{font-family:"Noto Serif JP","Noto Serif TC",serif}
+html[lang=ko] h1,html[lang=ko] h2{font-family:"Noto Serif KR","Noto Serif TC",serif}
+html[lang=en] .lead,html[lang=ms] .lead{font-size:17px}
+
 </style>
 </head>
 <body>
@@ -133,6 +147,7 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px soli
   <a href="#films">影像作品</a>
   <a href="#photo">攝影</a>
   <a href="#skills">技能</a>
+  <span class="langs"><a href="index.html" hreflang="zh-Hant" aria-current="page">中文</a><a href="en.html" hreflang="en">EN</a><a href="ms.html" hreflang="ms">BM</a><a href="ja.html" hreflang="ja">日本語</a><a href="ko.html" hreflang="ko">한국어</a></span>
   <button class="theme" id="theme" type="button" aria-label="切換深淺色">◐</button>
 </div></nav>
 
@@ -183,7 +198,7 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px soli
       <li><b>MCP 伺服器</b>：Claude 等外部 AI 可以直接在 App 裡建任務、寫腳本、看時間線</li>
     </ul>
     <div class="stack"><span>Next.js</span><span>Fastify</span><span>Prisma / SQLite</span><span>Expo (React Native)</span><span>FFmpeg</span><span>faster-whisper</span><span>Claude API / Claude CLI</span><span>HeyGen</span><span>GoHighLevel API</span><span>Docker</span><span>Cloudflare Tunnel</span><span>MCP</span></div>
-    <figure class="shot"><a href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener"><img src="assets/sol-studio-landing.jpg" alt="SOL Studio landing page 截圖" loading="lazy"></a><figcaption>SOL Studio 公開的 landing page（登入後才是工作系統）。前身是 AI-Content-studio（2026-08，MVP：Web 建腳本 → 手機提詞拍攝 → 自動後期）。</figcaption></figure>
+    <figure class="shot"><a href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener"><img src="assets/sol-studio-landing.jpg" alt="SOL Studio landing page" loading="lazy"></a><figcaption>SOL Studio 公開的 landing page（登入後才是工作系統）。前身是 AI-Content-studio（2026-08，MVP：Web 建腳本 → 手機提詞拍攝 → 自動後期）。</figcaption></figure>
   </article>
 
   <article class="card project">
@@ -205,12 +220,12 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px soli
     </ul>
     <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>WebGL / GLSL</span><span>MCP</span><span>Tauri（規劃中）</span></div>
     <div class="shots">
-      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 剪輯畫面" loading="lazy"><figcaption>Editing：左邊素材分類、中間預覽、右邊屬性與 AI Edit、下面多軌時間線。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset 3.0 首頁" loading="lazy"><figcaption>首頁只有五個入口，右下角是 Ask Onset。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-setup.jpg" alt="AI Onset 風格設定" loading="lazy"><figcaption>第一次使用：AI Onset 一題一題問出你的風格。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-styles.jpg" alt="風格摘要" loading="lazy"><figcaption>設定完成，自動產生四種風格。</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>Editing：左邊素材分類、中間預覽、右邊屬性與 AI Edit、下面多軌時間線。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset 3.0 Start" loading="lazy"><figcaption>首頁只有五個入口，右下角是 Ask Onset。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-setup.jpg" alt="AI Onset" loading="lazy"><figcaption>第一次使用：AI Onset 一題一題問出你的風格。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-styles.jpg" alt="Styles" loading="lazy"><figcaption>設定完成，自動產生四種風格。</figcaption></figure>
       <figure class="shot"><img src="assets/onset-script.jpg" alt="AI Script" loading="lazy"><figcaption>Create Script：左邊和 AI 對話，右邊是腳本。</figcaption></figure>
-      <figure class="shot wide"><img src="assets/onset-design-overview.png" alt="Onset 3.0 設計稿" loading="lazy"><figcaption>開工前先畫的 macOS 版設計稿。</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-design-overview.png" alt="Onset 3.0 design" loading="lazy"><figcaption>開工前先畫的 macOS 版設計稿。</figcaption></figure>
     </div>
   </article>
 
@@ -294,7 +309,6 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px soli
 <section id="films"><div class="wrap">
   <h2>影像作品</h2>
   <p class="sub">2026-11 重新檢查過，以下連結都還能打開。</p>
-
   <h4>大馬慈濟情 紀錄片系列（大愛電視）</h4>
   <div class="vids">
     <a class="vid" href="https://www.youtube.com/watch?v=A0ICXfiE0Lk" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/A0ICXfiE0Lk/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">守護者</div><div class="d">YouTube · 2021</div></div></a>
@@ -307,7 +321,6 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px soli
     <a class="vid" href="https://youtu.be/6MDd0LfYeZM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/6MDd0LfYeZM/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">漁米之鄉是我家，環保靠大家</div><div class="d">YouTube · 2021</div></div></a>
     <a class="vid" href="https://youtu.be/B_QRKShlvl0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/B_QRKShlvl0/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">失根的民族</div><div class="d">YouTube · 2021</div></div></a>
   </div>
-
   <h4>微電影與品牌影片</h4>
   <div class="vids">
     <a class="vid" href="https://v.youku.com/v_show/id_XMTM5MDU3MTA0NA==.html" target="_blank" rel="noopener"><div class="ph">優酷</div><div><div class="t">對不起 I'm Sorry</div><div class="d">KK International Film Festival 2014 評審獎</div></div></a>
@@ -326,24 +339,37 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px soli
   <h2>攝影</h2>
   <p class="sub">更多作品在 <a href="https://www.flickr.com/photos/zero5phh" target="_blank" rel="noopener">Flickr</a>。</p>
   <div class="gallery">
-    <figure><img src="assets/poty-2nd.jpg" alt="POTY 2010 Digital Vision 第二名作品" loading="lazy"><figcaption>POTY 2010 Digital Vision 第二名</figcaption></figure>
-    <figure><img src="assets/poty-telegraph.jpg" alt="Telegraph.co.uk 刊登作品" loading="lazy"><figcaption>Digital Camera Photographer of the Year，登上 Telegraph.co.uk</figcaption></figure>
-    <figure><img src="assets/jesselton.jpg" alt="The Sense of Jesselton 個人攝影展" loading="lazy"><figcaption>2011 個人攝影展《爵士頓之舞》</figcaption></figure>
-    <figure><img src="assets/epson100.jpg" alt="EPSON 100 Photo Exhibition" loading="lazy"><figcaption>EPSON 100 Photo / Art Exhibition</figcaption></figure>
-    <figure><img src="assets/dance.jpg" alt="舞蹈表演攝影" loading="lazy"><figcaption>舞蹈表演</figcaption></figure>
-    <figure><img src="assets/music.jpg" alt="音樂活動攝影" loading="lazy"><figcaption>音樂活動 · KK Jazz Festival</figcaption></figure>
-    <figure><img src="assets/trap.jpg" alt="微電影陷阱 Trap" loading="lazy"><figcaption>2012 微電影《陷阱 Trap》拍攝現場與海報</figcaption></figure>
+    <figure><img src="assets/poty-2nd.jpg" alt="POTY 2010 Digital Vision 第二名" loading="lazy"><figcaption>POTY 2010 Digital Vision 第二名</figcaption></figure>
+    <figure><img src="assets/poty-telegraph.jpg" alt="Digital Camera Photographer of the Year，登上 Telegraph.co.uk" loading="lazy"><figcaption>Digital Camera Photographer of the Year，登上 Telegraph.co.uk</figcaption></figure>
+    <figure><img src="assets/jesselton.jpg" alt="2011 個人攝影展《爵士頓之舞》" loading="lazy"><figcaption>2011 個人攝影展《爵士頓之舞》</figcaption></figure>
+    <figure><img src="assets/epson100.jpg" alt="EPSON 100 Photo / Art Exhibition" loading="lazy"><figcaption>EPSON 100 Photo / Art Exhibition</figcaption></figure>
+    <figure><img src="assets/dance.jpg" alt="舞蹈表演" loading="lazy"><figcaption>舞蹈表演</figcaption></figure>
+    <figure><img src="assets/music.jpg" alt="音樂活動 · KK Jazz Festival" loading="lazy"><figcaption>音樂活動 · KK Jazz Festival</figcaption></figure>
+    <figure><img src="assets/trap.jpg" alt="2012 微電影《陷阱 Trap》拍攝現場與海報" loading="lazy"><figcaption>2012 微電影《陷阱 Trap》拍攝現場與海報</figcaption></figure>
   </div>
 </div></section>
 
 <section id="skills"><div class="wrap">
   <h2>技能</h2>
   <p class="sub">Skills</p>
-  <div class="skills" id="skillList"></div>
+  <div class="skills">
+    <div class="skill"><span>攝影 Photography <small>· 人像、活動、舞台</small></span><span class="lv" aria-label="5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+    <div class="skill"><span>電腦組裝與維修</span><span class="lv" aria-label="5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+    <div class="skill"><span>錄影 Videography <small>· DSLR、穩定器、直播</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>空拍 Drone</span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>修圖 Photo Edit <small>· Photoshop、Capture One、Bridge</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>說故事 Story-Telling</span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>剪輯 Video Editing <small>· Final Cut Pro、Premiere、DaVinci、After Effects</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+    <div class="skill"><span>AI 工作流程與軟體開發 <small>· Claude、MCP、TypeScript、Python、FFmpeg</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+  </div>
   <div class="two" style="margin-top:32px">
     <div>
       <h4 style="margin-top:0">語言</h4>
-      <div class="skills" style="grid-template-columns:1fr" id="langList"></div>
+      <div class="skills" style="grid-template-columns:1fr">
+        <div class="skill"><span>中文</span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
+        <div class="skill"><span>English</span><span class="lv" aria-label="3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
+        <div class="skill"><span>Bahasa Melayu</span><span class="lv" aria-label="1 / 5"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span></div>
+      </div>
     </div>
     <div>
       <h4 style="margin-top:0">興趣</h4>
@@ -355,11 +381,6 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px soli
 <footer><div class="wrap">馮煥曉 Lonny Pang Huan Hsiao · Kuala Lumpur · 最後更新 2026-11 · <a href="https://github.com/zero5phh-ops" target="_blank" rel="noopener">github.com/zero5phh-ops</a></div></footer>
 
 <script>
-const skills=[["攝影 Photography",5,"人像、活動、舞台"],["電腦組裝與維修",5,""],["錄影 Videography",4,"DSLR、穩定器、直播"],["空拍 Drone",4,""],["修圖 Photo Edit",4,"Photoshop、Capture One、Bridge"],["說故事 Story-Telling",4,""],["剪輯 Video Editing",4,"Final Cut Pro、Premiere、DaVinci、After Effects"],["AI 工作流程與軟體開發",4,"Claude、MCP、TypeScript、Python、FFmpeg"]];
-const langs=[["中文",4],["English",3],["Bahasa Melayu",1]];
-const row=([n,l,s])=>`<div class="skill"><span>${n}${s?` <small>· ${s}</small>`:""}</span><span class="lv" aria-label="${l} / 5">${[1,2,3,4,5].map(i=>`<i class="${i<=l?"on":""}"></i>`).join("")}</span></div>`;
-document.getElementById("skillList").innerHTML=skills.map(row).join("");
-document.getElementById("langList").innerHTML=langs.map(([n,l])=>row([n,l,""])).join("");
 const root=document.documentElement,key="resume-theme";
 try{const t=localStorage.getItem(key);if(t)root.dataset.theme=t}catch(e){}
 document.getElementById("theme").onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;root.dataset.theme=dark?"light":"dark";try{localStorage.setItem(key,root.dataset.theme)}catch(e){}};

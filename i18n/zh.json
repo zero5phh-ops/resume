@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "title": "馮煥曉 Lonny Pang · 履歷",
+    "description": "馮煥曉 Lonny Pang Huan Hsiao — 導演、攝影師、內容創作者，也自己寫 AI 內容製作工具。"
+  },
+  "nav": {
+    "brand": "馮煥曉 Lonny",
+    "software": "軟體作品",
+    "experience": "經歷",
+    "awards": "獎項展覽",
+    "films": "影像作品",
+    "photo": "攝影",
+    "skills": "技能",
+    "theme": "切換深淺色"
+  },
+  "hero": {
+    "name": "馮煥曉",
+    "sub": "Lonny Pang Huan Hsiao",
+    "lead": "拍了二十年照片和影片的導演與攝影師。現在在 SOL Integrative Wellness Centre 帶內容團隊，並親手和 AI 一起寫出整套內容製作系統：從寫腳本、拍攝、剪輯到排程發佈。",
+    "loc": "Kuala Lumpur, Malaysia",
+    "born": "出生於 Kota Kinabalu, Sabah",
+    "langs": "中文 · English · Bahasa Melayu",
+    "flickr": "Flickr 攝影作品",
+    "badge": "Digital Vision 第二名"
+  },
+  "sw": {
+    "title": "軟體作品",
+    "sub": "2026 年起和 Claude 結對開發。私有 repo 寫細節，公開 repo 直接附連結。"
+  },
+  "sol": {
+    "meta": "2026-08 至今 · 約 2,000 個 commits · 公司內部正式上線",
+    "desc": "SOL Integrative Wellness Centre 的醫生內容生產系統：一句話寫好一整個月的腳本 → 醫生用手機提詞器拍攝 → 自動初剪 → 審片 → 排程發佈到社群 → 一鍵出 KPI。全公司非技術同事每天在用，介面中／英／馬來三語。",
+    "open": "打開 SOL Studio Landing Page",
+    "features": [
+      "<b>Create Script</b>：輸入「Dr Vig November」，AI 用醫生本人的語氣寫完整個月，附 Hook、醫療聲明檢查；也能解析行銷部門的 PPT 月計劃",
+      "<b>手機拍攝 App</b>（iOS / Android，Expo）：分鏡卡片 + 滾動提詞器，拍完自動上傳、歸檔到共享盤",
+      "<b>AI 自動初剪</b>：剪掉停頓和重拍、Whisper 對齊字幕、B-roll 配對、動態數字重點、3 秒 Hook、封面",
+      "<b>Pass to AI</b>：一句話改片，工作排隊到各台 Mac 上的 AI helper 執行；可匯出 CapCut 工程檔",
+      "<b>瀏覽器時間線剪輯器</b>：多軌、調色、人聲分離、去背、轉場、16 種字幕、AI-cut 即時看著 AI 一步步剪",
+      "<b>Podcast 多機位</b>：多台相機和麥克風按聲音自動對齊，判斷誰在說話自動切鏡",
+      "<b>Design 板</b>：FB / IG 圖文由 AI 寫稿，Auto Design 一次出三版可分層編輯的 PSD",
+      "<b>醫生 AI 配音</b>：內部克隆聲音做旁白，電話號碼逐位唸、英馬混語照原文念",
+      "<b>GHL 排程發佈</b>：FB / IG / TikTok / YouTube，留言盯梢有新回覆就響鈴",
+      "<b>素材庫 3,000+ 支成片</b>、Dashboard 看板、Content KPI Excel 報表、Webinar 與客戶名單",
+      "<b>權限與隱私</b>：角色／部門權限、聊天只認成員身份、病人同意書只給授權的人",
+      "<b>MCP 伺服器</b>：Claude 等外部 AI 可以直接在 App 裡建任務、寫腳本、看時間線"
+    ],
+    "caption": "SOL Studio 公開的 landing page（登入後才是工作系統）。前身是 AI-Content-studio（2026-08，MVP：Web 建腳本 → 手機提詞拍攝 → 自動後期）。"
+  },
+  "onset": {
+    "meta": "2026-11 開始 · 全新從零重寫 · 開發中",
+    "desc": "給一般內容創作者的個人工作室 App：寫腳本、拍攝、剪輯、做封面和貼文都在同一個地方，任何畫面右下角都能叫 AI（Ask Onset）幫忙，而且能看著 AI 一步一步做、隨時按停。目標平台 macOS、Windows、iOS、Android。",
+    "features": [
+      "<b>AI Onset 首次設定</b>：一問一答設定頻道風格，自動整理成腳本／採訪／設計／剪輯四種風格（內建 36 種）",
+      "<b>AI Script</b>：短影音、長片、採訪問題單、Podcast rundown、旁白稿五種格式，直接送去拍攝",
+      "<b>Recording</b>：電腦鏡頭或外接相機 + 提詞器，可調速度與字體",
+      "<b>CapCut 式剪輯器</b>：關鍵幀、39 種轉場、遮罩、LUT（含 HLG / Apple Log / S-Log3 → 709）、變速曲線、防抖",
+      "<b>字幕</b>：Whisper 語音轉文字、20 種字幕樣式、13 種字體、卡拉 OK 逐字高亮",
+      "<b>Auto-cut 與 AI Edit</b>：自動剪停頓與重拍，AI 照章節逐段剪，每一步都在時間線上即時顯示",
+      "<b>聲音</b>：降噪、Demucs 人聲／背景分離、AI 配音、音樂與音效、自動壓低背景音",
+      "<b>Podcast 多機位</b>與 <b>2 小時以上長片</b>：自動對齊、按講者切鏡、分章節處理",
+      "<b>封面與圖片貼文</b>：35 種版型、44 種設計操作，FB / IG / 小紅書 / TikTok / X / Threads",
+      "<b>輸出</b>：MP4 / MOV / MP3 / WAV，並可匯出 CapCut、FCPXML、Premiere XML、FilmCraft 工程檔",
+      "<b>動畫模式</b>：不用拍片，用圖形、文字動畫、Godot 2D／3D 做影片",
+      "<b>MCP</b>：外部 AI 可以在 Onset 開著時直接操作剪輯"
+    ],
+    "tauri": "Tauri（規劃中）",
+    "cap_editing": "Editing：左邊素材分類、中間預覽、右邊屬性與 AI Edit、下面多軌時間線。",
+    "cap_start": "首頁只有五個入口，右下角是 Ask Onset。",
+    "cap_setup": "第一次使用：AI Onset 一題一題問出你的風格。",
+    "cap_styles": "設定完成，自動產生四種風格。",
+    "cap_script": "Create Script：左邊和 AI 對話，右邊是腳本。",
+    "cap_design": "開工前先畫的 macOS 版設計稿。"
+  },
+  "vpipe": {
+    "desc": "在 Mac 本機跑 MiniMax H3（有聲影片）和 Qwen Image 2.1 Turbo（圖片）的小網頁，不用雲端、不用 credits。內建設定檢查和一鍵下載模型、AI 優化 prompt、人物 LoRA、排隊、2 倍放大；用 Neural Engine 分擔運算，M3 Air 上 5 秒影片從約 73 分鐘降到約 35 分鐘。"
+  },
+  "stock": {
+    "meta": "2026-10 · 個人用",
+    "desc": "美股與馬股（Bursa Malaysia）研究儀表板：市場概況、個股 K 線與新聞、持股燈號與白話建議、回測、模擬帳戶，以及四個 AI 助理每天寫的繁體中文簡報。Python + Streamlit，只在本機執行。"
+  },
+  "games": {
+    "title": "網頁遊戲與小作品（公開，可直接玩）",
+    "items": [
+      {"url": "https://zero5phh-ops.github.io/galaxy-voyage/", "t": "銀河系漫遊 · Galaxy Voyage", "d": "在瀏覽器裡飛過銀河系"},
+      {"url": "https://zero5phh-ops.github.io/blackhole-voyage/", "t": "黑洞漫遊 · Black Hole Voyage", "d": "3D 黑洞視覺體驗"},
+      {"url": "https://zero5phh-ops.github.io/space-rocket-game/", "t": "3D Space Rocket Shooter", "d": "3D 太空射擊遊戲"},
+      {"url": "https://zero5phh-ops.github.io/neon-kart/", "t": "霓虹卡丁車 · Neon Kart", "d": "霓虹風格賽車"},
+      {"url": "https://zero5phh-ops.github.io/pixel-jump-quest/", "t": "像素跳躍大冒險", "d": "20 關像素平台跳躍"},
+      {"url": "https://zero5phh-ops.github.io/neon-tetris/", "t": "霓虹方塊", "d": "霓虹風格方塊消除"},
+      {"url": "https://zero5phh-ops.github.io/test/", "t": "Mobby 日語學習樂園", "d": "給小朋友的日語學習網頁"}
+    ]
+  },
+  "exp": {
+    "title": "工作經歷",
+    "sub": "Working Experience",
+    "jobs": [
+      {"now": true, "yr": "2023 — 至今", "role": "內容團隊 · 影像 · AI 系統開發", "org": "SOL Integrative Wellness Centre, Kuala Lumpur", "p": "負責醫生影片內容的拍攝與製作；2026 年起親手開發 SOL Studio，把整個內容生產流程搬進一套 AI 系統。"},
+      {"yr": "2024", "role": "自由接案 · 影片製作", "org": "FCB Malaysia（廣告公司）× RHB Bank", "p": "為 RHB Bank 製作參賽影片：2024 MDA（D Awards）《Mobile Banking: Less Time Banking, More Time Bonding》，以及 2024 APAC Effies 參賽影片。"},
+      {"yr": "2022 — 2023", "role": "Film Director", "org": "Fu Gong Plantation Sdn Bhd 富宮種植", "p": "榴蓮種植紀錄片。"},
+      {"yr": "2020 — 2022", "role": "Film Director", "org": "Taiwan Buddhist Tzu-Chi Foundation Malaysia 慈濟基金會（吉隆坡）", "p": "「大馬慈濟情」紀錄片系列，於大愛電視播出。"},
+      {"yr": "2017 — 2019", "role": "Content Creator", "org": "深圳曠時文化傳播有限公司", "p": "深圳航空、深圳地鐵、佳兆業、鹽田國際、騰訊樂高等品牌影片。"},
+      {"yr": "2014 — 2016", "role": "CEO", "org": "Guangzhou YiCai Art Gallery House 廣州懿彩文化有限公司", "p": ""},
+      {"yr": "2013 — 2014", "role": "Creative Director", "org": "Guangzhou Jintai Photography 今太攝影", "p": ""},
+      {"yr": "2004 — 2012", "role": "Founder · Marketing &amp; Content Creator", "org": "Feeltone Inc（沸騰創作網 Feeltone Creative Platform）", "p": ""}
+    ],
+    "edu_title": "學歷",
+    "edu": "Informatics Technology College — Computer Science Diploma（1999）"
+  },
+  "aw": {
+    "title": "獎項、展覽與作品年表",
+    "sub": "Awards, Exhibitions &amp; Milestones",
+    "cols": [
+      [
+        {"y": "2004", "t": "成立沸騰創作網 Feeltone Creative Platform（創作交流網）"},
+        {"y": "2007", "t": "Miss Sabah Malaysia 沙巴州小姐選拔專屬攝影師"},
+        {"y": "2007", "t": "Digital Camera Magazine Malaysia 2007 Hot Choice"},
+        {"y": "2008", "t": "Digital Camera World Hot Choice 世界數碼月刊最佳編輯挑選"},
+        {"y": "2009", "t": "Borneo KK Jazz Festival 婆羅洲爵士音樂嘉年華專屬攝影師"},
+        {"y": "2009", "t": "Digital Camera Magazine UK 專題刊登；作品登上 Telegraph.co.uk"},
+        {"y": "2010", "t": "POTY Photographer of the Year 2010 Digital Vision 第二名", "hl": true},
+        {"y": "2010", "t": "Panasonic Lumix Station Sabah 攝影工作坊講師"},
+        {"y": "2010", "t": "Borneo Bond Art Festival 原建藝術節作品展覽"},
+        {"y": "2010", "t": "第一屆個人攝影堂講座"},
+        {"y": "2011", "t": "Sony Center Sabah 攝影工作坊講師"}
+      ],
+      [
+        {"y": "2011", "t": "個人攝影展《The Sense of Jesselton 爵士頓之舞》", "hl": true},
+        {"y": "2011", "t": "EPSON 100 Photo / Art Exhibition"},
+        {"y": "2011", "t": "第二屆個人攝影堂講座"},
+        {"y": "2012", "t": "Borneo Bond Art Festival 原建藝術節作品展覽"},
+        {"y": "2012", "t": "崇正學院攝影課程講座講師"},
+        {"y": "2012", "t": "第一部微電影預告《陷阱 Trap》"},
+        {"y": "2013", "t": "廣州第十屆藝術大爆炸個人攝影作品展"},
+        {"y": "2014", "t": "微電影《對不起 I'm Sorry》獲 KK International Film Festival 評審獎", "hl": true},
+        {"y": "2015", "t": "香港藝術家李懿殷印度之旅個人影片專訪"},
+        {"y": "2016", "t": "深圳新店網美食節目製作"},
+        {"y": "2017", "t": "深圳地鐵 6 號線、8 號線常規紀錄拍攝"},
+        {"y": "2018", "t": "深圳佳兆業活動拍攝"},
+        {"y": "2019", "t": "深圳騰訊樂高微電影；亞庇新媒體「小人物大夢想」系列"},
+        {"y": "2020", "t": "慈濟基金會「大馬慈濟情」紀錄片系列"},
+        {"y": "2022", "t": "富宮種植 — 榴蓮種植紀錄片"}
+      ]
+    ]
+  },
+  "films": {
+    "title": "影像作品",
+    "sub": "2026-11 重新檢查過，以下連結都還能打開。",
+    "tzuchi": "大馬慈濟情 紀錄片系列（大愛電視）",
+    "brand": "微電影與品牌影片",
+    "tzuchi_items": [
+      {"url": "https://www.youtube.com/watch?v=A0ICXfiE0Lk", "yt": "A0ICXfiE0Lk", "t": "守護者", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/zaRsn41oajE", "yt": "zaRsn41oajE", "t": "一起戰疫", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/s7nwF3-RXII", "yt": "s7nwF3-RXII", "t": "把遺憾留給昨天", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/jDoRc7CG8sw", "yt": "jDoRc7CG8sw", "t": "80 歲的願望", "d": "YouTube · 2020"},
+      {"url": "https://youtu.be/UlIcvxULwbs", "yt": "UlIcvxULwbs", "t": "「疫」起挺醫去", "d": "YouTube · 2020"},
+      {"url": "https://youtu.be/lSCXmtg-GfE", "yt": "lSCXmtg-GfE", "t": "友善農耕探索之旅", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/3HhL-2FRzrw", "yt": "3HhL-2FRzrw", "t": "拔苦與樂的承擔", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/6MDd0LfYeZM", "yt": "6MDd0LfYeZM", "t": "漁米之鄉是我家，環保靠大家", "d": "YouTube · 2021"},
+      {"url": "https://youtu.be/B_QRKShlvl0", "yt": "B_QRKShlvl0", "t": "失根的民族", "d": "YouTube · 2021"}
+    ],
+    "brand_items": [
+      {"url": "https://v.youku.com/v_show/id_XMTM5MDU3MTA0NA==.html", "ph": "優酷", "t": "對不起 I'm Sorry", "d": "KK International Film Festival 2014 評審獎"},
+      {"url": "https://v.youku.com/v_show/id_XNTc1NDk1NzM2.html", "ph": "優酷", "t": "陷阱 Trap（預告片）", "d": "2012 第一部微電影"},
+      {"url": "https://v.youku.com/v_show/id_XMTYwNTI3NTkxMg==.html", "ph": "優酷", "t": "微廣告：夢想進行中 Chasing Dream", "d": "優酷"},
+      {"url": "https://youtu.be/Pvk9rN0Yn1o", "yt": "Pvk9rN0Yn1o", "t": "藝術家訪問 30 秒 CV（李懿殷）", "d": "YouTube"},
+      {"url": "https://v.youku.com/v_show/id_XMTQwMDAwMDk4OA==.html", "ph": "優酷", "t": "藝術家訪問完整版：Jasmine 印度之旅", "d": "優酷 · 2015"},
+      {"url": "https://mp.weixin.qq.com/s/jqywWBz2MKh6MZTx7roetQ", "ph": "微信", "t": "深圳航空安全飛行影片", "d": "曠時文化出品 · 2019"},
+      {"url": "https://mp.weixin.qq.com/s/QmqfsfxPg0cTsU4Vl0kI3Q", "ph": "微信", "t": "佳兆業微電影", "d": "校招宣傳片"},
+      {"url": "https://mp.weixin.qq.com/s/tWBzx8dxLDFo-E7k_P-HjQ", "ph": "微信", "t": "深圳地鐵 — 有軌電車微電影", "d": "曠時文化出品"},
+      {"url": "https://mp.weixin.qq.com/s/F8T3cMDx1PNYg7RP3FfHVA", "ph": "微信", "t": "深圳鹽田國際 MOL Triumph 首航", "d": "曠時文化出品 · 2017"}
+    ]
+  },
+  "photo": {
+    "title": "攝影",
+    "sub": "更多作品在 <a href=\"https://www.flickr.com/photos/zero5phh\" target=\"_blank\" rel=\"noopener\">Flickr</a>。",
+    "items": [
+      {"img": "poty-2nd.jpg", "cap": "POTY 2010 Digital Vision 第二名"},
+      {"img": "poty-telegraph.jpg", "cap": "Digital Camera Photographer of the Year，登上 Telegraph.co.uk"},
+      {"img": "jesselton.jpg", "cap": "2011 個人攝影展《爵士頓之舞》"},
+      {"img": "epson100.jpg", "cap": "EPSON 100 Photo / Art Exhibition"},
+      {"img": "dance.jpg", "cap": "舞蹈表演"},
+      {"img": "music.jpg", "cap": "音樂活動 · KK Jazz Festival"},
+      {"img": "trap.jpg", "cap": "2012 微電影《陷阱 Trap》拍攝現場與海報"}
+    ]
+  },
+  "skills": {
+    "title": "技能",
+    "sub": "Skills",
+    "items": [
+      {"n": "攝影 Photography", "l": 5, "s": "人像、活動、舞台"},
+      {"n": "電腦組裝與維修", "l": 5, "s": ""},
+      {"n": "錄影 Videography", "l": 4, "s": "DSLR、穩定器、直播"},
+      {"n": "空拍 Drone", "l": 4, "s": ""},
+      {"n": "修圖 Photo Edit", "l": 4, "s": "Photoshop、Capture One、Bridge"},
+      {"n": "說故事 Story-Telling", "l": 4, "s": ""},
+      {"n": "剪輯 Video Editing", "l": 4, "s": "Final Cut Pro、Premiere、DaVinci、After Effects"},
+      {"n": "AI 工作流程與軟體開發", "l": 4, "s": "Claude、MCP、TypeScript、Python、FFmpeg"}
+    ],
+    "lang_title": "語言",
+    "langs": [
+      {"n": "中文", "l": 4},
+      {"n": "English", "l": 3},
+      {"n": "Bahasa Melayu", "l": 1}
+    ],
+    "hobby_title": "興趣",
+    "hobby": "作曲、彈奏樂器（吉他、貝斯、鋼琴）、攝影、慢跑、登山、旅行。"
+  },
+  "footer": "馮煥曉 Lonny Pang Huan Hsiao · Kuala Lumpur · 最後更新 2026-11"
+}

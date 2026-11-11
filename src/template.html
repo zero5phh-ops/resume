@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="{{@htmllang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+{{@alternates}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{{@fonts}}" rel="stylesheet">
+<style>
+{{@css}}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="#top">{{nav.brand}}</a>
+  <a href="#software">{{nav.software}}</a>
+  <a href="#experience">{{nav.experience}}</a>
+  <a href="#awards">{{nav.awards}}</a>
+  <a href="#films">{{nav.films}}</a>
+  <a href="#photo">{{nav.photo}}</a>
+  <a href="#skills">{{nav.skills}}</a>
+  {{@langs}}
+  <button class="theme" id="theme" type="button" aria-label="{{nav.theme}}">◐</button>
+</div></nav>
+
+<header class="wrap hero" id="top">
+  <div>
+    <div class="eyebrow">Director · Photographer · AI Workflow Builder</div>
+    <h1>{{hero.name}}<small>{{hero.sub}}</small></h1>
+    <p class="lead">{{hero.lead}}</p>
+    <div class="facts">
+      <span class="chip">📍 {{hero.loc}}</span>
+      <span class="chip">{{hero.born}}</span>
+      <span class="chip">{{hero.langs}}</span>
+    </div>
+    <div class="links">
+      <a class="btn primary" href="https://github.com/zero5phh-ops" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/lonny-pang-a0172687/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://www.instagram.com/zero5phh/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn" href="https://www.facebook.com/zero5phh" target="_blank" rel="noopener">Facebook</a>
+      <a class="btn" href="https://www.flickr.com/photos/zero5phh" target="_blank" rel="noopener">{{hero.flickr}}</a>
+    </div>
+  </div>
+  <div class="portrait">
+    <img src="assets/portrait.jpg" alt="{{hero.name}} Lonny Pang">
+    <div class="badge"><b>2010</b>Photographer of the Year<br>{{hero.badge}}</div>
+  </div>
+</header>
+
+<section id="software"><div class="wrap">
+  <h2>{{sw.title}}</h2>
+  <p class="sub">{{sw.sub}}</p>
+
+  <article class="card project">
+    <div class="phead"><h3>SOL Studio</h3><span class="vis priv">PRIVATE</span><span class="meta">{{sol.meta}}</span></div>
+    <p class="pdesc">{{sol.desc}}</p>
+    <div class="links" style="margin-bottom:18px"><a class="btn primary" href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener">{{sol.open}} ↗</a></div>
+    <ul class="feat">
+{{@list:sol.features}}
+    </ul>
+    <div class="stack"><span>Next.js</span><span>Fastify</span><span>Prisma / SQLite</span><span>Expo (React Native)</span><span>FFmpeg</span><span>faster-whisper</span><span>Claude API / Claude CLI</span><span>HeyGen</span><span>GoHighLevel API</span><span>Docker</span><span>Cloudflare Tunnel</span><span>MCP</span></div>
+    <figure class="shot"><a href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener"><img src="assets/sol-studio-landing.jpg" alt="SOL Studio landing page" loading="lazy"></a><figcaption>{{sol.caption}}</figcaption></figure>
+  </article>
+
+  <article class="card project">
+    <div class="phead"><h3>Onset 3.0</h3><span class="vis priv">PRIVATE</span><span class="meta">{{onset.meta}}</span></div>
+    <p class="pdesc">{{onset.desc}}</p>
+    <ul class="feat">
+{{@list:onset.features}}
+    </ul>
+    <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>WebGL / GLSL</span><span>MCP</span><span>{{onset.tauri}}</span></div>
+    <div class="shots">
+      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>{{onset.cap_editing}}</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset 3.0 Start" loading="lazy"><figcaption>{{onset.cap_start}}</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-setup.jpg" alt="AI Onset" loading="lazy"><figcaption>{{onset.cap_setup}}</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-styles.jpg" alt="Styles" loading="lazy"><figcaption>{{onset.cap_styles}}</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-script.jpg" alt="AI Script" loading="lazy"><figcaption>{{onset.cap_script}}</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-design-overview.png" alt="Onset 3.0 design" loading="lazy"><figcaption>{{onset.cap_design}}</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="card project">
+    <div class="phead"><h3>vpipe工作台 · vpipe Workbench</h3><span class="vis pub">PUBLIC · MIT</span><span class="meta">2026-11</span></div>
+    <p class="pdesc">{{vpipe.desc}}</p>
+    <div class="links"><a class="btn primary" href="https://github.com/zero5phh-ops/vpipe-workbench" target="_blank" rel="noopener">github.com/zero5phh-ops/vpipe-workbench ↗</a></div>
+  </article>
+
+  <article class="card project">
+    <div class="phead"><h3>AI Stock Research Desk</h3><span class="vis priv">PRIVATE</span><span class="meta">{{stock.meta}}</span></div>
+    <p class="pdesc">{{stock.desc}}</p>
+  </article>
+
+  <h4>{{games.title}}</h4>
+  <div class="grid3">
+{{@games}}
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>{{exp.title}}</h2>
+  <p class="sub">{{exp.sub}}</p>
+  <ul class="timeline">
+{{@jobs}}
+  </ul>
+  <h4>{{exp.edu_title}}</h4>
+  <p>{{exp.edu}}</p>
+</div></section>
+
+<section id="awards"><div class="wrap">
+  <h2>{{aw.title}}</h2>
+  <p class="sub">{{aw.sub}}</p>
+  <div class="two">
+    <ul class="awards">
+{{@awards:0}}
+    </ul>
+    <ul class="awards">
+{{@awards:1}}
+    </ul>
+  </div>
+</div></section>
+
+<section id="films"><div class="wrap">
+  <h2>{{films.title}}</h2>
+  <p class="sub">{{films.sub}}</p>
+  <h4>{{films.tzuchi}}</h4>
+  <div class="vids">
+{{@vids:tzuchi}}
+  </div>
+  <h4>{{films.brand}}</h4>
+  <div class="vids">
+{{@vids:brand}}
+  </div>
+</div></section>
+
+<section id="photo"><div class="wrap">
+  <h2>{{photo.title}}</h2>
+  <p class="sub">{{photo.sub}}</p>
+  <div class="gallery">
+{{@gallery}}
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>{{skills.title}}</h2>
+  <p class="sub">{{skills.sub}}</p>
+  <div class="skills">
+{{@skills}}
+  </div>
+  <div class="two" style="margin-top:32px">
+    <div>
+      <h4 style="margin-top:0">{{skills.lang_title}}</h4>
+      <div class="skills" style="grid-template-columns:1fr">
+{{@langlevels}}
+      </div>
+    </div>
+    <div>
+      <h4 style="margin-top:0">{{skills.hobby_title}}</h4>
+      <p>{{skills.hobby}}</p>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">{{footer}} · <a href="https://github.com/zero5phh-ops" target="_blank" rel="noopener">github.com/zero5phh-ops</a></div></footer>
+
+<script>
+const root=document.documentElement,key="resume-theme";
+try{const t=localStorage.getItem(key);if(t)root.dataset.theme=t}catch(e){}
+document.getElementById("theme").onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;root.dataset.theme=dark?"light":"dark";try{localStorage.setItem(key,root.dataset.theme)}catch(e){}};
+</script>
+</body>
+</html>
