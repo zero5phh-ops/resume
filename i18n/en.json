@@ -48,29 +48,30 @@
     "caption": "The public SOL Studio landing page (the working system sits behind login). It grew out of AI-Content-studio (Aug 2026, MVP: web scripting → phone teleprompter filming → automatic post-production)."
   },
   "onset": {
-    "meta": "Started Nov 2026 · Full rewrite from scratch · In development",
-    "desc": "A personal studio app for everyday creators: scripting, filming, editing, covers and posts all in one place. Ask Onset, in the bottom-right of every screen, brings in AI help — and you can watch it work step by step and stop it anytime. Targets macOS, Windows, iOS and Android.",
+    "meta": "Started 10 Nov 2026 · 327 commits in 6 days · Mac and iPhone / iPad apps running on my own devices · not yet released",
+    "desc": "A creator studio rewritten from scratch: scripting, shooting, editing, covers and posts, and AI generation in one app. One codebase ships as a Mac app and an iPhone / iPad app that sync offline-first. AI Onset sits on every screen: it sees the screen, searches the web, talks by voice and can operate every feature in the app, step by step in front of you, with stop and whole-run undo.",
     "features": [
-      "<b>AI Onset first-run setup</b>: a short Q&amp;A sets your channel style, auto-organised into script / interview / design / editing styles (36 built in)",
-      "<b>AI Script</b>: five formats — short video, long-form, interview questions, podcast rundown, voiceover — sent straight to filming",
-      "<b>Recording</b>: webcam or external camera + teleprompter with adjustable speed and font",
-      "<b>CapCut-style editor</b>: keyframes, 39 transitions, masks, LUTs (incl. HLG / Apple Log / S-Log3 → 709), speed curves, stabilisation",
-      "<b>Captions</b>: Whisper speech-to-text, 20 caption styles, 13 fonts, karaoke word-by-word highlighting",
-      "<b>Auto-cut and AI Edit</b>: auto-removes pauses and retakes; AI edits chapter by chapter, every step shown live on the timeline",
-      "<b>Audio</b>: noise reduction, Demucs voice/background separation, AI voiceover, music and SFX, auto-ducking",
-      "<b>Multicam podcasts</b> and <b>2-hour+ long-form</b>: auto-sync, speaker-based switching, chapter-by-chapter processing",
-      "<b>Covers and image posts</b>: 35 layouts, 44 design operations, for FB / IG / Xiaohongshu / TikTok / X / Threads",
-      "<b>Export</b>: MP4 / MOV / MP3 / WAV, plus CapCut, FCPXML, Premiere XML and FilmCraft project files",
-      "<b>Animation mode</b>: make videos without filming, using graphics, text animation and Godot 2D/3D",
-      "<b>MCP</b>: external AIs can drive the editor directly while Onset is open"
+      "<b>Mac app and iPhone / iPad app</b> (Tauri 2 + Swift): one codebase, three shells; on the phone, AVFoundation export, Apple Speech dictation, Apple Vision cut-outs and Image Playground",
+      "<b>Sync and relay</b>: pair by QR code, offline-first, both versions kept when both sides change; on 4G / 5G the phone reaches the Mac at home through a Cloudflare Worker + Durable Objects, end-to-end sealed",
+      "<b>AI Onset</b>: an assistant on every page that sees the screen and pointer, searches the web and talks; every feature lives in one action catalogue, and 1–10 agents can work at once",
+      "<b>One-click MCP</b>: Claude Desktop, Claude Code, ChatGPT / Codex, Cursor and other AI apps can drive Onset, every step shown on screen",
+      "<b>Create Script</b>: the AI writes in six visible steps — angle, hook, draft in your style, platform check, spoken / de-AI pass, risk check (medical claims, copying); 9 formats, 36 styles",
+      "<b>Recording</b>: a teleprompter that follows your voice (5 languages), voice commands, Bluetooth remote keys, countdown; an iPhone as the Mac's camera or as a remote camera for multi-cam",
+      "<b>CapCut-style editor</b>: keyframes, 39 transitions, masks, LUTs and HLG / Log → 709, speed curves, 20 caption looks with karaoke, dozens of kinetic-text styles, Three.js / Godot graphics, built-in royalty-free music and SFX",
+      "<b>Auto-cut and AI Edit</b>: hears the whole video once, finds retakes, edits chapter by chapter, adds chapter cards and punch-ins; long videos become Shorts",
+      "<b>Hours-long multi-cam podcasts</b>: read straight from an external drive, synced by sound, cut to whoever is speaking, exported at a steady loudness (−14 / −16 LUFS)",
+      "<b>Make it without shooting</b>: AI research with free-licence stock; local generation (MiniMax H3 video, Qwen Image, your own LoRAs); cloud-generation plug-in",
+      "<b>Cover and post design</b>: 35 layouts, curved text, carousels; the iPhone lays posts out on its own, no Mac needed",
+      "<b>Style packs and skins</b>: one pack carries captions, layouts, fonts and music, and can even rename and recolour the app (Ed25519-signed); projects share as .onsetpack files",
+      "<b>Accounts and licences</b>: a Cloudflare Worker + D1 service for sign-up, approval and per-device licences; the UI in 6 languages (Traditional / Simplified Chinese, English, Malay, Japanese, Korean)",
+      "<b>Export</b>: MP4 / MOV / MP3 / WAV, plus CapCut, FCPXML, Premiere XML and FilmCraft project files"
     ],
-    "tauri": "Tauri (planned)",
-    "cap_editing": "Editing: media bins on the left, preview in the centre, properties and AI Edit on the right, multitrack timeline below.",
-    "cap_start": "The home screen has just five entry points, with Ask Onset at the bottom right.",
-    "cap_setup": "First run: AI Onset works out your style one question at a time.",
-    "cap_styles": "Setup complete — four styles generated automatically.",
-    "cap_script": "Create Script: chat with AI on the left, script on the right.",
-    "cap_design": "macOS design mockup drawn before development began."
+    "cap_editing": "Editing: Auto-cut hears the whole clip once and makes the captions at the same time (demo clip).",
+    "cap_start": "Mac Start screen: six entry points, AI Onset in the corner.",
+    "cap_script": "Create Script: AI Onset writing for real, with each step and the risk check listed on the left.",
+    "cap_recording": "Recording: the teleprompter over the camera picture, able to follow your voice.",
+    "cap_phone": "iPhone app: simple editor, post design, Start, the generation library synced with the Mac, prompt steps for other AI platforms.",
+    "cap_ipad": "iPad: the post designer (simulator)."
   },
   "vpipe": {
     "desc": "A small web app that runs MiniMax H3 (video with sound) and Qwen Image 2.1 Turbo (images) locally on a Mac — no cloud, no credits. Built-in setup checks and one-click model download, AI prompt enhancement, character LoRAs, queueing and 2× upscaling; offloads work to the Neural Engine, cutting a 5-second video on an M3 Air from ~73 to ~35 minutes."

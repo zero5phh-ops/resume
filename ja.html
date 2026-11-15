@@ -204,30 +204,32 @@ html[lang=en] h1,html[lang=en] h2,html[lang=ms] h1,html[lang=ms] h2{font-family:
   </article>
 
   <article class="card project">
-    <div class="phead"><h3>Onset 3.0</h3><span class="vis priv">PRIVATE</span><span class="meta">2026-11 開始 · ゼロから全面再設計 · 開発中</span></div>
-    <p class="pdesc">一般のコンテンツクリエイター向け個人スタジオアプリ。脚本・撮影・編集・サムネイルや投稿画像の制作を一か所で完結。どの画面でも右下から AI（Ask Onset）を呼び出せ、AI の作業を一歩ずつ確認しながらいつでも停止可能。対応予定プラットフォームは macOS、Windows、iOS、Android。</p>
+    <div class="phead"><h3>Onset 3.0</h3><span class="vis priv">PRIVATE</span><span class="meta">2026-11-10 開始 · 6日間で327コミット · Mac と iPhone / iPad アプリを自分の端末で運用中 · 未公開</span></div>
+    <p class="pdesc">ゼロから書き直したクリエイター向け制作スタジオ。台本、撮影、編集、カバーと投稿のデザイン、AI 生成をひとつのアプリで。ひとつのコードから Mac アプリと iPhone / iPad アプリを作り、オフラインファーストで同期。どの画面にもいる AI Onset は画面を見て、Web を調べ、音声で会話し、アプリのすべての機能を一歩ずつ目の前で操作。いつでも停止・まとめて取り消し可能。</p>
     <ul class="feat">
-      <li><b>AI Onset 初期設定</b>：一問一答でチャンネルのスタイルを設定し、脚本／インタビュー／デザイン／編集の4種のスタイルに自動整理（プリセット36種）</li>
-      <li><b>AI Script</b>：ショート動画、長尺動画、インタビュー質問リスト、Podcast rundown、ナレーション原稿の5形式に対応し、そのまま撮影へ</li>
-      <li><b>Recording</b>：PC カメラまたは外部カメラ＋プロンプター。速度とフォントを調整可能</li>
-      <li><b>CapCut 風エディタ</b>：キーフレーム、39種のトランジション、マスク、LUT（HLG / Apple Log / S-Log3 → 709 対応）、速度カーブ、手ぶれ補正</li>
-      <li><b>字幕</b>：Whisper による音声文字起こし、20種の字幕スタイル、13種のフォント、カラオケ風の逐語ハイライト</li>
-      <li><b>Auto-cut と AI Edit</b>：間や撮り直しを自動カットし、AI がチャプターごとに編集。各ステップをタイムライン上にリアルタイム表示</li>
-      <li><b>オーディオ</b>：ノイズ除去、Demucs によるボーカル／背景分離、AI ナレーション、音楽と効果音、BGM の自動ダッキング</li>
-      <li><b>Podcast マルチカメラ</b>と<b>2時間超の長尺動画</b>：自動同期、話者に応じたカメラ切替、チャプター単位の処理</li>
-      <li><b>サムネイルと画像投稿</b>：35種のレイアウト、44種のデザイン操作。FB / IG / 小紅書 / TikTok / X / Threads に対応</li>
-      <li><b>書き出し</b>：MP4 / MOV / MP3 / WAV。CapCut、FCPXML、Premiere XML、FilmCraft のプロジェクトファイルにも対応</li>
-      <li><b>アニメーションモード</b>：撮影不要。図形、テキストアニメーション、Godot 2D／3D で動画を制作</li>
-      <li><b>MCP</b>：Onset の起動中、外部 AI が直接編集を操作可能</li>
+      <li><b>Mac アプリと iPhone / iPad アプリ</b>（Tauri 2 + Swift）：ひとつのコードに3つの外殻。iPhone では AVFoundation 書き出し、Apple Speech 音声認識、Apple Vision 切り抜き、Image Playground</li>
+      <li><b>同期とリレー</b>：QR コードでペアリング、オフラインファースト、両側で変更すれば両方の版を保持。4G / 5G でも Cloudflare Worker + Durable Objects 経由で自宅の Mac にエンドツーエンド暗号化で接続</li>
+      <li><b>AI Onset</b>：全ページにいる AI アシスタント。画面とポインタを見て、Web 検索し、音声で話す。全機能をひとつのアクション一覧にまとめ、1〜10 のエージェントが同時に作業</li>
+      <li><b>ワンクリック MCP</b>：Claude Desktop、Claude Code、ChatGPT / Codex、Cursor などの外部 AI が Onset を操作。各ステップは画面に表示</li>
+      <li><b>Create Script</b>：AI が見える6段階で執筆 — 切り口、フック、スタイル通りの初稿、プラットフォーム確認、話し言葉化・AI っぽさ除去、リスク確認（医療表現・盗用）。9形式、36スタイル</li>
+      <li><b>Recording</b>：声に合わせて進むプロンプター（5言語）、音声コマンド、Bluetooth リモコン、カウントダウン。iPhone を Mac のカメラやマルチカム用リモートカメラとして使用</li>
+      <li><b>CapCut 風エディター</b>：キーフレーム、39種のトランジション、マスク、LUT と HLG / Log → 709、速度カーブ、カラオケ付き字幕20種、数十種のモーションテキスト、Three.js / Godot グラフィック、ロイヤリティフリーの音楽と効果音を内蔵</li>
+      <li><b>Auto-cut と AI Edit</b>：全編を一度聞いてカット、撮り直しを検出、章ごとに編集、章カードとズーム。長尺から Shorts を自動作成</li>
+      <li><b>数時間のマルチカム Podcast</b>：外付けドライブから直接読み込み、音で同期、話者に合わせて自動スイッチ、ラウドネスを統一（−14 / −16 LUFS）</li>
+      <li><b>撮らずに作る</b>：AI リサーチとフリーライセンス素材。ローカル生成（MiniMax H3 動画、Qwen Image、自作 LoRA）、クラウド生成プラグイン</li>
+      <li><b>カバーと投稿デザイン</b>：35種のレイアウト、曲線テキスト、カルーセル。iPhone だけでもレイアウト可能</li>
+      <li><b>スタイルパックとスキン</b>：字幕・レイアウト・フォント・音楽をまとめて持ち運び、アプリ名・アイコン・配色まで変更（Ed25519 署名）。プロジェクトは .onsetpack で共有</li>
+      <li><b>アカウントとライセンス</b>：Cloudflare Worker + D1 による申請・承認・端末ごとのライセンス。UI は繁体字・簡体字中国語、英語、マレー語、日本語、韓国語の6言語</li>
+      <li><b>書き出し</b>：MP4 / MOV / MP3 / WAV、CapCut・FCPXML・Premiere XML・FilmCraft のプロジェクトファイル</li>
     </ul>
-    <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>WebGL / GLSL</span><span>MCP</span><span>Tauri（計画中）</span></div>
+    <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>Tauri 2 / Rust</span><span>Swift</span><span>Cloudflare Workers · D1 · Durable Objects</span><span>MLX Whisper</span><span>WebGL / Three.js</span><span>MCP</span></div>
     <div class="shots">
-      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>Editing：左に素材カテゴリ、中央にプレビュー、右にプロパティと AI Edit、下にマルチトラックのタイムライン。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset 3.0 Start" loading="lazy"><figcaption>ホーム画面は5つの入口のみ。右下に Ask Onset。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-setup.jpg" alt="AI Onset" loading="lazy"><figcaption>初回利用時：AI Onset が質問を重ねてスタイルを引き出す。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-styles.jpg" alt="Styles" loading="lazy"><figcaption>設定完了後、4種のスタイルを自動生成。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-script.jpg" alt="AI Script" loading="lazy"><figcaption>Create Script：左で AI と対話、右に脚本。</figcaption></figure>
-      <figure class="shot wide"><img src="assets/onset-design-overview.png" alt="Onset 3.0 design" loading="lazy"><figcaption>開発前に作成した macOS 版のデザインカンプ。</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>Editing：Auto-cut が全編を一度聞き、字幕も同時に作成（デモ映像）。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-script.jpg" alt="Create Script" loading="lazy"><figcaption>Create Script：AI Onset が実際に執筆中。左に各ステップとリスク確認の結果。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-recording.jpg" alt="Recording" loading="lazy"><figcaption>Recording：カメラ映像に重ねたプロンプター。声に合わせてスクロール。</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-phone.jpg" alt="Onset on iPhone" loading="lazy"><figcaption>iPhone アプリ：簡易エディター、投稿デザイン、ホーム、Mac と同期する生成ライブラリ、他の AI 向けプロンプト手順。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-ipad.jpg" alt="Onset on iPad" loading="lazy"><figcaption>iPad：投稿デザイナー（シミュレーター）。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset Start" loading="lazy"><figcaption>Mac のホーム画面：6つの入口、右下に AI Onset。</figcaption></figure>
     </div>
   </article>
 

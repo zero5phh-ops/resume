@@ -204,30 +204,32 @@ html[lang=en] h1,html[lang=en] h2,html[lang=ms] h1,html[lang=ms] h2{font-family:
   </article>
 
   <article class="card project">
-    <div class="phead"><h3>Onset 3.0</h3><span class="vis priv">PRIVATE</span><span class="meta">Started Nov 2026 · Full rewrite from scratch · In development</span></div>
-    <p class="pdesc">A personal studio app for everyday creators: scripting, filming, editing, covers and posts all in one place. Ask Onset, in the bottom-right of every screen, brings in AI help — and you can watch it work step by step and stop it anytime. Targets macOS, Windows, iOS and Android.</p>
+    <div class="phead"><h3>Onset 3.0</h3><span class="vis priv">PRIVATE</span><span class="meta">Started 10 Nov 2026 · 327 commits in 6 days · Mac and iPhone / iPad apps running on my own devices · not yet released</span></div>
+    <p class="pdesc">A creator studio rewritten from scratch: scripting, shooting, editing, covers and posts, and AI generation in one app. One codebase ships as a Mac app and an iPhone / iPad app that sync offline-first. AI Onset sits on every screen: it sees the screen, searches the web, talks by voice and can operate every feature in the app, step by step in front of you, with stop and whole-run undo.</p>
     <ul class="feat">
-      <li><b>AI Onset first-run setup</b>: a short Q&amp;A sets your channel style, auto-organised into script / interview / design / editing styles (36 built in)</li>
-      <li><b>AI Script</b>: five formats — short video, long-form, interview questions, podcast rundown, voiceover — sent straight to filming</li>
-      <li><b>Recording</b>: webcam or external camera + teleprompter with adjustable speed and font</li>
-      <li><b>CapCut-style editor</b>: keyframes, 39 transitions, masks, LUTs (incl. HLG / Apple Log / S-Log3 → 709), speed curves, stabilisation</li>
-      <li><b>Captions</b>: Whisper speech-to-text, 20 caption styles, 13 fonts, karaoke word-by-word highlighting</li>
-      <li><b>Auto-cut and AI Edit</b>: auto-removes pauses and retakes; AI edits chapter by chapter, every step shown live on the timeline</li>
-      <li><b>Audio</b>: noise reduction, Demucs voice/background separation, AI voiceover, music and SFX, auto-ducking</li>
-      <li><b>Multicam podcasts</b> and <b>2-hour+ long-form</b>: auto-sync, speaker-based switching, chapter-by-chapter processing</li>
-      <li><b>Covers and image posts</b>: 35 layouts, 44 design operations, for FB / IG / Xiaohongshu / TikTok / X / Threads</li>
+      <li><b>Mac app and iPhone / iPad app</b> (Tauri 2 + Swift): one codebase, three shells; on the phone, AVFoundation export, Apple Speech dictation, Apple Vision cut-outs and Image Playground</li>
+      <li><b>Sync and relay</b>: pair by QR code, offline-first, both versions kept when both sides change; on 4G / 5G the phone reaches the Mac at home through a Cloudflare Worker + Durable Objects, end-to-end sealed</li>
+      <li><b>AI Onset</b>: an assistant on every page that sees the screen and pointer, searches the web and talks; every feature lives in one action catalogue, and 1–10 agents can work at once</li>
+      <li><b>One-click MCP</b>: Claude Desktop, Claude Code, ChatGPT / Codex, Cursor and other AI apps can drive Onset, every step shown on screen</li>
+      <li><b>Create Script</b>: the AI writes in six visible steps — angle, hook, draft in your style, platform check, spoken / de-AI pass, risk check (medical claims, copying); 9 formats, 36 styles</li>
+      <li><b>Recording</b>: a teleprompter that follows your voice (5 languages), voice commands, Bluetooth remote keys, countdown; an iPhone as the Mac's camera or as a remote camera for multi-cam</li>
+      <li><b>CapCut-style editor</b>: keyframes, 39 transitions, masks, LUTs and HLG / Log → 709, speed curves, 20 caption looks with karaoke, dozens of kinetic-text styles, Three.js / Godot graphics, built-in royalty-free music and SFX</li>
+      <li><b>Auto-cut and AI Edit</b>: hears the whole video once, finds retakes, edits chapter by chapter, adds chapter cards and punch-ins; long videos become Shorts</li>
+      <li><b>Hours-long multi-cam podcasts</b>: read straight from an external drive, synced by sound, cut to whoever is speaking, exported at a steady loudness (−14 / −16 LUFS)</li>
+      <li><b>Make it without shooting</b>: AI research with free-licence stock; local generation (MiniMax H3 video, Qwen Image, your own LoRAs); cloud-generation plug-in</li>
+      <li><b>Cover and post design</b>: 35 layouts, curved text, carousels; the iPhone lays posts out on its own, no Mac needed</li>
+      <li><b>Style packs and skins</b>: one pack carries captions, layouts, fonts and music, and can even rename and recolour the app (Ed25519-signed); projects share as .onsetpack files</li>
+      <li><b>Accounts and licences</b>: a Cloudflare Worker + D1 service for sign-up, approval and per-device licences; the UI in 6 languages (Traditional / Simplified Chinese, English, Malay, Japanese, Korean)</li>
       <li><b>Export</b>: MP4 / MOV / MP3 / WAV, plus CapCut, FCPXML, Premiere XML and FilmCraft project files</li>
-      <li><b>Animation mode</b>: make videos without filming, using graphics, text animation and Godot 2D/3D</li>
-      <li><b>MCP</b>: external AIs can drive the editor directly while Onset is open</li>
     </ul>
-    <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>WebGL / GLSL</span><span>MCP</span><span>Tauri (planned)</span></div>
+    <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>Tauri 2 / Rust</span><span>Swift</span><span>Cloudflare Workers · D1 · Durable Objects</span><span>MLX Whisper</span><span>WebGL / Three.js</span><span>MCP</span></div>
     <div class="shots">
-      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>Editing: media bins on the left, preview in the centre, properties and AI Edit on the right, multitrack timeline below.</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset 3.0 Start" loading="lazy"><figcaption>The home screen has just five entry points, with Ask Onset at the bottom right.</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-setup.jpg" alt="AI Onset" loading="lazy"><figcaption>First run: AI Onset works out your style one question at a time.</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-styles.jpg" alt="Styles" loading="lazy"><figcaption>Setup complete — four styles generated automatically.</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-script.jpg" alt="AI Script" loading="lazy"><figcaption>Create Script: chat with AI on the left, script on the right.</figcaption></figure>
-      <figure class="shot wide"><img src="assets/onset-design-overview.png" alt="Onset 3.0 design" loading="lazy"><figcaption>macOS design mockup drawn before development began.</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>Editing: Auto-cut hears the whole clip once and makes the captions at the same time (demo clip).</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-script.jpg" alt="Create Script" loading="lazy"><figcaption>Create Script: AI Onset writing for real, with each step and the risk check listed on the left.</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-recording.jpg" alt="Recording" loading="lazy"><figcaption>Recording: the teleprompter over the camera picture, able to follow your voice.</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-phone.jpg" alt="Onset on iPhone" loading="lazy"><figcaption>iPhone app: simple editor, post design, Start, the generation library synced with the Mac, prompt steps for other AI platforms.</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-ipad.jpg" alt="Onset on iPad" loading="lazy"><figcaption>iPad: the post designer (simulator).</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset Start" loading="lazy"><figcaption>Mac Start screen: six entry points, AI Onset in the corner.</figcaption></figure>
     </div>
   </article>
 

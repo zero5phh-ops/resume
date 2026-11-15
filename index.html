@@ -204,30 +204,32 @@ html[lang=en] h1,html[lang=en] h2,html[lang=ms] h1,html[lang=ms] h2{font-family:
   </article>
 
   <article class="card project">
-    <div class="phead"><h3>Onset 3.0</h3><span class="vis priv">PRIVATE</span><span class="meta">2026-11 開始 · 全新從零重寫 · 開發中</span></div>
-    <p class="pdesc">給一般內容創作者的個人工作室 App：寫腳本、拍攝、剪輯、做封面和貼文都在同一個地方，任何畫面右下角都能叫 AI（Ask Onset）幫忙，而且能看著 AI 一步一步做、隨時按停。目標平台 macOS、Windows、iOS、Android。</p>
+    <div class="phead"><h3>Onset 3.0</h3><span class="vis priv">PRIVATE</span><span class="meta">2026-11-10 開始 · 6 天 327 個 commits · Mac 與 iPhone / iPad App 已在自己的裝置上運作 · 尚未公開發佈</span></div>
+    <p class="pdesc">完全從零重寫、給內容創作者的個人工作室：寫腳本、拍攝、剪輯、做封面和貼文、AI 生成，都在同一個 App 裡。同一套程式做成 Mac App 和 iPhone / iPad App，彼此離線優先同步。每個畫面都有 AI Onset：它看得到畫面、會上網查資料、能用聲音對話，App 裡每一個功能它都能操作，而且一步一步做給你看，隨時可以停、可以整次復原。</p>
     <ul class="feat">
-      <li><b>AI Onset 首次設定</b>：一問一答設定頻道風格，自動整理成腳本／採訪／設計／剪輯四種風格（內建 36 種）</li>
-      <li><b>AI Script</b>：短影音、長片、採訪問題單、Podcast rundown、旁白稿五種格式，直接送去拍攝</li>
-      <li><b>Recording</b>：電腦鏡頭或外接相機 + 提詞器，可調速度與字體</li>
-      <li><b>CapCut 式剪輯器</b>：關鍵幀、39 種轉場、遮罩、LUT（含 HLG / Apple Log / S-Log3 → 709）、變速曲線、防抖</li>
-      <li><b>字幕</b>：Whisper 語音轉文字、20 種字幕樣式、13 種字體、卡拉 OK 逐字高亮</li>
-      <li><b>Auto-cut 與 AI Edit</b>：自動剪停頓與重拍，AI 照章節逐段剪，每一步都在時間線上即時顯示</li>
-      <li><b>聲音</b>：降噪、Demucs 人聲／背景分離、AI 配音、音樂與音效、自動壓低背景音</li>
-      <li><b>Podcast 多機位</b>與 <b>2 小時以上長片</b>：自動對齊、按講者切鏡、分章節處理</li>
-      <li><b>封面與圖片貼文</b>：35 種版型、44 種設計操作，FB / IG / 小紅書 / TikTok / X / Threads</li>
+      <li><b>Mac App 與 iPhone / iPad App</b>（Tauri 2 + Swift）：一套程式三個外殼；手機上用 AVFoundation 輸出、Apple Speech 聽寫、Apple Vision 去背、Image Playground 生圖</li>
+      <li><b>同步與轉接站</b>：掃 QR code 配對，離線優先、兩邊都改會保留兩個版本；在外面用 4G / 5G 也能經 Cloudflare Worker + Durable Objects 端對端加密連回家裡的 Mac</li>
+      <li><b>AI Onset</b>：每頁都在的 AI 助理，看得到螢幕和游標、會搜尋網路、能語音對話；所有功能集中在一份動作清單，可同時派 1–10 個 agent 分工</li>
+      <li><b>MCP 一鍵安裝</b>：Claude Desktop、Claude Code、ChatGPT / Codex、Cursor 等外部 AI 可直接操作 Onset，每一步都顯示在畫面上</li>
+      <li><b>Create Script</b>：AI 分六步寫給你看——角度、Hook、照風格寫初稿、平台檢查、口語化去 AI 味、風險檢查（醫療聲明、抄襲）；9 種格式、36 種風格</li>
+      <li><b>Recording</b>：會跟著聲音走的提詞器（5 種語言）、語音指令、藍牙遙控鍵、倒數；iPhone 可當 Mac 的鏡頭，或當遙控攝影機做多機位</li>
+      <li><b>CapCut 式剪輯器</b>：關鍵幀、39 種轉場、遮罩、LUT 與 HLG / Log → 709、變速曲線、20 種字幕與卡拉 OK、數十種飛字、Three.js / Godot 圖卡、內建免版稅音樂音效</li>
+      <li><b>Auto-cut 與 AI Edit</b>：一次聽完全片再剪、自動找重拍、逐章剪輯、章節卡、重點放大；長片自動切成多支 Shorts</li>
+      <li><b>數小時的多機位 Podcast</b>：直接讀外接硬碟不複製、按聲音對齊、判斷誰在說話自動切鏡、輸出統一響度（−14 / −16 LUFS）</li>
+      <li><b>不拍，直接做</b>：AI 查資料配免費授權素材；本機生成（MiniMax H3 影片、Qwen Image、自己的 LoRA）；雲端生成外掛</li>
+      <li><b>封面與貼文設計</b>：35 種版型、弧形文字、輪播；iPhone 不連 Mac 也能自己排版</li>
+      <li><b>風格包與外殼</b>：一包帶走字幕、版型、字體、音樂，甚至換掉 App 名稱、圖示和顏色（Ed25519 簽章）；專案打包成 .onsetpack 分享</li>
+      <li><b>帳號與授權</b>：Cloudflare Worker + D1 帳號服務，申請、審核、每台裝置授權；介面有繁中、簡中、英、馬來、日、韓 6 種語言</li>
       <li><b>輸出</b>：MP4 / MOV / MP3 / WAV，並可匯出 CapCut、FCPXML、Premiere XML、FilmCraft 工程檔</li>
-      <li><b>動畫模式</b>：不用拍片，用圖形、文字動畫、Godot 2D／3D 做影片</li>
-      <li><b>MCP</b>：外部 AI 可以在 Onset 開著時直接操作剪輯</li>
     </ul>
-    <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>WebGL / GLSL</span><span>MCP</span><span>Tauri（規劃中）</span></div>
+    <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>Tauri 2 / Rust</span><span>Swift</span><span>Cloudflare Workers · D1 · Durable Objects</span><span>MLX Whisper</span><span>WebGL / Three.js</span><span>MCP</span></div>
     <div class="shots">
-      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>Editing：左邊素材分類、中間預覽、右邊屬性與 AI Edit、下面多軌時間線。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset 3.0 Start" loading="lazy"><figcaption>首頁只有五個入口，右下角是 Ask Onset。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-setup.jpg" alt="AI Onset" loading="lazy"><figcaption>第一次使用：AI Onset 一題一題問出你的風格。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-styles.jpg" alt="Styles" loading="lazy"><figcaption>設定完成，自動產生四種風格。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-script.jpg" alt="AI Script" loading="lazy"><figcaption>Create Script：左邊和 AI 對話，右邊是腳本。</figcaption></figure>
-      <figure class="shot wide"><img src="assets/onset-design-overview.png" alt="Onset 3.0 design" loading="lazy"><figcaption>開工前先畫的 macOS 版設計稿。</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>Editing：Auto-cut 一次聽完全片，字幕同時做好（截圖用示範影片）。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-script.jpg" alt="Create Script" loading="lazy"><figcaption>Create Script：AI Onset 真的在寫，左邊列出每一步和風險檢查結果。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-recording.jpg" alt="Recording" loading="lazy"><figcaption>Recording：提詞器疊在鏡頭畫面上，可以跟著聲音捲動。</figcaption></figure>
+      <figure class="shot wide"><img src="assets/onset-phone.jpg" alt="Onset on iPhone" loading="lazy"><figcaption>iPhone App：簡易剪輯器、貼文設計、首頁、和 Mac 同步的生成庫、給其他 AI 平台的 prompt 步驟。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-ipad.jpg" alt="Onset on iPad" loading="lazy"><figcaption>iPad：貼文設計器（模擬器）。</figcaption></figure>
+      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset Start" loading="lazy"><figcaption>Mac 首頁：六個入口，右下角是 AI Onset。</figcaption></figure>
     </div>
   </article>
 
