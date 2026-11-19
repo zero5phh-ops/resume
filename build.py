@@ -190,6 +190,7 @@ def onset_block(t, page_mode):
              "<span>Cloudflare Workers · D1 · Durable Objects</span><span>MLX Whisper</span><span>WebGL / Three.js</span><span>MCP</span>")
     shots = f'''<div class="shots">
       <figure class="shot wide"><img src="{{P}}assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>{o["cap_editing"]}</figcaption></figure>
+      <figure class="shot wide"><img src="{{P}}assets/onset-board.jpg" alt="Animation board" loading="lazy"><figcaption>{o["cap_board"]}</figcaption></figure>
       <figure class="shot"><img src="{{P}}assets/onset-script.jpg" alt="Create Script" loading="lazy"><figcaption>{o["cap_script"]}</figcaption></figure>
       <figure class="shot"><img src="{{P}}assets/onset-recording.jpg" alt="Recording" loading="lazy"><figcaption>{o["cap_recording"]}</figcaption></figure>
       <figure class="shot wide"><img src="{{P}}assets/onset-phone.jpg" alt="Onset on iPhone" loading="lazy"><figcaption>{o["cap_phone"]}</figcaption></figure>

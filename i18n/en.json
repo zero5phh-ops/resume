@@ -128,7 +128,8 @@
         "t": "Style packs and languages",
         "d": "Take subtitles, layouts, fonts and music with you in one pack; the interface comes in 6 languages."
       }
-    ]
+    ],
+    "cap_board": "Animation board: a character split into layers (head, arms, legs, tie…), each with its own timeline and keyframes; AI Onset on the left, with an outside AI working through MCP."
   },
   "vpipe": {
     "desc": "A small web app that runs MiniMax H3 (video with sound) and Qwen Image 2.1 Turbo (images) locally on a Mac — no cloud, no credits. Built-in setup checks and one-click model download, AI prompt enhancement, character LoRAs, queueing and 2× upscaling; offloads work to the Neural Engine, cutting a 5-second video on an M3 Air from ~73 to ~35 minutes.",

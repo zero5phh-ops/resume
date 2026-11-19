@@ -128,7 +128,8 @@
         "t": "Pek gaya dan berbilang bahasa",
         "d": "Bawa sekali gus sari kata, templat, fon dan muzik; antara muka dalam 6 bahasa."
       }
-    ]
+    ],
+    "cap_board": "Papan animasi: watak dipecahkan kepada lapisan (kepala, lengan, kaki, tali leher…), setiap satu dengan garis masa dan keyframe sendiri; AI Onset di sebelah kiri, dengan AI luar bekerja melalui MCP."
   },
   "vpipe": {
     "desc": "Laman web kecil untuk menjalankan MiniMax H3 (video beraudio) dan Qwen Image 2.1 Turbo (imej) secara setempat pada Mac — tanpa awan, tanpa credits. Dilengkapi semakan tetapan dan muat turun model satu klik, pengoptimuman prompt dengan AI, LoRA watak, barisan gilir dan peningkatan 2x; menggunakan Neural Engine untuk berkongsi beban pengiraan, mengurangkan masa video 5 saat pada M3 Air daripada kira-kira 73 minit kepada kira-kira 35 minit.",
