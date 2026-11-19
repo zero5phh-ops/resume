@@ -25,10 +25,10 @@
   },
   "sw": {
     "title": "Perisian",
-    "sub": "Dibangunkan secara berpasangan dengan Claude sejak 2026. Repo peribadi diterangkan secara terperinci; repo awam disertakan pautan terus."
+    "sub": "Dibangunkan bersama Claude sejak 2026. Klik untuk melihat butiran setiap projek."
   },
   "sol": {
-    "meta": "2026-08 — Kini · kira-kira 2,000 commit · digunakan secara rasmi di dalam syarikat",
+    "meta": "2026-08 hingga kini · 2,000+ commit · digunakan secara rasmi dalam syarikat",
     "desc": "Sistem penghasilan kandungan doktor untuk SOL Integrative Wellness Centre: satu ayat untuk menulis skrip sebulan penuh → doktor merakam dengan teleprompter telefon → suntingan kasar automatik → semakan → penjadualan siaran ke media sosial → laporan KPI dengan satu klik. Digunakan setiap hari oleh kakitangan bukan teknikal di seluruh syarikat, dengan antara muka dalam tiga bahasa: Cina, Inggeris dan Melayu.",
     "open": "Buka Landing Page SOL Studio",
     "features": [
@@ -45,40 +45,99 @@
       "<b>Kebenaran dan privasi</b>: kebenaran mengikut peranan dan jabatan, sembang hanya mengenal pasti identiti ahli, borang persetujuan pesakit hanya untuk pihak yang dibenarkan",
       "<b>Pelayan MCP</b>: AI luaran seperti Claude boleh terus mencipta tugasan, menulis skrip dan melihat garis masa di dalam App"
     ],
-    "caption": "Landing page awam SOL Studio (sistem kerja hanya selepas log masuk). Asalnya AI-Content-studio (2026-08, MVP: skrip di Web → rakaman teleprompter telefon → pascaproduksi automatik)."
+    "caption": "Landing page awam SOL Studio (sistem kerja hanya selepas log masuk). Asalnya AI-Content-studio (2026-08, MVP: skrip di Web → rakaman teleprompter telefon → pascaproduksi automatik).",
+    "summary": "Sistem penghasilan kandungan doktor: tulis skrip dengan satu ayat → rakam dengan teleprompter telefon → suntingan awal AI → jadual penyiaran → KPI. Digunakan setiap hari oleh seluruh syarikat.",
+    "points": [
+      {
+        "t": "Skrip sebulan ditulis dengan satu ayat",
+        "d": "Taip \"Dr Vig November\", AI menulis dalam gaya percakapan doktor itu sendiri dan turut menyemak tuntutan perubatan."
+      },
+      {
+        "t": "Rakaman dengan teleprompter telefon",
+        "d": "Kad papan cerita dengan teleprompter bergulir; selepas rakaman, fail dimuat naik dan diarkibkan ke pemacu kongsi secara automatik."
+      },
+      {
+        "t": "Suntingan awal automatik oleh AI",
+        "d": "Membuang jeda dan rakaman semula, menambah sari kata, memadankan B-roll dan menghasilkan kulit muka."
+      },
+      {
+        "t": "Penyunting dalam pelayar",
+        "d": "Garis masa berbilang trek; AI juga boleh menyunting langkah demi langkah di depan anda."
+      },
+      {
+        "t": "Jadual penyiaran dan KPI",
+        "d": "Disiarkan ke FB / IG / TikTok / YouTube, laporan bulanan dijana dengan satu klik."
+      },
+      {
+        "t": "Kebenaran dan privasi",
+        "d": "Kebenaran diberi mengikut peranan dan jabatan; data pesakit hanya untuk mereka yang dibenarkan."
+      }
+    ]
   },
   "onset": {
-    "meta": "Bermula 10 Nov 2026 · 327 commit dalam 6 hari · aplikasi Mac dan iPhone / iPad berjalan pada peranti sendiri · belum dilancarkan",
+    "meta": "Bermula 2026-11-10 · 455 commit dalam 10 hari · aplikasi Mac dan iPhone / iPad sudah berjalan pada peranti sendiri · belum diterbitkan",
     "desc": "Studio pencipta kandungan yang ditulis semula dari awal: skrip, penggambaran, suntingan, kulit muka dan hantaran, serta penjanaan AI dalam satu aplikasi. Satu kod sumber menjadi aplikasi Mac dan aplikasi iPhone / iPad yang disegerakkan secara luar talian dahulu. AI Onset ada di setiap skrin: ia nampak skrin, mencari di web, bercakap dengan suara dan boleh mengendalikan setiap fungsi aplikasi, langkah demi langkah di depan anda, dengan butang henti dan buat asal sekali gus.",
     "features": [
-      "<b>Aplikasi Mac dan iPhone / iPad</b> (Tauri 2 + Swift): satu kod sumber, tiga cangkerang; di telefon, eksport AVFoundation, imlak Apple Speech, buang latar Apple Vision dan Image Playground",
-      "<b>Penyegerakan dan relay</b>: berpasangan dengan kod QR, luar talian dahulu, kedua-dua versi disimpan jika kedua-dua pihak mengubah; dengan 4G / 5G telefon sampai ke Mac di rumah melalui Cloudflare Worker + Durable Objects, disulitkan hujung ke hujung",
-      "<b>AI Onset</b>: pembantu di setiap halaman yang nampak skrin dan penunjuk, mencari di web dan bercakap; semua fungsi dalam satu katalog tindakan, dan 1–10 ejen boleh bekerja serentak",
-      "<b>MCP satu klik</b>: Claude Desktop, Claude Code, ChatGPT / Codex, Cursor dan aplikasi AI lain boleh mengendalikan Onset, setiap langkah ditunjukkan di skrin",
-      "<b>Create Script</b>: AI menulis dalam enam langkah yang kelihatan — sudut, Hook, draf ikut gaya, semakan platform, gaya lisan tanpa rasa AI, semakan risiko (dakwaan perubatan, peniruan); 9 format, 36 gaya",
-      "<b>Recording</b>: teleprompter yang mengikut suara (5 bahasa), arahan suara, kekunci alat kawalan Bluetooth, kiraan detik; iPhone sebagai kamera Mac atau kamera jauh untuk berbilang kamera",
-      "<b>Penyunting gaya CapCut</b>: keyframe, 39 peralihan, topeng, LUT dan HLG / Log → 709, lengkung kelajuan, 20 gaya sari kata dengan karaoke, puluhan gaya teks kinetik, grafik Three.js / Godot, muzik dan kesan bunyi bebas royalti",
-      "<b>Auto-cut dan AI Edit</b>: mendengar seluruh video sekali, mencari rakaman ulang, menyunting bab demi bab, kad bab dan zum penting; video panjang dijadikan Shorts",
-      "<b>Podcast berbilang kamera berjam-jam</b>: dibaca terus dari cakera luaran, diselaraskan mengikut bunyi, dipotong kepada sesiapa yang bercakap, kelantangan seragam (−14 / −16 LUFS)",
-      "<b>Buat tanpa penggambaran</b>: penyelidikan AI dengan bahan stok berlesen percuma; penjanaan setempat (video MiniMax H3, Qwen Image, LoRA sendiri); pemalam penjanaan awan",
-      "<b>Reka bentuk kulit muka dan hantaran</b>: 35 susun atur, teks melengkung, karusel; iPhone boleh menyusun hantaran sendiri tanpa Mac",
-      "<b>Pek gaya dan kulit aplikasi</b>: satu pek membawa sari kata, susun atur, fon dan muzik, malah boleh menukar nama, ikon dan warna aplikasi (tandatangan Ed25519); projek dikongsi sebagai fail .onsetpack",
-      "<b>Akaun dan lesen</b>: perkhidmatan Cloudflare Worker + D1 untuk pendaftaran, kelulusan dan lesen setiap peranti; antara muka dalam 6 bahasa (Cina Tradisional / Ringkas, Inggeris, Melayu, Jepun, Korea)",
-      "<b>Eksport</b>: MP4 / MOV / MP3 / WAV, serta fail projek CapCut, FCPXML, Premiere XML dan FilmCraft"
+      "<b>Aplikasi Mac dan aplikasi iPhone / iPad</b> (Tauri 2 + Swift): satu kod untuk tiga kulit aplikasi; pada telefon menggunakan AVFoundation untuk eksport, Apple Speech untuk dikte, Apple Vision untuk buang latar dan Image Playground untuk jana imej",
+      "<b>Penyegerakan dan stesen geganti</b>: berpasangan dengan mengimbas kod QR, mengutamakan luar talian, dua versi disimpan jika kedua-dua belah diubah; di luar dengan 4G / 5G pun boleh bersambung semula ke Mac di rumah melalui Cloudflare Worker + Durable Objects dengan penyulitan hujung ke hujung",
+      "<b>AI Onset</b>: pembantu AI pada setiap halaman, boleh melihat skrin dan kursor, mencari di web dan berbual dengan suara; semua fungsi dikumpulkan dalam satu senarai tindakan, boleh menugaskan 1–10 agen serentak, setiap agen ialah kursor berwarna yang terbang ke tempat yang sedang diubahnya",
+      "<b>Pemasangan MCP satu klik</b>: AI luar seperti Claude Desktop, Claude Code, ChatGPT / Codex dan Cursor boleh mengendalikan Onset terus, dan setiap langkah dipaparkan pada skrin",
+      "<b>Create Script</b>: AI menulis dalam enam langkah di depan anda: sudut, Hook, draf pertama mengikut gaya, semakan platform, bahasa pertuturan yang tidak berbunyi seperti AI, semakan risiko (tuntutan perubatan, plagiarisme); 9 format, 36 gaya",
+      "<b>Recording</b>: teleprompter yang mengikut suara anda (5 bahasa), arahan suara, butang kawalan jauh Bluetooth, kiraan detik; iPhone boleh menjadi kamera untuk Mac, atau kamera kawalan jauh untuk berbilang sudut",
+      "<b>Penyunting gaya CapCut</b>: keyframe, 39 peralihan, topeng, LUT dan HLG / Log → 709, lengkung kelajuan, 20 gaya sari kata dan karaoke, berpuluh-puluh gaya teks kinetik, kad Three.js / Godot, muzik dan kesan bunyi bebas royalti terbina dalam",
+      "<b>Auto-cut dan AI Edit</b>: mendengar keseluruhan video sekali sebelum menyunting, mencari rakaman semula secara automatik, suntingan bab demi bab, kad bab, zum pada bahagian penting; video panjang dipotong automatik menjadi beberapa Shorts",
+      "<b>Podcast berbilang kamera berjam-jam</b>: membaca terus dari cakera keras luaran tanpa menyalin, penjajaran mengikut suara, mengesan siapa yang bercakap untuk menukar kamera secara automatik, eksport dengan kenyaringan seragam (−14 / −16 LUFS)",
+      "<b>Buat tanpa penggambaran</b>: hanya dengan skrip pun boleh menghasilkan video, setiap ayat dipadankan dengan visual: AI mencari bahan berlesen percuma, melukis imej AI atau membuat kad animasi; anggaran jumlah masa diberi sebelum bermula, dan baki masa dipaparkan semasa berjalan",
+      "<b>Syot teks kinetik</b>: satu perkataan besar setiap rentak, pergerakan kamera, peralihan, prop 3D, skrin aplikasi olok-olok; boleh dieksport ke EffectCraft",
+      "<b>Papan animasi</b>: AI merancang dahulu, kemudian melukis ilustrasi sebenar dan menambah rangka supaya bergerak; animasi bingkai demi bingkai, corak berulang, teks 3D, dan anda juga boleh mengambil alih untuk mengubah secara manual",
+      "<b>Penjanaan AI</b>: setempat (video MiniMax H3, Qwen Image, LoRA sendiri) serta Higgsfield dan Theater di awan; Theater memberi sebut harga dahulu dan hanya mula selepas anda bersetuju",
+      "<b>Kulit muka, hantaran dan gaya penjenamaan</b>: 35 templat, teks melengkung, karusel; intro dan outro saluran sendiri, jalur nama, kad bab dan tera air; iPhone boleh menyusun atur sendiri tanpa sambungan ke Mac",
+      "<b>Pek gaya dan kulit aplikasi</b>: satu pek membawa sari kata, templat, fon, muzik, malah menukar nama, ikon dan warna aplikasi (tandatangan Ed25519); projek dibungkus sebagai .onsetpack untuk dikongsi",
+      "<b>Akaun dan pelesenan</b>: perkhidmatan akaun Cloudflare Worker + D1, permohonan, kelulusan, pelesenan setiap peranti; antara muka dalam 6 bahasa: Cina Tradisional, Cina Ringkas, Inggeris, Melayu, Jepun, Korea",
+      "<b>Eksport</b>: MP4 / MOV / MP3 / WAV, dan boleh dieksport sebagai fail projek CapCut, FCPXML, Premiere XML dan FilmCraft"
     ],
     "cap_editing": "Editing: Auto-cut mendengar seluruh klip sekali dan membuat sari kata serentak (klip demo).",
     "cap_start": "Skrin utama Mac: enam pintu masuk, AI Onset di sudut.",
     "cap_script": "Create Script: AI Onset sedang menulis, setiap langkah dan semakan risiko disenaraikan di kiri.",
     "cap_recording": "Recording: teleprompter di atas gambar kamera, boleh mengikut suara.",
     "cap_phone": "Aplikasi iPhone: penyunting ringkas, reka bentuk hantaran, skrin utama, pustaka penjanaan yang disegerakkan dengan Mac, langkah prompt untuk platform AI lain.",
-    "cap_ipad": "iPad: penyunting reka bentuk hantaran (simulator)."
+    "cap_ipad": "iPad: penyunting reka bentuk hantaran (simulator).",
+    "summary": "Studio peribadi untuk pencipta: tulis skrip, rakam, sunting, reka bentuk dan jana dengan AI, semuanya dalam satu aplikasi pada Mac, iPhone dan iPad.",
+    "points": [
+      {
+        "t": "Satu aplikasi, tiga peranti",
+        "d": "Mac, iPhone dan iPad disegerakkan tanpa talian; dari luar pun boleh bersambung semula ke Mac di rumah."
+      },
+      {
+        "t": "Pembantu AI Onset",
+        "d": "Ada pada setiap halaman. Boleh melihat skrin, mencari maklumat di web, dan bercakap dengan anda, serta bekerja langkah demi langkah di depan anda dan boleh dihentikan bila-bila masa."
+      },
+      {
+        "t": "Dari skrip hingga video siap",
+        "d": "AI menulis skrip, rakaman dengan teleprompter, suntingan gaya CapCut, Auto-cut dan sari kata automatik."
+      },
+      {
+        "t": "Buat video tanpa penggambaran",
+        "d": "AI mencari bahan percuma, penjanaan setempat dan awan, teks kinetik, papan animasi."
+      },
+      {
+        "t": "Reka bentuk kulit muka dan hantaran",
+        "d": "35 templat; iPhone boleh menyusun atur sendiri tanpa sambungan ke Mac."
+      },
+      {
+        "t": "Pek gaya dan berbilang bahasa",
+        "d": "Bawa sekali gus sari kata, templat, fon dan muzik; antara muka dalam 6 bahasa."
+      }
+    ]
   },
   "vpipe": {
-    "desc": "Laman web kecil untuk menjalankan MiniMax H3 (video beraudio) dan Qwen Image 2.1 Turbo (imej) secara setempat pada Mac — tanpa awan, tanpa credits. Dilengkapi semakan tetapan dan muat turun model satu klik, pengoptimuman prompt dengan AI, LoRA watak, barisan gilir dan peningkatan 2x; menggunakan Neural Engine untuk berkongsi beban pengiraan, mengurangkan masa video 5 saat pada M3 Air daripada kira-kira 73 minit kepada kira-kira 35 minit."
+    "desc": "Laman web kecil untuk menjalankan MiniMax H3 (video beraudio) dan Qwen Image 2.1 Turbo (imej) secara setempat pada Mac — tanpa awan, tanpa credits. Dilengkapi semakan tetapan dan muat turun model satu klik, pengoptimuman prompt dengan AI, LoRA watak, barisan gilir dan peningkatan 2x; menggunakan Neural Engine untuk berkongsi beban pengiraan, mengurangkan masa video 5 saat pada M3 Air daripada kira-kira 73 minit kepada kira-kira 35 minit.",
+    "summary": "Laman web kecil untuk menjalankan video dan imej AI secara setempat pada Mac, sumber terbuka (MIT), tanpa awan dan tanpa credits."
   },
   "stock": {
     "meta": "2026-10 · kegunaan peribadi",
-    "desc": "Papan pemuka penyelidikan saham AS dan Malaysia (Bursa Malaysia): gambaran pasaran, carta lilin dan berita saham individu, isyarat lampu pegangan dengan cadangan dalam bahasa mudah, ujian balik, akaun simulasi, serta taklimat harian dalam bahasa Cina Tradisional oleh empat pembantu AI. Python + Streamlit, dijalankan secara setempat sahaja."
+    "desc": "Papan pemuka penyelidikan saham AS dan Malaysia (Bursa Malaysia): gambaran pasaran, carta lilin dan berita saham individu, isyarat lampu pegangan dengan cadangan dalam bahasa mudah, ujian balik, akaun simulasi, serta taklimat harian dalam bahasa Cina Tradisional oleh empat pembantu AI. Python + Streamlit, dijalankan secara setempat sahaja.",
+    "summary": "Papan pemuka penyelidikan saham AS dan Malaysia, pembantu AI menulis ringkasan setiap hari. Untuk kegunaan peribadi, hanya berjalan secara setempat."
   },
   "games": {
     "title": "Permainan web dan projek kecil (awam, boleh dimainkan terus)",
@@ -118,7 +177,8 @@
         "t": "Mobby: Taman Belajar Bahasa Jepun",
         "d": "Laman web belajar bahasa Jepun untuk kanak-kanak"
       }
-    ]
+    ],
+    "summary": "7 permainan kecil dan karya yang boleh dimainkan terus dalam pelayar."
   },
   "exp": {
     "title": "Pengalaman Kerja",
@@ -509,5 +569,34 @@
     "hobby_title": "Minat",
     "hobby": "Mencipta lagu, bermain alat muzik (gitar, bes, piano), fotografi, berjoging, mendaki gunung dan melancong."
   },
-  "footer": "Lonny Pang Huan Hsiao (馮煥曉) · Kuala Lumpur · Kemas kini terakhir 2026-11"
+  "footer": "Lonny Pang Huan Hsiao (馮煥曉) · Kuala Lumpur · Kemas kini terakhir 2026-11",
+  "ui": {
+    "back": "← Utama",
+    "back_sw": "← Perisian",
+    "details": "Lihat butiran",
+    "open": "Buka",
+    "highlights": "Sorotan",
+    "all_features": "Semua ciri (klik untuk buka)",
+    "all_games": "7 permainan (klik untuk buka)",
+    "all_note": "Letakkan semua kandungan pada satu halaman untuk dicetak atau disimpan sebagai PDF",
+    "menu_title": "Apa yang anda ingin lihat?"
+  },
+  "home": {
+    "tagline": "Pengarah dan jurugambar yang sudah dua puluh tahun merakam foto dan video. Kini mengetuai pasukan kandungan, dan bersama AI membina alat penghasilan kandungan.",
+    "full": "Resume penuh (semua pada satu halaman)",
+    "cards": {
+      "software": "5 projek termasuk SOL Studio dan Onset 3.0, serta 7 permainan kecil",
+      "experience": "Dari 2004 hingga kini, 8 pengalaman kerja",
+      "awards": "Tempat kedua POTY 2010, Anugerah Juri KKIFF 2014 dan lain-lain",
+      "films": "Dokumentari, filem pendek dan video jenama, 18 karya untuk ditonton",
+      "photo": "Karya pemenang anugerah, pameran fotografi solo, fotografi acara",
+      "skills": "Fotografi, penyuntingan, aliran kerja AI, bahasa"
+    }
+  },
+  "handbook": {
+    "meta": "2026-11 · awam · Cina Tradisional, dengan versi Inggeris",
+    "summary": "Untuk pencipta yang baru menggunakan Onset: 8 bab, tidak perlu tahu pengaturcaraan, ikut sahaja langkahnya.",
+    "desc": "Manual pengguna baharu Onset, merangkumi pemasangan, enam pintu masuk halaman utama, penyuntingan, AI Onset, buat tanpa penggambaran, penjanaan awan, penyegerakan iPhone dan soalan lazim.",
+    "link": "Buka manual"
+  }
 }

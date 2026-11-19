@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOL Studio · 馮煥曉 Lonny</title>
+<meta name="description" content="馮煥曉 Lonny Pang Huan Hsiao — 導演、攝影師、內容創作者，也自己寫 AI 內容製作工具。">
+<link rel="alternate" hreflang="zh-Hant" href="https://zero5phh-ops.github.io/resume/zh/sol.html">
+<link rel="alternate" hreflang="en" href="https://zero5phh-ops.github.io/resume/en/sol.html">
+<link rel="alternate" hreflang="ms" href="https://zero5phh-ops.github.io/resume/ms/sol.html">
+<link rel="alternate" hreflang="ja" href="https://zero5phh-ops.github.io/resume/ja/sol.html">
+<link rel="alternate" hreflang="ko" href="https://zero5phh-ops.github.io/resume/ko/sol.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --paper:#fffdf8; --ink:#16161a; --muted:#5f5f68; --line:#e2ddd2;
+  --accent:#e0402f; --accent-soft:#fbe4df; --tag:#efeae0; --shadow:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e0e11; --paper:#17171b; --ink:#ececf0; --muted:#a0a0aa; --line:#2a2a31;
+  --accent:#ff5a46; --accent-soft:#3a1d19; --tag:#24242a; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}}
+:root[data-theme="dark"]{
+  --bg:#0e0e11; --paper:#17171b; --ink:#ececf0; --muted:#a0a0aa; --line:#2a2a31;
+  --accent:#ff5a46; --accent-soft:#3a1d19; --tag:#24242a; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Noto Sans TC",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+nav.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:18px;align-items:center;height:52px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav.top .wrap::-webkit-scrollbar{display:none}
+nav.top a{text-decoration:none;font-size:14px;color:var(--muted)}
+nav.top a:hover{color:var(--ink)}
+nav.top .brand{font-weight:900;color:var(--ink);margin-right:auto;font-size:15px}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center;padding:72px 0 56px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(40px,7vw,72px);line-height:1.05;margin:10px 0 6px}
+h1 small{display:block;font-family:"Noto Sans TC",sans-serif;font-weight:500;font-size:.34em;color:var(--muted);margin-top:12px;letter-spacing:.02em}
+.lead{font-size:18px;color:var(--ink);max-width:36em}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.chip{background:var(--tag);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:8px 14px;font-size:14px;text-decoration:none;font-weight:500}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.portrait{position:relative}
+.portrait img{border-radius:20px;box-shadow:var(--shadow);aspect-ratio:1/1;object-fit:cover;width:100%}
+.portrait .badge{position:absolute;left:-14px;bottom:24px;background:var(--accent);color:#fff;border-radius:12px;padding:10px 14px;font-size:13px;line-height:1.35;box-shadow:var(--shadow)}
+.portrait .badge b{display:block;font-size:22px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:"Noto Serif TC",serif;font-size:clamp(26px,4vw,36px);margin:0 0 6px;line-height:1.2}
+h2 + .sub{color:var(--muted);margin:0 0 32px}
+h3{font-size:22px;margin:0;line-height:1.3}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--shadow)}
+.project{margin-bottom:28px}
+.phead{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin-bottom:6px}
+.vis{font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;letter-spacing:.04em}
+.vis.priv{background:var(--accent-soft);color:var(--accent)}
+.vis.pub{background:#dff3e4;color:#1d7a3a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .vis.pub{background:#16301e;color:#7fd99a}}
+:root[data-theme="dark"] .vis.pub{background:#16301e;color:#7fd99a}
+.meta{color:var(--muted);font-size:14px}
+.pdesc{margin:10px 0 18px;font-size:17px}
+.feat{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 28px;margin:0 0 20px;padding:0;list-style:none}
+.feat li{position:relative;padding-left:18px;font-size:15px}
+.feat li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;border-radius:2px;background:var(--accent)}
+.feat b{font-weight:700}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.stack span{font-size:12px;background:var(--tag);color:var(--muted);border-radius:6px;padding:2px 8px}
+figure{margin:0}
+figure.shot img{border-radius:12px;border:1px solid var(--line)}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.shots .wide{grid-column:1/-1}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mini{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;text-decoration:none;display:flex;flex-direction:column;gap:4px;transition:transform .15s,border-color .15s}
+a.mini:hover{transform:translateY(-2px);border-color:var(--accent);color:inherit}
+.mini .t{font-weight:700}
+.mini .d{font-size:14px;color:var(--muted)}
+.mini .u{font-size:12px;color:var(--accent);margin-top:auto;padding-top:8px;word-break:break-all}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 26px 26px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:.55em;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
+.timeline li.now::before{background:var(--accent)}
+.timeline .yr{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.04em}
+.timeline .role{font-weight:700;font-size:17px}
+.timeline .org{color:var(--muted);font-size:15px}
+.timeline p{margin:4px 0 0;font-size:15px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.awards{list-style:none;margin:0;padding:0}
+.awards li{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.awards li span{color:var(--accent);font-weight:700}
+.awards li.hl{font-weight:700}
+.vids{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.vid{display:flex;gap:12px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px;text-decoration:none}
+a.vid:hover{border-color:var(--accent);color:inherit}
+.vid img{width:120px;aspect-ratio:16/9;object-fit:cover;border-radius:8px;flex:none;background:var(--tag)}
+.vid .ph{width:120px;aspect-ratio:16/9;border-radius:8px;flex:none;background:var(--tag);display:grid;place-items:center;color:var(--muted);font-size:12px}
+.vid .t{font-weight:700;font-size:15px;line-height:1.35}
+.vid .d{font-size:13px;color:var(--muted)}
+.vid.dead{opacity:.6}
+h4{font-size:15px;letter-spacing:.06em;color:var(--muted);margin:32px 0 12px;font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery figure img{border-radius:10px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 32px}
+.skill{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:15px}
+.skill .lv{display:flex;gap:3px;align-items:center}
+.skill .lv i{width:16px;height:6px;border-radius:3px;background:var(--line)}
+.skill .lv i.on{background:var(--accent)}
+.skill small{color:var(--muted)}
+footer{padding:40px 0 64px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.theme{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:4px 10px;font:inherit;font-size:13px;cursor:pointer}
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;gap:28px;padding:40px 0}
+  .portrait{max-width:300px}
+  .portrait .badge{left:auto;right:-8px}
+  .feat,.shots,.two,.vids,.skills{grid-template-columns:1fr}
+  .grid3,.gallery{grid-template-columns:1fr 1fr}
+  .card{padding:20px}
+}
+@media (max-width:480px){.grid3,.gallery{grid-template-columns:1fr}}
+@media print{nav.top,.theme{display:none}section{break-inside:avoid-page}body{background:#fff}}
+.langs{display:flex;gap:2px;border:1px solid var(--line);border-radius:8px;padding:2px;background:var(--paper);flex:none}
+.langs a{font-size:12px;padding:2px 8px;border-radius:6px;color:var(--muted)}
+.langs a[aria-current]{background:var(--ink);color:var(--bg)}
+html[lang=ja] body{font-family:"Noto Sans JP","Noto Sans TC",system-ui,sans-serif}
+html[lang=ko] body{font-family:"Noto Sans KR","Noto Sans TC",system-ui,sans-serif}
+html[lang=ja] h1,html[lang=ja] h2{font-family:"Noto Serif JP","Noto Serif TC",serif}
+html[lang=ko] h1,html[lang=ko] h2{font-family:"Noto Serif KR","Noto Serif TC",serif}
+html[lang=en] .lead,html[lang=ms] .lead{font-size:17px}
+html[lang=en] body,html[lang=ms] body{font-family:"Noto Sans","Noto Sans TC",system-ui,sans-serif}
+html[lang=en] h1,html[lang=en] h2,html[lang=ms] h1,html[lang=ms] h2{font-family:"Noto Serif","Noto Serif TC",serif}
+nav.top .back{font-weight:700;color:var(--ink);margin-right:auto;font-size:15px;text-decoration:none}
+.muted{color:var(--muted)}
+.hero.simple{padding:48px 0 32px;gap:40px}
+.hero.simple .portrait{max-width:300px;justify-self:end;width:100%}
+.menu-wrap{padding-bottom:24px}
+.menu-title{font-family:"Noto Serif TC",serif;font-size:clamp(24px,3.5vw,30px);margin:0 0 18px}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.menu a{display:flex;flex-direction:column;gap:6px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;text-decoration:none;box-shadow:var(--shadow);transition:transform .15s,border-color .15s;min-height:160px}
+.menu a:hover{transform:translateY(-3px);border-color:var(--accent);color:inherit}
+.menu .n{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.08em}
+.menu .t{font-size:22px;font-weight:700;line-height:1.25}
+.menu .d{font-size:14px;color:var(--muted);line-height:1.55}
+.menu .arrow{margin-top:auto;color:var(--accent);font-size:20px}
+.homefoot{margin:0 0 20px}
+.homefoot .muted{font-size:13px;margin-left:8px}
+.detail{padding-bottom:56px}
+.ptitle{font-family:"Noto Serif TC",serif;font-size:clamp(30px,5vw,44px);margin:32px 0 6px;line-height:1.15}
+.detail > .sub{margin:0 0 24px}
+.detail > .meta{margin:4px 0 12px}
+.proj{display:block;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin-bottom:16px;text-decoration:none;box-shadow:var(--shadow)}
+a.proj:hover{border-color:var(--accent);color:inherit}
+.proj p{margin:8px 0 10px;font-size:16px}
+.proj .go{color:var(--accent);font-weight:700;font-size:14px}
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+.point{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px}
+.point b{display:block;margin-bottom:4px;font-size:15px}
+.point span{font-size:14px;color:var(--muted);line-height:1.55;display:block}
+details.fold{margin:18px 0;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+details.fold summary{cursor:pointer;padding:12px 16px;font-weight:700;list-style:none}
+details.fold summary::-webkit-details-marker{display:none}
+details.fold summary::after{content:"＋";float:right;color:var(--accent)}
+details.fold[open] summary::after{content:"－"}
+details.fold > *:not(summary){margin-left:16px;margin-right:16px}
+details.fold > :last-child{margin-bottom:16px}
+details.fold .grid3{margin-top:6px}
+@media (max-width:820px){.menu{grid-template-columns:1fr 1fr}.points{grid-template-columns:1fr 1fr}.hero.simple .portrait{justify-self:start}}
+@media (max-width:520px){.menu,.points{grid-template-columns:1fr}.menu a{min-height:0}}
+.hero,.hero.simple{padding-left:16px;padding-right:16px}
+.menu-sec{border-top:0;padding:8px 0 28px}
+.homefoot .muted{display:block;margin:8px 0 0}
+@media (max-width:520px){
+  nav.top .wrap{gap:10px}
+  nav.top .brand,nav.top .back{font-size:14px}
+  .langs a{padding:2px 6px;font-size:11px}
+  .menu a{padding:16px 18px;gap:4px}
+  .menu .t{font-size:20px}
+  .menu .arrow{position:absolute;right:18px;bottom:14px;margin:0}
+  .menu a{position:relative}
+}
+
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="back" href="../zh/software.html">← 軟體作品</a>
+  <span class="langs"><a href="../zh/sol.html" hreflang="zh-Hant" aria-current="page">中文</a><a href="../en/sol.html" hreflang="en">EN</a><a href="../ms/sol.html" hreflang="ms">BM</a><a href="../ja/sol.html" hreflang="ja">日本語</a><a href="../ko/sol.html" hreflang="ko">한국어</a></span>
+  <button class="theme" id="theme" type="button" aria-label="切換深淺色">◐</button>
+</div></nav>
+<main class="wrap detail"><h1 class="ptitle">SOL Studio</h1><p class="meta">2026-08 至今 · 2,000+ 個 commits · 公司內部正式上線</p>
+    <p class="pdesc">SOL Integrative Wellness Centre 的醫生內容生產系統：一句話寫好一整個月的腳本 → 醫生用手機提詞器拍攝 → 自動初剪 → 審片 → 排程發佈到社群 → 一鍵出 KPI。全公司非技術同事每天在用，介面中／英／馬來三語。</p>
+    <div class="links" style="margin-bottom:18px"><a class="btn primary" href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener">打開 SOL Studio Landing Page ↗</a></div>
+    <div class="points"><div class="point"><b>一句話寫完一個月的腳本</b><span>輸入「Dr Vig November」，AI 用醫生本人的語氣寫完，還會做醫療聲明檢查。</span></div><div class="point"><b>手機提詞器拍攝</b><span>分鏡卡片加滾動提詞器，拍完自動上傳、歸檔到共享盤。</span></div><div class="point"><b>AI 自動初剪</b><span>剪掉停頓和重拍、加字幕、配 B-roll、做封面。</span></div><div class="point"><b>瀏覽器裡的剪輯器</b><span>多軌時間線，也能叫 AI 一步一步剪給你看。</span></div><div class="point"><b>排程發佈與 KPI</b><span>發到 FB / IG / TikTok / YouTube，一鍵產生月報表。</span></div><div class="point"><b>權限與隱私</b><span>依角色和部門給權限，病人資料只給被授權的人。</span></div></div>
+    <details class="fold"><summary>全部功能（點開）</summary><ul class="feat"><li><b>Create Script</b>：輸入「Dr Vig November」，AI 用醫生本人的語氣寫完整個月，附 Hook、醫療聲明檢查；也能解析行銷部門的 PPT 月計劃</li>
+<li><b>手機拍攝 App</b>（iOS / Android，Expo）：分鏡卡片 + 滾動提詞器，拍完自動上傳、歸檔到共享盤</li>
+<li><b>AI 自動初剪</b>：剪掉停頓和重拍、Whisper 對齊字幕、B-roll 配對、動態數字重點、3 秒 Hook、封面</li>
+<li><b>Pass to AI</b>：一句話改片，工作排隊到各台 Mac 上的 AI helper 執行；可匯出 CapCut 工程檔</li>
+<li><b>瀏覽器時間線剪輯器</b>：多軌、調色、人聲分離、去背、轉場、16 種字幕、AI-cut 即時看著 AI 一步步剪</li>
+<li><b>Podcast 多機位</b>：多台相機和麥克風按聲音自動對齊，判斷誰在說話自動切鏡</li>
+<li><b>Design 板</b>：FB / IG 圖文由 AI 寫稿，Auto Design 一次出三版可分層編輯的 PSD</li>
+<li><b>醫生 AI 配音</b>：內部克隆聲音做旁白，電話號碼逐位唸、英馬混語照原文念</li>
+<li><b>GHL 排程發佈</b>：FB / IG / TikTok / YouTube，留言盯梢有新回覆就響鈴</li>
+<li><b>素材庫 3,000+ 支成片</b>、Dashboard 看板、Content KPI Excel 報表、Webinar 與客戶名單</li>
+<li><b>權限與隱私</b>：角色／部門權限、聊天只認成員身份、病人同意書只給授權的人</li>
+<li><b>MCP 伺服器</b>：Claude 等外部 AI 可以直接在 App 裡建任務、寫腳本、看時間線</li></ul></details>
+    <div class="stack"><span>Next.js</span><span>Fastify</span><span>Prisma / SQLite</span><span>Expo (React Native)</span><span>FFmpeg</span><span>faster-whisper</span><span>Claude API / Claude CLI</span><span>HeyGen</span><span>GoHighLevel API</span><span>Docker</span><span>Cloudflare Tunnel</span><span>MCP</span></div>
+    <figure class="shot"><a href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener"><img src="../assets/sol-studio-landing.jpg" alt="SOL Studio landing page" loading="lazy"></a><figcaption>SOL Studio 公開的 landing page（登入後才是工作系統）。前身是 AI-Content-studio（2026-08，MVP：Web 建腳本 → 手機提詞拍攝 → 自動後期）。</figcaption></figure></main>
+<footer><div class="wrap">馮煥曉 Lonny Pang Huan Hsiao · Kuala Lumpur · 最後更新 2026-11 · <a href="https://github.com/zero5phh-ops" target="_blank" rel="noopener">github.com/zero5phh-ops</a></div></footer>
+<script>
+const root=document.documentElement,key="resume-theme";
+try{const t=localStorage.getItem(key);if(t)root.dataset.theme=t}catch(e){}
+document.getElementById("theme").onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;root.dataset.theme=dark?"light":"dark";try{localStorage.setItem(key,root.dataset.theme)}catch(e){}};
+</script>
+</body>
+</html>

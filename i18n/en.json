@@ -25,10 +25,10 @@
   },
   "sw": {
     "title": "Software",
-    "sub": "Pair-programming with Claude since 2026. Private repos are described in detail; public repos are linked directly."
+    "sub": "Pair-built with Claude since 2026. Open any project for the details."
   },
   "sol": {
-    "meta": "Aug 2026 — Present · ~2,000 commits · In production company-wide",
+    "meta": "2026-08 to present · 2,000+ commits · in live use company-wide",
     "desc": "Doctor content production system for SOL Integrative Wellness Centre: one sentence writes a full month of scripts → doctors film on a phone teleprompter → automatic rough cut → review → scheduled social publishing → one-click KPI reports. Used daily by non-technical staff across the company, with a Chinese / English / Malay interface.",
     "open": "Open the SOL Studio landing page",
     "features": [
@@ -45,25 +45,55 @@
       "<b>Permissions and privacy</b>: role/department access, chat tied to member identity, patient consent forms visible only to authorised staff",
       "<b>MCP server</b>: Claude and other external AIs can create tasks, write scripts and read timelines directly in the app"
     ],
-    "caption": "The public SOL Studio landing page (the working system sits behind login). It grew out of AI-Content-studio (Aug 2026, MVP: web scripting → phone teleprompter filming → automatic post-production)."
+    "caption": "The public SOL Studio landing page (the working system sits behind login). It grew out of AI-Content-studio (Aug 2026, MVP: web scripting → phone teleprompter filming → automatic post-production).",
+    "summary": "A content production system for doctors: one sentence writes the script → shoot with a phone teleprompter → AI rough cut → scheduled publishing → KPIs. Used across the company every day.",
+    "points": [
+      {
+        "t": "A month of scripts from one sentence",
+        "d": "Type \"Dr Vig November\" and the AI writes in the doctor's own voice, then runs a medical-claims check."
+      },
+      {
+        "t": "Phone teleprompter shooting",
+        "d": "Shot cards with a scrolling teleprompter; footage uploads and files itself to the shared drive."
+      },
+      {
+        "t": "AI rough cut",
+        "d": "Removes pauses and retakes, adds subtitles and B-roll, and makes the cover."
+      },
+      {
+        "t": "Editor in the browser",
+        "d": "Multi-track timeline, and the AI can edit step by step while you watch."
+      },
+      {
+        "t": "Scheduled publishing and KPIs",
+        "d": "Posts to FB / IG / TikTok / YouTube and builds a monthly report in one click."
+      },
+      {
+        "t": "Permissions and privacy",
+        "d": "Access by role and department; patient data goes only to authorized people."
+      }
+    ]
   },
   "onset": {
-    "meta": "Started 10 Nov 2026 · 327 commits in 6 days · Mac and iPhone / iPad apps running on my own devices · not yet released",
+    "meta": "Started 2026-11-10 · 455 commits in 10 days · Mac and iPhone / iPad apps running on my own devices · not yet publicly released",
     "desc": "A creator studio rewritten from scratch: scripting, shooting, editing, covers and posts, and AI generation in one app. One codebase ships as a Mac app and an iPhone / iPad app that sync offline-first. AI Onset sits on every screen: it sees the screen, searches the web, talks by voice and can operate every feature in the app, step by step in front of you, with stop and whole-run undo.",
     "features": [
-      "<b>Mac app and iPhone / iPad app</b> (Tauri 2 + Swift): one codebase, three shells; on the phone, AVFoundation export, Apple Speech dictation, Apple Vision cut-outs and Image Playground",
-      "<b>Sync and relay</b>: pair by QR code, offline-first, both versions kept when both sides change; on 4G / 5G the phone reaches the Mac at home through a Cloudflare Worker + Durable Objects, end-to-end sealed",
-      "<b>AI Onset</b>: an assistant on every page that sees the screen and pointer, searches the web and talks; every feature lives in one action catalogue, and 1–10 agents can work at once",
-      "<b>One-click MCP</b>: Claude Desktop, Claude Code, ChatGPT / Codex, Cursor and other AI apps can drive Onset, every step shown on screen",
-      "<b>Create Script</b>: the AI writes in six visible steps — angle, hook, draft in your style, platform check, spoken / de-AI pass, risk check (medical claims, copying); 9 formats, 36 styles",
-      "<b>Recording</b>: a teleprompter that follows your voice (5 languages), voice commands, Bluetooth remote keys, countdown; an iPhone as the Mac's camera or as a remote camera for multi-cam",
-      "<b>CapCut-style editor</b>: keyframes, 39 transitions, masks, LUTs and HLG / Log → 709, speed curves, 20 caption looks with karaoke, dozens of kinetic-text styles, Three.js / Godot graphics, built-in royalty-free music and SFX",
-      "<b>Auto-cut and AI Edit</b>: hears the whole video once, finds retakes, edits chapter by chapter, adds chapter cards and punch-ins; long videos become Shorts",
-      "<b>Hours-long multi-cam podcasts</b>: read straight from an external drive, synced by sound, cut to whoever is speaking, exported at a steady loudness (−14 / −16 LUFS)",
-      "<b>Make it without shooting</b>: AI research with free-licence stock; local generation (MiniMax H3 video, Qwen Image, your own LoRAs); cloud-generation plug-in",
-      "<b>Cover and post design</b>: 35 layouts, curved text, carousels; the iPhone lays posts out on its own, no Mac needed",
-      "<b>Style packs and skins</b>: one pack carries captions, layouts, fonts and music, and can even rename and recolour the app (Ed25519-signed); projects share as .onsetpack files",
-      "<b>Accounts and licences</b>: a Cloudflare Worker + D1 service for sign-up, approval and per-device licences; the UI in 6 languages (Traditional / Simplified Chinese, English, Malay, Japanese, Korean)",
+      "<b>Mac app and iPhone / iPad app</b> (Tauri 2 + Swift): one codebase, three shells; on the phone, AVFoundation for export, Apple Speech for dictation, Apple Vision for background removal, Image Playground for image generation",
+      "<b>Sync and relay</b>: pair by scanning a QR code; offline-first, and if both sides edit, both versions are kept; away from home on 4G / 5G, an end-to-end encrypted connection to the Mac at home runs through a Cloudflare Worker + Durable Objects",
+      "<b>AI Onset</b>: an AI assistant on every page that sees the screen and cursor, searches the web and talks by voice; all features sit in one action catalogue, and 1–10 agents can share the work, each a colored cursor that flies to the spot it is editing",
+      "<b>One-click MCP install</b>: external AIs such as Claude Desktop, Claude Code, ChatGPT / Codex and Cursor can operate Onset directly, with every step shown on screen",
+      "<b>Create Script</b>: the AI writes in six visible steps: angle, Hook, first draft in your style, platform check, de-AI the wording into natural speech, risk check (medical claims, plagiarism); 9 formats, 36 styles",
+      "<b>Recording</b>: a teleprompter that follows your voice (5 languages), voice commands, Bluetooth remote keys, countdown; the iPhone can serve as the Mac's camera or a remote camera for multi-cam",
+      "<b>CapCut-style editor</b>: keyframes, 39 transitions, masks, LUT and HLG / Log → 709, speed curves, 20 subtitle styles plus karaoke, dozens of kinetic-text styles, Three.js / Godot cards, built-in royalty-free music and sound effects",
+      "<b>Auto-cut and AI Edit</b>: listens to the whole video before cutting, finds retakes automatically, edits chapter by chapter, chapter cards, emphasis zooms; long videos are split into multiple Shorts",
+      "<b>Multi-hour multi-cam podcasts</b>: reads straight from an external drive without copying, aligns by sound, detects the speaker to switch cameras automatically, exports at consistent loudness (−14 / −16 LUFS)",
+      "<b>Make it without shooting</b>: a script alone can become a video, with visuals for every line: the AI researches and finds freely licensed footage, fills gaps with AI images or animated cards; it estimates total time up front and shows time remaining while it works",
+      "<b>Kinetic-type shots</b>: one big word per beat, camera moves, transitions, 3D props, fake app screens; exportable to EffectCraft",
+      "<b>Animation board</b>: the AI plans first, then draws real illustrations and rigs them to move; frame-by-frame animation, repeating patterns, 3D text, and you can take over and edit by hand",
+      "<b>AI generation</b>: local (MiniMax H3 video, Qwen Image, my own LoRA) plus cloud Higgsfield and Theater; Theater quotes a price first and starts only after you agree",
+      "<b>Covers, posts and Branding styles</b>: 35 layouts, curved text, carousels; a channel's own intro and outro, name bars, chapter cards and watermark; the iPhone can design on its own without the Mac",
+      "<b>Style packs and skins</b>: one pack carries subtitles, layouts, fonts and music, and can even swap the app's name, icon and colors (Ed25519-signed); projects are packaged as .onsetpack to share",
+      "<b>Accounts and licensing</b>: a Cloudflare Worker + D1 account service with sign-up, approval and per-device licensing; the interface is available in Traditional Chinese, Simplified Chinese, English, Malay, Japanese and Korean",
       "<b>Export</b>: MP4 / MOV / MP3 / WAV, plus CapCut, FCPXML, Premiere XML and FilmCraft project files"
     ],
     "cap_editing": "Editing: Auto-cut hears the whole clip once and makes the captions at the same time (demo clip).",
@@ -71,14 +101,43 @@
     "cap_script": "Create Script: AI Onset writing for real, with each step and the risk check listed on the left.",
     "cap_recording": "Recording: the teleprompter over the camera picture, able to follow your voice.",
     "cap_phone": "iPhone app: simple editor, post design, Start, the generation library synced with the Mac, prompt steps for other AI platforms.",
-    "cap_ipad": "iPad: the post designer (simulator)."
+    "cap_ipad": "iPad: the post designer (simulator).",
+    "summary": "A personal studio for creators: scripting, shooting, editing, design and AI generation in one app, on Mac, iPhone and iPad.",
+    "points": [
+      {
+        "t": "One app, three devices",
+        "d": "Mac, iPhone and iPad sync offline; on the go, you can still reach your Mac at home."
+      },
+      {
+        "t": "AI Onset assistant",
+        "d": "On every page. It sees the screen, searches the web, takes voice, and works step by step in front of you, and you can stop it anytime."
+      },
+      {
+        "t": "Script to finished video",
+        "d": "AI scriptwriting, teleprompter shooting, CapCut-style editing, Auto-cut, automatic subtitles."
+      },
+      {
+        "t": "Make videos without shooting",
+        "d": "AI finds free stock footage, local and cloud generation, kinetic text, Animation board."
+      },
+      {
+        "t": "Cover and post design",
+        "d": "35 layouts; the iPhone can design on its own without the Mac."
+      },
+      {
+        "t": "Style packs and languages",
+        "d": "Take subtitles, layouts, fonts and music with you in one pack; the interface comes in 6 languages."
+      }
+    ]
   },
   "vpipe": {
-    "desc": "A small web app that runs MiniMax H3 (video with sound) and Qwen Image 2.1 Turbo (images) locally on a Mac — no cloud, no credits. Built-in setup checks and one-click model download, AI prompt enhancement, character LoRAs, queueing and 2× upscaling; offloads work to the Neural Engine, cutting a 5-second video on an M3 Air from ~73 to ~35 minutes."
+    "desc": "A small web app that runs MiniMax H3 (video with sound) and Qwen Image 2.1 Turbo (images) locally on a Mac — no cloud, no credits. Built-in setup checks and one-click model download, AI prompt enhancement, character LoRAs, queueing and 2× upscaling; offloads work to the Neural Engine, cutting a 5-second video on an M3 Air from ~73 to ~35 minutes.",
+    "summary": "A small web app that runs AI video and image generation locally on a Mac. Open source (MIT), no cloud, no credits."
   },
   "stock": {
     "meta": "Oct 2026 · Personal use",
-    "desc": "US and Malaysian (Bursa Malaysia) stock research dashboard: market overview, candlestick charts and news per stock, holding signals with plain-language notes, backtesting, a paper-trading account, and daily Traditional Chinese briefings written by four AI assistants. Python + Streamlit, runs locally only."
+    "desc": "US and Malaysian (Bursa Malaysia) stock research dashboard: market overview, candlestick charts and news per stock, holding signals with plain-language notes, backtesting, a paper-trading account, and daily Traditional Chinese briefings written by four AI assistants. Python + Streamlit, runs locally only.",
+    "summary": "A US and Malaysian stock research dashboard where an AI assistant writes a daily briefing. Personal use, runs only on my own machine."
   },
   "games": {
     "title": "Web games and side projects (public, playable)",
@@ -118,7 +177,8 @@
         "t": "Mobby Japanese Playland (Mobby 日語學習樂園)",
         "d": "Japanese-learning site for kids"
       }
-    ]
+    ],
+    "summary": "7 small games and projects you can play right in the browser."
   },
   "exp": {
     "title": "Work Experience",
@@ -509,5 +569,34 @@
     "hobby_title": "Interests",
     "hobby": "Songwriting, playing guitar, bass and piano, photography, running, hiking, travel."
   },
-  "footer": "Lonny Pang Huan Hsiao (馮煥曉) · Kuala Lumpur · Last updated Nov 2026"
+  "footer": "Lonny Pang Huan Hsiao (馮煥曉) · Kuala Lumpur · Last updated Nov 2026",
+  "ui": {
+    "back": "← Home",
+    "back_sw": "← Software",
+    "details": "See details",
+    "open": "Open",
+    "highlights": "Highlights",
+    "all_features": "All features (tap to expand)",
+    "all_games": "7 games (tap to expand)",
+    "all_note": "Puts everything on one page, handy for printing or saving as a PDF",
+    "menu_title": "What would you like to see?"
+  },
+  "home": {
+    "tagline": "A director and photographer with twenty years of photo and video work. Now leading a content team and building content-production tools together with AI.",
+    "full": "Full resume (everything on one page)",
+    "cards": {
+      "software": "SOL Studio, Onset 3.0 and 3 more projects, plus 7 small games",
+      "experience": "2004 to today, 8 roles",
+      "awards": "POTY 2010 runner-up, KKIFF 2014 Jury Award, and more",
+      "films": "Documentaries, short films and brand films, 18 to watch",
+      "photo": "Award-winning work, solo photo exhibitions, live photography",
+      "skills": "Photography, editing, AI workflows, languages"
+    }
+  },
+  "handbook": {
+    "meta": "2026-11 · public · Traditional Chinese, with an English edition",
+    "summary": "For creators using Onset for the first time: 8 chapters, no coding needed, just follow along.",
+    "desc": "A beginner's handbook for Onset covering installation, the six home-page entrances, editing, AI Onset, making videos without shooting, cloud generation, iPhone sync and FAQs.",
+    "link": "Open the handbook"
+  }
 }

@@ -25,10 +25,10 @@
   },
   "sw": {
     "title": "軟體作品",
-    "sub": "2026 年起和 Claude 結對開發。私有 repo 寫細節，公開 repo 直接附連結。"
+    "sub": "2026 年起和 Claude 結對開發。點進去看每個作品的詳細。"
   },
   "sol": {
-    "meta": "2026-08 至今 · 約 2,000 個 commits · 公司內部正式上線",
+    "meta": "2026-08 至今 · 2,000+ 個 commits · 公司內部正式上線",
     "desc": "SOL Integrative Wellness Centre 的醫生內容生產系統：一句話寫好一整個月的腳本 → 醫生用手機提詞器拍攝 → 自動初剪 → 審片 → 排程發佈到社群 → 一鍵出 KPI。全公司非技術同事每天在用，介面中／英／馬來三語。",
     "open": "打開 SOL Studio Landing Page",
     "features": [
@@ -45,23 +45,53 @@
       "<b>權限與隱私</b>：角色／部門權限、聊天只認成員身份、病人同意書只給授權的人",
       "<b>MCP 伺服器</b>：Claude 等外部 AI 可以直接在 App 裡建任務、寫腳本、看時間線"
     ],
-    "caption": "SOL Studio 公開的 landing page（登入後才是工作系統）。前身是 AI-Content-studio（2026-08，MVP：Web 建腳本 → 手機提詞拍攝 → 自動後期）。"
+    "caption": "SOL Studio 公開的 landing page（登入後才是工作系統）。前身是 AI-Content-studio（2026-08，MVP：Web 建腳本 → 手機提詞拍攝 → 自動後期）。",
+    "summary": "醫生內容生產系統：一句話寫腳本 → 手機提詞拍攝 → AI 初剪 → 排程發佈 → KPI。全公司每天在用。",
+    "points": [
+      {
+        "t": "一句話寫完一個月的腳本",
+        "d": "輸入「Dr Vig November」，AI 用醫生本人的語氣寫完，還會做醫療聲明檢查。"
+      },
+      {
+        "t": "手機提詞器拍攝",
+        "d": "分鏡卡片加滾動提詞器，拍完自動上傳、歸檔到共享盤。"
+      },
+      {
+        "t": "AI 自動初剪",
+        "d": "剪掉停頓和重拍、加字幕、配 B-roll、做封面。"
+      },
+      {
+        "t": "瀏覽器裡的剪輯器",
+        "d": "多軌時間線，也能叫 AI 一步一步剪給你看。"
+      },
+      {
+        "t": "排程發佈與 KPI",
+        "d": "發到 FB / IG / TikTok / YouTube，一鍵產生月報表。"
+      },
+      {
+        "t": "權限與隱私",
+        "d": "依角色和部門給權限，病人資料只給被授權的人。"
+      }
+    ]
   },
   "onset": {
-    "meta": "2026-11-10 開始 · 6 天 327 個 commits · Mac 與 iPhone / iPad App 已在自己的裝置上運作 · 尚未公開發佈",
+    "meta": "2026-11-10 開始 · 10 天 455 個 commits · Mac 與 iPhone / iPad App 已在自己的裝置上運作 · 尚未公開發佈",
     "desc": "完全從零重寫、給內容創作者的個人工作室：寫腳本、拍攝、剪輯、做封面和貼文、AI 生成，都在同一個 App 裡。同一套程式做成 Mac App 和 iPhone / iPad App，彼此離線優先同步。每個畫面都有 AI Onset：它看得到畫面、會上網查資料、能用聲音對話，App 裡每一個功能它都能操作，而且一步一步做給你看，隨時可以停、可以整次復原。",
     "features": [
       "<b>Mac App 與 iPhone / iPad App</b>（Tauri 2 + Swift）：一套程式三個外殼；手機上用 AVFoundation 輸出、Apple Speech 聽寫、Apple Vision 去背、Image Playground 生圖",
       "<b>同步與轉接站</b>：掃 QR code 配對，離線優先、兩邊都改會保留兩個版本；在外面用 4G / 5G 也能經 Cloudflare Worker + Durable Objects 端對端加密連回家裡的 Mac",
-      "<b>AI Onset</b>：每頁都在的 AI 助理，看得到螢幕和游標、會搜尋網路、能語音對話；所有功能集中在一份動作清單，可同時派 1–10 個 agent 分工",
+      "<b>AI Onset</b>：每頁都在的 AI 助理，看得到螢幕和游標、會搜尋網路、能語音對話；所有功能集中在一份動作清單，可同時派 1–10 個 agent 分工，每個 agent 是一個彩色游標，飛到它正在改的地方",
       "<b>MCP 一鍵安裝</b>：Claude Desktop、Claude Code、ChatGPT / Codex、Cursor 等外部 AI 可直接操作 Onset，每一步都顯示在畫面上",
       "<b>Create Script</b>：AI 分六步寫給你看——角度、Hook、照風格寫初稿、平台檢查、口語化去 AI 味、風險檢查（醫療聲明、抄襲）；9 種格式、36 種風格",
       "<b>Recording</b>：會跟著聲音走的提詞器（5 種語言）、語音指令、藍牙遙控鍵、倒數；iPhone 可當 Mac 的鏡頭，或當遙控攝影機做多機位",
       "<b>CapCut 式剪輯器</b>：關鍵幀、39 種轉場、遮罩、LUT 與 HLG / Log → 709、變速曲線、20 種字幕與卡拉 OK、數十種飛字、Three.js / Godot 圖卡、內建免版稅音樂音效",
       "<b>Auto-cut 與 AI Edit</b>：一次聽完全片再剪、自動找重拍、逐章剪輯、章節卡、重點放大；長片自動切成多支 Shorts",
       "<b>數小時的多機位 Podcast</b>：直接讀外接硬碟不複製、按聲音對齊、判斷誰在說話自動切鏡、輸出統一響度（−14 / −16 LUFS）",
-      "<b>不拍，直接做</b>：AI 查資料配免費授權素材；本機生成（MiniMax H3 影片、Qwen Image、自己的 LoRA）；雲端生成外掛",
-      "<b>封面與貼文設計</b>：35 種版型、弧形文字、輪播；iPhone 不連 Mac 也能自己排版",
+      "<b>不拍，直接做</b>：只有腳本也能出片，每一句都配畫面——AI 查資料找免費授權素材、補畫 AI 圖或做動畫圖卡；開始前先估總時間，做的時候顯示還要多久",
+      "<b>動態字鏡頭</b>：一拍一個大字、運鏡、轉場、3D 道具、假 App 畫面，可匯出到 EffectCraft",
+      "<b>動畫畫板</b>：AI 先規劃再畫出真正的插畫並加上骨架動起來；逐格動畫、圖樣重複、3D 立體字，也能手動接手修改",
+      "<b>AI 生成</b>：本機（MiniMax H3 影片、Qwen Image、自己的 LoRA）加雲端 Higgsfield 和 Theater；Theater 先報價、同意才開始做",
+      "<b>封面、貼文與包裝風格</b>：35 種版型、弧形文字、輪播；頻道自己的片頭片尾、名字條、章節卡和水印；iPhone 不連 Mac 也能自己排版",
       "<b>風格包與外殼</b>：一包帶走字幕、版型、字體、音樂，甚至換掉 App 名稱、圖示和顏色（Ed25519 簽章）；專案打包成 .onsetpack 分享",
       "<b>帳號與授權</b>：Cloudflare Worker + D1 帳號服務，申請、審核、每台裝置授權；介面有繁中、簡中、英、馬來、日、韓 6 種語言",
       "<b>輸出</b>：MP4 / MOV / MP3 / WAV，並可匯出 CapCut、FCPXML、Premiere XML、FilmCraft 工程檔"
@@ -71,14 +101,43 @@
     "cap_script": "Create Script：AI Onset 真的在寫，左邊列出每一步和風險檢查結果。",
     "cap_recording": "Recording：提詞器疊在鏡頭畫面上，可以跟著聲音捲動。",
     "cap_phone": "iPhone App：簡易剪輯器、貼文設計、首頁、和 Mac 同步的生成庫、給其他 AI 平台的 prompt 步驟。",
-    "cap_ipad": "iPad：貼文設計器（模擬器）。"
+    "cap_ipad": "iPad：貼文設計器（模擬器）。",
+    "summary": "給創作者的個人工作室：寫腳本、拍攝、剪輯、設計、AI 生成都在同一個 App，Mac、iPhone、iPad 都能用。",
+    "points": [
+      {
+        "t": "一個 App，三種裝置",
+        "d": "Mac、iPhone、iPad 離線同步；人在外面也能連回家裡的 Mac。"
+      },
+      {
+        "t": "AI Onset 助理",
+        "d": "每一頁都在。會看畫面、上網查資料、能用說的，並且一步一步做給你看，隨時可以停。"
+      },
+      {
+        "t": "從腳本到成片",
+        "d": "AI 寫腳本、提詞器拍攝、CapCut 式剪輯、Auto-cut、自動字幕。"
+      },
+      {
+        "t": "不拍也能做影片",
+        "d": "AI 找免費素材、本機與雲端生成、動態字、動畫畫板。"
+      },
+      {
+        "t": "封面與貼文設計",
+        "d": "35 種版型，iPhone 不連 Mac 也能自己排版。"
+      },
+      {
+        "t": "風格包與多語言",
+        "d": "整包帶走字幕、版型、字體和音樂；介面有 6 種語言。"
+      }
+    ]
   },
   "vpipe": {
-    "desc": "在 Mac 本機跑 MiniMax H3（有聲影片）和 Qwen Image 2.1 Turbo（圖片）的小網頁，不用雲端、不用 credits。內建設定檢查和一鍵下載模型、AI 優化 prompt、人物 LoRA、排隊、2 倍放大；用 Neural Engine 分擔運算，M3 Air 上 5 秒影片從約 73 分鐘降到約 35 分鐘。"
+    "desc": "在 Mac 本機跑 MiniMax H3（有聲影片）和 Qwen Image 2.1 Turbo（圖片）的小網頁，不用雲端、不用 credits。內建設定檢查和一鍵下載模型、AI 優化 prompt、人物 LoRA、排隊、2 倍放大；用 Neural Engine 分擔運算，M3 Air 上 5 秒影片從約 73 分鐘降到約 35 分鐘。",
+    "summary": "在 Mac 本機跑 AI 影片和圖片的小網頁，開源（MIT），不用雲端、不用 credits。"
   },
   "stock": {
     "meta": "2026-10 · 個人用",
-    "desc": "美股與馬股（Bursa Malaysia）研究儀表板：市場概況、個股 K 線與新聞、持股燈號與白話建議、回測、模擬帳戶，以及四個 AI 助理每天寫的繁體中文簡報。Python + Streamlit，只在本機執行。"
+    "desc": "美股與馬股（Bursa Malaysia）研究儀表板：市場概況、個股 K 線與新聞、持股燈號與白話建議、回測、模擬帳戶，以及四個 AI 助理每天寫的繁體中文簡報。Python + Streamlit，只在本機執行。",
+    "summary": "美股與馬股研究儀表板，AI 助理每天寫簡報。個人用，只在本機執行。"
   },
   "games": {
     "title": "網頁遊戲與小作品（公開，可直接玩）",
@@ -118,7 +177,8 @@
         "t": "Mobby 日語學習樂園",
         "d": "給小朋友的日語學習網頁"
       }
-    ]
+    ],
+    "summary": "7 個可以直接在瀏覽器玩的小遊戲與作品。"
   },
   "exp": {
     "title": "工作經歷",
@@ -509,5 +569,34 @@
     "hobby_title": "興趣",
     "hobby": "作曲、彈奏樂器（吉他、貝斯、鋼琴）、攝影、慢跑、登山、旅行。"
   },
-  "footer": "馮煥曉 Lonny Pang Huan Hsiao · Kuala Lumpur · 最後更新 2026-11"
+  "footer": "馮煥曉 Lonny Pang Huan Hsiao · Kuala Lumpur · 最後更新 2026-11",
+  "ui": {
+    "back": "← 回首頁",
+    "back_sw": "← 軟體作品",
+    "details": "看詳細",
+    "open": "打開",
+    "highlights": "重點",
+    "all_features": "全部功能（點開）",
+    "all_games": "7 個遊戲（點開）",
+    "all_note": "把所有內容放在同一頁，方便列印或存成 PDF",
+    "menu_title": "想看什麼？"
+  },
+  "home": {
+    "tagline": "拍了二十年照片和影片的導演與攝影師。現在帶內容團隊，也和 AI 一起寫內容製作工具。",
+    "full": "完整履歷（所有內容一頁看完）",
+    "cards": {
+      "software": "SOL Studio、Onset 3.0 等 5 個作品，加上 7 個小遊戲",
+      "experience": "2004 年至今，8 段經歷",
+      "awards": "POTY 2010 第二名、KKIFF 2014 評審獎等",
+      "films": "紀錄片、微電影、品牌影片，共 18 支可看",
+      "photo": "得獎作品、個人攝影展、現場攝影",
+      "skills": "攝影、剪輯、AI 工作流程、語言"
+    }
+  },
+  "handbook": {
+    "meta": "2026-11 · 公開 · 繁體中文，另有英文版",
+    "summary": "給第一次用 Onset 的創作者：8 章，不用懂程式，照著做就好。",
+    "desc": "Onset 新手使用手冊，涵蓋安裝、首頁六個入口、剪輯、AI Onset、不拍直接做、雲端生成、iPhone 同步和常見問題。",
+    "link": "打開手冊"
+  }
 }

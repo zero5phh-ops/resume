@@ -137,27 +137,69 @@ html[lang=ko] h1,html[lang=ko] h2{font-family:"Noto Serif KR","Noto Serif TC",se
 html[lang=en] .lead,html[lang=ms] .lead{font-size:17px}
 html[lang=en] body,html[lang=ms] body{font-family:"Noto Sans","Noto Sans TC",system-ui,sans-serif}
 html[lang=en] h1,html[lang=en] h2,html[lang=ms] h1,html[lang=ms] h2{font-family:"Noto Serif","Noto Serif TC",serif}
+nav.top .back{font-weight:700;color:var(--ink);margin-right:auto;font-size:15px;text-decoration:none}
+.muted{color:var(--muted)}
+.hero.simple{padding:48px 0 32px;gap:40px}
+.hero.simple .portrait{max-width:300px;justify-self:end;width:100%}
+.menu-wrap{padding-bottom:24px}
+.menu-title{font-family:"Noto Serif TC",serif;font-size:clamp(24px,3.5vw,30px);margin:0 0 18px}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.menu a{display:flex;flex-direction:column;gap:6px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;text-decoration:none;box-shadow:var(--shadow);transition:transform .15s,border-color .15s;min-height:160px}
+.menu a:hover{transform:translateY(-3px);border-color:var(--accent);color:inherit}
+.menu .n{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.08em}
+.menu .t{font-size:22px;font-weight:700;line-height:1.25}
+.menu .d{font-size:14px;color:var(--muted);line-height:1.55}
+.menu .arrow{margin-top:auto;color:var(--accent);font-size:20px}
+.homefoot{margin:0 0 20px}
+.homefoot .muted{font-size:13px;margin-left:8px}
+.detail{padding-bottom:56px}
+.ptitle{font-family:"Noto Serif TC",serif;font-size:clamp(30px,5vw,44px);margin:32px 0 6px;line-height:1.15}
+.detail > .sub{margin:0 0 24px}
+.detail > .meta{margin:4px 0 12px}
+.proj{display:block;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin-bottom:16px;text-decoration:none;box-shadow:var(--shadow)}
+a.proj:hover{border-color:var(--accent);color:inherit}
+.proj p{margin:8px 0 10px;font-size:16px}
+.proj .go{color:var(--accent);font-weight:700;font-size:14px}
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+.point{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px}
+.point b{display:block;margin-bottom:4px;font-size:15px}
+.point span{font-size:14px;color:var(--muted);line-height:1.55;display:block}
+details.fold{margin:18px 0;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+details.fold summary{cursor:pointer;padding:12px 16px;font-weight:700;list-style:none}
+details.fold summary::-webkit-details-marker{display:none}
+details.fold summary::after{content:"＋";float:right;color:var(--accent)}
+details.fold[open] summary::after{content:"－"}
+details.fold > *:not(summary){margin-left:16px;margin-right:16px}
+details.fold > :last-child{margin-bottom:16px}
+details.fold .grid3{margin-top:6px}
+@media (max-width:820px){.menu{grid-template-columns:1fr 1fr}.points{grid-template-columns:1fr 1fr}.hero.simple .portrait{justify-self:start}}
+@media (max-width:520px){.menu,.points{grid-template-columns:1fr}.menu a{min-height:0}}
+.hero,.hero.simple{padding-left:16px;padding-right:16px}
+.menu-sec{border-top:0;padding:8px 0 28px}
+.homefoot .muted{display:block;margin:8px 0 0}
+@media (max-width:520px){
+  nav.top .wrap{gap:10px}
+  nav.top .brand,nav.top .back{font-size:14px}
+  .langs a{padding:2px 6px;font-size:11px}
+  .menu a{padding:16px 18px;gap:4px}
+  .menu .t{font-size:20px}
+  .menu .arrow{position:absolute;right:18px;bottom:14px;margin:0}
+  .menu a{position:relative}
+}
 
 </style>
 </head>
 <body>
 <nav class="top"><div class="wrap">
   <a class="brand" href="#top">馮煥曉 Lonny</a>
-  <a href="#software">ソフトウェア</a>
-  <a href="#experience">職歴</a>
-  <a href="#awards">受賞・展覧会</a>
-  <a href="#films">映像作品</a>
-  <a href="#photo">写真</a>
-  <a href="#skills">スキル</a>
   <span class="langs"><a href="index.html" hreflang="zh-Hant">中文</a><a href="en.html" hreflang="en">EN</a><a href="ms.html" hreflang="ms">BM</a><a href="ja.html" hreflang="ja" aria-current="page">日本語</a><a href="ko.html" hreflang="ko">한국어</a></span>
   <button class="theme" id="theme" type="button" aria-label="ライト／ダーク切替">◐</button>
 </div></nav>
-
-<header class="wrap hero" id="top">
+<header class="wrap hero simple" id="top">
   <div>
     <div class="eyebrow">Director · Photographer · AI Workflow Builder</div>
     <h1>馮煥曉<small>Lonny Pang Huan Hsiao</small></h1>
-    <p class="lead">写真と映像に20年携わってきた映像監督・フォトグラファー。現在は SOL Integrative Wellness Centre でコンテンツチームを率い、脚本作成・撮影・編集から予約投稿まで、コンテンツ制作の全工程を担うシステムを AI と共に自ら開発。</p>
+    <p class="lead">20年にわたり写真と映像を撮り続けてきた監督・フォトグラファー。現在はコンテンツチームを率い、AIと一緒にコンテンツ制作ツールも開発しています。</p>
     <div class="facts">
       <span class="chip">📍 Kuala Lumpur, Malaysia</span>
       <span class="chip">Kota Kinabalu, Sabah 出身</span>
@@ -176,214 +218,13 @@ html[lang=en] h1,html[lang=en] h2,html[lang=ms] h1,html[lang=ms] h2{font-family:
     <div class="badge"><b>2010</b>Photographer of the Year<br>Digital Vision 部門 第2位</div>
   </div>
 </header>
-
-<section id="software"><div class="wrap">
-  <h2>ソフトウェア</h2>
-  <p class="sub">2026年より Claude とペア開発。非公開 repo は概要を記載、公開 repo はリンクを掲載。</p>
-
-  <article class="card project">
-    <div class="phead"><h3>SOL Studio</h3><span class="vis priv">PRIVATE</span><span class="meta">2026-08 — 現在 · 約 2,000 commits · 社内で本番稼働中</span></div>
-    <p class="pdesc">SOL Integrative Wellness Centre の医師向けコンテンツ制作システム。一言で1か月分の脚本を作成 → 医師がスマホのプロンプターで撮影 → 自動で粗編集 → レビュー → SNS へ予約投稿 → ワンクリックで KPI 出力。技術職以外の全社員が日常的に利用し、UI は中国語・英語・マレー語の3言語対応。</p>
-    <div class="links" style="margin-bottom:18px"><a class="btn primary" href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener">SOL Studio の Landing Page を開く ↗</a></div>
-    <ul class="feat">
-      <li><b>Create Script</b>：「Dr Vig November」と入力するだけで、AI が医師本人の口調で1か月分を執筆。Hook と医療表現チェック付き。マーケティング部の PPT 月間計画の解析にも対応</li>
-      <li><b>撮影アプリ</b>（iOS / Android、Expo）：絵コンテカード＋スクロール式プロンプター。撮影後は自動アップロードし共有ドライブへ整理</li>
-      <li><b>AI 自動粗編集</b>：間や撮り直しのカット、Whisper による字幕同期、B-roll の自動割り当て、数値の動的強調、3秒 Hook、サムネイル</li>
-      <li><b>Pass to AI</b>：一言で動画を修正。ジョブは各 Mac 上の AI helper にキューイングして実行。CapCut プロジェクトファイルの書き出しにも対応</li>
-      <li><b>ブラウザ版タイムラインエディタ</b>：マルチトラック、カラーグレーディング、ボーカル分離、背景除去、トランジション、16種の字幕。AI-cut では AI の編集過程をリアルタイムで確認可能</li>
-      <li><b>Podcast マルチカメラ</b>：複数のカメラとマイクを音声で自動同期し、話者を判定して自動でカメラを切替</li>
-      <li><b>Design ボード</b>：FB / IG の画像投稿を AI が執筆。Auto Design でレイヤー編集可能な PSD を一度に3案生成</li>
-      <li><b>医師の AI ナレーション</b>：社内でクローンした音声でナレーションを作成。電話番号は1桁ずつ読み上げ、英語・マレー語の混在文も原文どおりに発音</li>
-      <li><b>GHL 予約投稿</b>：FB / IG / TikTok / YouTube に対応。コメントを監視し、新着返信があれば通知音でお知らせ</li>
-      <li><b>3,000本以上の完成動画を収めた素材ライブラリ</b>、Dashboard、Content KPI の Excel レポート、Webinar と顧客リスト</li>
-      <li><b>権限とプライバシー</b>：ロール／部署単位の権限管理、チャットはメンバー認証のみ、患者同意書は権限保持者のみ閲覧可</li>
-      <li><b>MCP サーバー</b>：Claude などの外部 AI がアプリ内で直接タスク作成・脚本執筆・タイムライン確認を実行可能</li>
-    </ul>
-    <div class="stack"><span>Next.js</span><span>Fastify</span><span>Prisma / SQLite</span><span>Expo (React Native)</span><span>FFmpeg</span><span>faster-whisper</span><span>Claude API / Claude CLI</span><span>HeyGen</span><span>GoHighLevel API</span><span>Docker</span><span>Cloudflare Tunnel</span><span>MCP</span></div>
-    <figure class="shot"><a href="https://studio.neuroyoung.co/login" target="_blank" rel="noopener"><img src="assets/sol-studio-landing.jpg" alt="SOL Studio landing page" loading="lazy"></a><figcaption>SOL Studio の公開 landing page（ログイン後が業務システム）。前身は AI-Content-studio（2026-08、MVP：Web で脚本作成 → スマホのプロンプターで撮影 → 自動ポストプロダクション）。</figcaption></figure>
-  </article>
-
-  <article class="card project">
-    <div class="phead"><h3>Onset 3.0</h3><span class="vis priv">PRIVATE</span><span class="meta">2026-11-10 開始 · 6日間で327コミット · Mac と iPhone / iPad アプリを自分の端末で運用中 · 未公開</span></div>
-    <p class="pdesc">ゼロから書き直したクリエイター向け制作スタジオ。台本、撮影、編集、カバーと投稿のデザイン、AI 生成をひとつのアプリで。ひとつのコードから Mac アプリと iPhone / iPad アプリを作り、オフラインファーストで同期。どの画面にもいる AI Onset は画面を見て、Web を調べ、音声で会話し、アプリのすべての機能を一歩ずつ目の前で操作。いつでも停止・まとめて取り消し可能。</p>
-    <ul class="feat">
-      <li><b>Mac アプリと iPhone / iPad アプリ</b>（Tauri 2 + Swift）：ひとつのコードに3つの外殻。iPhone では AVFoundation 書き出し、Apple Speech 音声認識、Apple Vision 切り抜き、Image Playground</li>
-      <li><b>同期とリレー</b>：QR コードでペアリング、オフラインファースト、両側で変更すれば両方の版を保持。4G / 5G でも Cloudflare Worker + Durable Objects 経由で自宅の Mac にエンドツーエンド暗号化で接続</li>
-      <li><b>AI Onset</b>：全ページにいる AI アシスタント。画面とポインタを見て、Web 検索し、音声で話す。全機能をひとつのアクション一覧にまとめ、1〜10 のエージェントが同時に作業</li>
-      <li><b>ワンクリック MCP</b>：Claude Desktop、Claude Code、ChatGPT / Codex、Cursor などの外部 AI が Onset を操作。各ステップは画面に表示</li>
-      <li><b>Create Script</b>：AI が見える6段階で執筆 — 切り口、フック、スタイル通りの初稿、プラットフォーム確認、話し言葉化・AI っぽさ除去、リスク確認（医療表現・盗用）。9形式、36スタイル</li>
-      <li><b>Recording</b>：声に合わせて進むプロンプター（5言語）、音声コマンド、Bluetooth リモコン、カウントダウン。iPhone を Mac のカメラやマルチカム用リモートカメラとして使用</li>
-      <li><b>CapCut 風エディター</b>：キーフレーム、39種のトランジション、マスク、LUT と HLG / Log → 709、速度カーブ、カラオケ付き字幕20種、数十種のモーションテキスト、Three.js / Godot グラフィック、ロイヤリティフリーの音楽と効果音を内蔵</li>
-      <li><b>Auto-cut と AI Edit</b>：全編を一度聞いてカット、撮り直しを検出、章ごとに編集、章カードとズーム。長尺から Shorts を自動作成</li>
-      <li><b>数時間のマルチカム Podcast</b>：外付けドライブから直接読み込み、音で同期、話者に合わせて自動スイッチ、ラウドネスを統一（−14 / −16 LUFS）</li>
-      <li><b>撮らずに作る</b>：AI リサーチとフリーライセンス素材。ローカル生成（MiniMax H3 動画、Qwen Image、自作 LoRA）、クラウド生成プラグイン</li>
-      <li><b>カバーと投稿デザイン</b>：35種のレイアウト、曲線テキスト、カルーセル。iPhone だけでもレイアウト可能</li>
-      <li><b>スタイルパックとスキン</b>：字幕・レイアウト・フォント・音楽をまとめて持ち運び、アプリ名・アイコン・配色まで変更（Ed25519 署名）。プロジェクトは .onsetpack で共有</li>
-      <li><b>アカウントとライセンス</b>：Cloudflare Worker + D1 による申請・承認・端末ごとのライセンス。UI は繁体字・簡体字中国語、英語、マレー語、日本語、韓国語の6言語</li>
-      <li><b>書き出し</b>：MP4 / MOV / MP3 / WAV、CapCut・FCPXML・Premiere XML・FilmCraft のプロジェクトファイル</li>
-    </ul>
-    <div class="stack"><span>React</span><span>TypeScript</span><span>Vite</span><span>Node helper</span><span>FFmpeg</span><span>Whisper</span><span>Demucs</span><span>Claude CLI</span><span>Tauri 2 / Rust</span><span>Swift</span><span>Cloudflare Workers · D1 · Durable Objects</span><span>MLX Whisper</span><span>WebGL / Three.js</span><span>MCP</span></div>
-    <div class="shots">
-      <figure class="shot wide"><img src="assets/onset-editing.jpg" alt="Onset 3.0 Editing" loading="lazy"><figcaption>Editing：Auto-cut が全編を一度聞き、字幕も同時に作成（デモ映像）。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-script.jpg" alt="Create Script" loading="lazy"><figcaption>Create Script：AI Onset が実際に執筆中。左に各ステップとリスク確認の結果。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-recording.jpg" alt="Recording" loading="lazy"><figcaption>Recording：カメラ映像に重ねたプロンプター。声に合わせてスクロール。</figcaption></figure>
-      <figure class="shot wide"><img src="assets/onset-phone.jpg" alt="Onset on iPhone" loading="lazy"><figcaption>iPhone アプリ：簡易エディター、投稿デザイン、ホーム、Mac と同期する生成ライブラリ、他の AI 向けプロンプト手順。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-ipad.jpg" alt="Onset on iPad" loading="lazy"><figcaption>iPad：投稿デザイナー（シミュレーター）。</figcaption></figure>
-      <figure class="shot"><img src="assets/onset-start.jpg" alt="Onset Start" loading="lazy"><figcaption>Mac のホーム画面：6つの入口、右下に AI Onset。</figcaption></figure>
-    </div>
-  </article>
-
-  <article class="card project">
-    <div class="phead"><h3>vpipe工作台 · vpipe Workbench</h3><span class="vis pub">PUBLIC · MIT</span><span class="meta">2026-11</span></div>
-    <p class="pdesc">Mac 上で MiniMax H3（音声付き動画）と Qwen Image 2.1 Turbo（画像）をローカル実行する小さな Web アプリ。クラウドもクレジットも不要。設定チェックとモデルのワンクリックダウンロード、AI による prompt 最適化、人物 LoRA、キュー処理、2倍アップスケールを搭載。Neural Engine に演算を分担させ、M3 Air で5秒動画の生成時間を約73分から約35分に短縮。</p>
-    <div class="links"><a class="btn primary" href="https://github.com/zero5phh-ops/vpipe-workbench" target="_blank" rel="noopener">github.com/zero5phh-ops/vpipe-workbench ↗</a></div>
-  </article>
-
-  <article class="card project">
-    <div class="phead"><h3>AI Stock Research Desk</h3><span class="vis priv">PRIVATE</span><span class="meta">2026-10 · 個人用</span></div>
-    <p class="pdesc">米国株とマレーシア株（Bursa Malaysia）のリサーチダッシュボード。市場概況、個別銘柄のローソク足とニュース、保有銘柄のシグナル表示と平易な助言、バックテスト、デモ口座、さらに4つの AI アシスタントが毎日作成する繁体字中国語のブリーフィングを搭載。Python + Streamlit、ローカル環境のみで動作。</p>
-  </article>
-
-  <h4>Web ゲームと小作品（公開中・すぐに遊べます）</h4>
-  <div class="grid3">
-    <a class="mini" href="https://zero5phh-ops.github.io/galaxy-voyage/" target="_blank" rel="noopener"><span class="t">銀河系の旅 · Galaxy Voyage</span><span class="d">ブラウザで銀河系を飛び回る</span><span class="u">zero5phh-ops.github.io/galaxy-voyage</span></a>
-    <a class="mini" href="https://zero5phh-ops.github.io/blackhole-voyage/" target="_blank" rel="noopener"><span class="t">ブラックホールの旅 · Black Hole Voyage</span><span class="d">3D ブラックホールのビジュアル体験</span><span class="u">zero5phh-ops.github.io/blackhole-voyage</span></a>
-    <a class="mini" href="https://zero5phh-ops.github.io/space-rocket-game/" target="_blank" rel="noopener"><span class="t">3D Space Rocket Shooter</span><span class="d">3D 宇宙シューティングゲーム</span><span class="u">zero5phh-ops.github.io/space-rocket-game</span></a>
-    <a class="mini" href="https://zero5phh-ops.github.io/neon-kart/" target="_blank" rel="noopener"><span class="t">ネオンカート · Neon Kart</span><span class="d">ネオン風レースゲーム</span><span class="u">zero5phh-ops.github.io/neon-kart</span></a>
-    <a class="mini" href="https://zero5phh-ops.github.io/pixel-jump-quest/" target="_blank" rel="noopener"><span class="t">ピクセルジャンプ大冒険</span><span class="d">全20ステージのピクセル風プラットフォームアクション</span><span class="u">zero5phh-ops.github.io/pixel-jump-quest</span></a>
-    <a class="mini" href="https://zero5phh-ops.github.io/neon-tetris/" target="_blank" rel="noopener"><span class="t">ネオンブロック</span><span class="d">ネオン風落ち物パズル</span><span class="u">zero5phh-ops.github.io/neon-tetris</span></a>
-    <a class="mini" href="https://zero5phh-ops.github.io/test/" target="_blank" rel="noopener"><span class="t">Mobby 日本語学習ランド</span><span class="d">子ども向け日本語学習サイト</span><span class="u">zero5phh-ops.github.io/test</span></a>
-  </div>
-</div></section>
-
-<section id="experience"><div class="wrap">
-  <h2>職歴</h2>
-  <p class="sub">Working Experience</p>
-  <ul class="timeline">
-    <li class="now"><div class="yr">2023 — 現在</div><div class="role">コンテンツチーム · 映像 · AI システム開発</div><div class="org">SOL Integrative Wellness Centre, Kuala Lumpur</div><p>医師の動画コンテンツの撮影・制作を担当。2026年より SOL Studio を自ら開発し、コンテンツ制作の全工程を AI システムに移行。</p></li>
-    <li><div class="yr">2024</div><div class="role">フリーランス · 映像制作</div><div class="org">FCB Malaysia（広告代理店）× RHB Bank</div><p>RHB Bank の応募作品を制作：2024 MDA（D Awards）『Mobile Banking: Less Time Banking, More Time Bonding』、および 2024 APAC Effies 応募映像。</p></li>
-    <li><div class="yr">2022 — 2023</div><div class="role">Film Director</div><div class="org">Fu Gong Plantation Sdn Bhd 富宮種植</div><p>ドリアン栽培のドキュメンタリー。</p></li>
-    <li><div class="yr">2020 — 2022</div><div class="role">Film Director</div><div class="org">Taiwan Buddhist Tzu-Chi Foundation Malaysia 慈済基金会マレーシア支部（クアラルンプール）</div><p>「大馬慈済情」ドキュメンタリーシリーズ。大愛テレビにて放送。</p></li>
-    <li><div class="yr">2017 — 2019</div><div class="role">Content Creator</div><div class="org">深圳曠時文化伝播有限公司</div><p>深圳航空、深圳地下鉄、佳兆業（Kaisa）、塩田国際（Yantian International）、テンセント × レゴなどのブランド映像。</p></li>
-    <li><div class="yr">2014 — 2016</div><div class="role">CEO</div><div class="org">Guangzhou YiCai Art Gallery House 広州懿彩文化有限公司</div></li>
-    <li><div class="yr">2013 — 2014</div><div class="role">Creative Director</div><div class="org">Guangzhou Jintai Photography 今太撮影</div></li>
-    <li><div class="yr">2004 — 2012</div><div class="role">Founder · Marketing &amp; Content Creator</div><div class="org">Feeltone Inc（沸騰創作網 Feeltone Creative Platform）</div></li>
-  </ul>
-  <h4>学歴</h4>
-  <p>Informatics Technology College — Computer Science Diploma（1999）</p>
-</div></section>
-
-<section id="awards"><div class="wrap">
-  <h2>受賞・展覧会・作品年表</h2>
-  <p class="sub">Awards, Exhibitions &amp; Milestones</p>
-  <div class="two">
-    <ul class="awards">
-      <li><span>2004</span>クリエイター交流サイト「沸騰創作網 Feeltone Creative Platform」を設立</li>
-      <li><span>2007</span>Miss Sabah Malaysia（サバ州ミスコンテスト）専属フォトグラファー</li>
-      <li><span>2007</span>Digital Camera Magazine Malaysia 2007 Hot Choice</li>
-      <li><span>2008</span>Digital Camera World Hot Choice（編集部選出）</li>
-      <li><span>2009</span>Borneo KK Jazz Festival（ボルネオ・ジャズフェスティバル）専属フォトグラファー</li>
-      <li><span>2009</span>Digital Camera Magazine UK に特集掲載、作品が Telegraph.co.uk に掲載</li>
-      <li class="hl"><span>2010</span>POTY Photographer of the Year 2010 Digital Vision 部門 第2位</li>
-      <li><span>2010</span>Panasonic Lumix Station Sabah 写真ワークショップ講師</li>
-      <li><span>2010</span>Borneo Bond Art Festival（原建芸術祭）作品展示</li>
-      <li><span>2010</span>第1回 個人写真講座</li>
-      <li><span>2011</span>Sony Center Sabah 写真ワークショップ講師</li>
-    </ul>
-    <ul class="awards">
-      <li class="hl"><span>2011</span>個展『The Sense of Jesselton』（爵士頓之舞）</li>
-      <li><span>2011</span>EPSON 100 Photo / Art Exhibition</li>
-      <li><span>2011</span>第2回 個人写真講座</li>
-      <li><span>2012</span>Borneo Bond Art Festival（原建芸術祭）作品展示</li>
-      <li><span>2012</span>崇正学院 写真講座講師</li>
-      <li><span>2012</span>初の短編映画『罠 Trap』予告編</li>
-      <li><span>2013</span>広州 第10回「芸術大爆発」個人写真展</li>
-      <li class="hl"><span>2014</span>短編映画『ごめんなさい I'm Sorry』が KK International Film Festival 審査員賞を受賞</li>
-      <li><span>2015</span>香港のアーティスト李懿殷のインド旅行ドキュメンタリー・インタビュー</li>
-      <li><span>2016</span>深圳「新店網」グルメ番組制作</li>
-      <li><span>2017</span>深圳地下鉄6号線・8号線の定期記録撮影</li>
-      <li><span>2018</span>深圳 佳兆業（Kaisa）イベント撮影</li>
-      <li><span>2019</span>深圳 テンセント × レゴ短編映画、コタキナバルの新メディア「小人物大夢想」シリーズ</li>
-      <li><span>2020</span>慈済基金会「大馬慈済情」ドキュメンタリーシリーズ</li>
-      <li><span>2022</span>富宮種植 — ドリアン栽培ドキュメンタリー</li>
-    </ul>
-  </div>
-</div></section>
-
-<section id="films"><div class="wrap">
-  <h2>映像作品</h2>
-  <p class="sub">2026-11 に再確認済み。以下のリンクはすべて視聴可能です。</p>
-  <h4>「大馬慈済情」ドキュメンタリーシリーズ（大愛テレビ）</h4>
-  <div class="vids">
-    <a class="vid" href="https://www.youtube.com/watch?v=A0ICXfiE0Lk" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/A0ICXfiE0Lk/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">守護者</div><div class="d">YouTube · 2021</div></div></a>
-    <a class="vid" href="https://youtu.be/zaRsn41oajE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/zaRsn41oajE/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">共にコロナと闘う（一起戰疫）</div><div class="d">YouTube · 2021</div></div></a>
-    <a class="vid" href="https://youtu.be/s7nwF3-RXII" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/s7nwF3-RXII/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">後悔は昨日に置いて（把遺憾留給昨天）</div><div class="d">YouTube · 2021</div></div></a>
-    <a class="vid" href="https://youtu.be/jDoRc7CG8sw" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/jDoRc7CG8sw/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">80歳の願い（80 歲的願望）</div><div class="d">YouTube · 2020</div></div></a>
-    <a class="vid" href="https://youtu.be/UlIcvxULwbs" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/UlIcvxULwbs/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">共に医療を支えよう（「疫」起挺醫去）</div><div class="d">YouTube · 2020</div></div></a>
-    <a class="vid" href="https://youtu.be/lSCXmtg-GfE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/lSCXmtg-GfE/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">環境にやさしい農業を探る旅（友善農耕探索之旅）</div><div class="d">YouTube · 2021</div></div></a>
-    <a class="vid" href="https://youtu.be/3HhL-2FRzrw" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/3HhL-2FRzrw/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">苦を抜き楽を与える担い手（拔苦與樂的承擔）</div><div class="d">YouTube · 2021</div></div></a>
-    <a class="vid" href="https://youtu.be/6MDd0LfYeZM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/6MDd0LfYeZM/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">魚と米の里はわが家、環境保護はみんなで（漁米之鄉是我家，環保靠大家）</div><div class="d">YouTube · 2021</div></div></a>
-    <a class="vid" href="https://youtu.be/B_QRKShlvl0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/B_QRKShlvl0/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">根を失った民族（失根的民族）</div><div class="d">YouTube · 2021</div></div></a>
-  </div>
-  <h4>短編映画とブランド映像</h4>
-  <div class="vids">
-    <a class="vid" href="https://v.youku.com/v_show/id_XMTM5MDU3MTA0NA==.html" target="_blank" rel="noopener"><div class="ph">Youku</div><div><div class="t">ごめんなさい I'm Sorry（對不起）</div><div class="d">KK International Film Festival 2014 審査員賞</div></div></a>
-    <a class="vid" href="https://v.youku.com/v_show/id_XNTc1NDk1NzM2.html" target="_blank" rel="noopener"><div class="ph">Youku</div><div><div class="t">罠 Trap（予告編）（陷阱）</div><div class="d">2012年 初の短編映画</div></div></a>
-    <a class="vid" href="https://v.youku.com/v_show/id_XMTYwNTI3NTkxMg==.html" target="_blank" rel="noopener"><div class="ph">Youku</div><div><div class="t">マイクロ広告：夢の途中 Chasing Dream（夢想進行中）</div><div class="d">Youku</div></div></a>
-    <a class="vid" href="https://youtu.be/Pvk9rN0Yn1o" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Pvk9rN0Yn1o/mqdefault.jpg" alt="" loading="lazy"><div><div class="t">アーティストインタビュー 30秒 CV（李懿殷）</div><div class="d">YouTube</div></div></a>
-    <a class="vid" href="https://v.youku.com/v_show/id_XMTQwMDAwMDk4OA==.html" target="_blank" rel="noopener"><div class="ph">Youku</div><div><div class="t">アーティストインタビュー完全版：Jasmine のインド旅行</div><div class="d">Youku · 2015</div></div></a>
-    <a class="vid" href="https://mp.weixin.qq.com/s/jqywWBz2MKh6MZTx7roetQ" target="_blank" rel="noopener"><div class="ph">WeChat</div><div><div class="t">深圳航空 機内安全ビデオ</div><div class="d">曠時文化制作 · 2019</div></div></a>
-    <a class="vid" href="https://mp.weixin.qq.com/s/QmqfsfxPg0cTsU4Vl0kI3Q" target="_blank" rel="noopener"><div class="ph">WeChat</div><div><div class="t">佳兆業（Kaisa）短編映画</div><div class="d">新卒採用プロモーション映像</div></div></a>
-    <a class="vid" href="https://mp.weixin.qq.com/s/tWBzx8dxLDFo-E7k_P-HjQ" target="_blank" rel="noopener"><div class="ph">WeChat</div><div><div class="t">深圳地下鉄 — 路面電車短編映画</div><div class="d">曠時文化制作</div></div></a>
-    <a class="vid" href="https://mp.weixin.qq.com/s/F8T3cMDx1PNYg7RP3FfHVA" target="_blank" rel="noopener"><div class="ph">WeChat</div><div><div class="t">深圳 塩田国際 MOL Triumph 初寄港</div><div class="d">曠時文化制作 · 2017</div></div></a>
-  </div>
-</div></section>
-
-<section id="photo"><div class="wrap">
-  <h2>写真</h2>
-  <p class="sub">その他の作品は <a href="https://www.flickr.com/photos/zero5phh" target="_blank" rel="noopener">Flickr</a> にて。</p>
-  <div class="gallery">
-    <figure><img src="assets/poty-2nd.jpg" alt="POTY 2010 Digital Vision 部門 第2位" loading="lazy"><figcaption>POTY 2010 Digital Vision 部門 第2位</figcaption></figure>
-    <figure><img src="assets/poty-telegraph.jpg" alt="Digital Camera Photographer of the Year、Telegraph.co.uk に掲載" loading="lazy"><figcaption>Digital Camera Photographer of the Year、Telegraph.co.uk に掲載</figcaption></figure>
-    <figure><img src="assets/jesselton.jpg" alt="2011年 個展『The Sense of Jesselton』（爵士頓之舞）" loading="lazy"><figcaption>2011年 個展『The Sense of Jesselton』（爵士頓之舞）</figcaption></figure>
-    <figure><img src="assets/epson100.jpg" alt="EPSON 100 Photo / Art Exhibition" loading="lazy"><figcaption>EPSON 100 Photo / Art Exhibition</figcaption></figure>
-    <figure><img src="assets/dance.jpg" alt="ダンスパフォーマンス" loading="lazy"><figcaption>ダンスパフォーマンス</figcaption></figure>
-    <figure><img src="assets/music.jpg" alt="音楽イベント · KK Jazz Festival" loading="lazy"><figcaption>音楽イベント · KK Jazz Festival</figcaption></figure>
-    <figure><img src="assets/trap.jpg" alt="2012年 短編映画『罠 Trap』撮影現場とポスター" loading="lazy"><figcaption>2012年 短編映画『罠 Trap』撮影現場とポスター</figcaption></figure>
-  </div>
-</div></section>
-
-<section id="skills"><div class="wrap">
-  <h2>スキル</h2>
-  <p class="sub">Skills</p>
-  <div class="skills">
-    <div class="skill"><span>写真撮影 Photography <small>· ポートレート、イベント、ステージ</small></span><span class="lv" aria-label="5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
-    <div class="skill"><span>PC の組み立て・修理</span><span class="lv" aria-label="5 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
-    <div class="skill"><span>映像撮影 Videography <small>· DSLR、ジンバル、ライブ配信</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
-    <div class="skill"><span>空撮 Drone</span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
-    <div class="skill"><span>写真レタッチ Photo Edit <small>· Photoshop、Capture One、Bridge</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
-    <div class="skill"><span>ストーリーテリング Story-Telling</span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
-    <div class="skill"><span>映像編集 Video Editing <small>· Final Cut Pro、Premiere、DaVinci、After Effects</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
-    <div class="skill"><span>AI ワークフローとソフトウェア開発 <small>· Claude、MCP、TypeScript、Python、FFmpeg</small></span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
-  </div>
-  <div class="two" style="margin-top:32px">
-    <div>
-      <h4 style="margin-top:0">語学</h4>
-      <div class="skills" style="grid-template-columns:1fr">
-        <div class="skill"><span>中国語</span><span class="lv" aria-label="4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div>
-        <div class="skill"><span>英語</span><span class="lv" aria-label="3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div>
-        <div class="skill"><span>マレー語</span><span class="lv" aria-label="1 / 5"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span></div>
-      </div>
-    </div>
-    <div>
-      <h4 style="margin-top:0">趣味</h4>
-      <p>作曲、楽器演奏（ギター、ベース、ピアノ）、写真、ジョギング、登山、旅行。</p>
-    </div>
-  </div>
-</div></section>
-
-<footer><div class="wrap">馮煥曉 Lonny Pang Huan Hsiao · Kuala Lumpur · 最終更新 2026-11 · <a href="https://github.com/zero5phh-ops" target="_blank" rel="noopener">github.com/zero5phh-ops</a></div></footer>
-
+<section class="menu-sec"><div class="wrap"><h2 class="menu-title">何をご覧になりますか？</h2><nav class="menu"><a href="ja/software.html"><span class="n">01</span><span class="t">ソフトウェア</span><span class="d">SOL Studio、Onset 3.0 など5つの作品と、7つのミニゲーム</span><span class="arrow">→</span></a>
+<a href="ja/experience.html"><span class="n">02</span><span class="t">職歴</span><span class="d">2004年から現在まで、8つの経歴</span><span class="arrow">→</span></a>
+<a href="ja/awards.html"><span class="n">03</span><span class="t">受賞・展覧会</span><span class="d">POTY 2010 準優勝、KKIFF 2014 審査員賞など</span><span class="arrow">→</span></a>
+<a href="ja/films.html"><span class="n">04</span><span class="t">映像作品</span><span class="d">ドキュメンタリー、ショートフィルム、ブランド映像など全18本</span><span class="arrow">→</span></a>
+<a href="ja/photo.html"><span class="n">05</span><span class="t">写真</span><span class="d">受賞作品、個展、イベント撮影</span><span class="arrow">→</span></a>
+<a href="ja/skills.html"><span class="n">06</span><span class="t">スキル</span><span class="d">撮影、編集、AIワークフロー、言語</span><span class="arrow">→</span></a></nav></div></section>
+<footer><div class="wrap"><p class="homefoot"><a class="btn" href="ja/all.html">履歴書（全部を1ページで）</a> <span class="muted">すべての内容を1ページにまとめます。印刷やPDF保存に便利です</span></p>馮煥曉 Lonny Pang Huan Hsiao · Kuala Lumpur · 最終更新 2026-11 · <a href="https://github.com/zero5phh-ops" target="_blank" rel="noopener">github.com/zero5phh-ops</a></div></footer>
 <script>
 const root=document.documentElement,key="resume-theme";
 try{const t=localStorage.getItem(key);if(t)root.dataset.theme=t}catch(e){}
